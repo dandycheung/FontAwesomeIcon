@@ -19,9 +19,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.sumit.fontawesomeicon.adapter.DataAdapter;
@@ -35,6 +35,10 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.util.ArrayList;
+
+/**
+ * Created by Sumit on 7/27/2017.
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -191,11 +195,8 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse(path);
         intent.setDataAndType(uri, "text/xml");
 
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            return true;
-        }
+        return intent.resolveActivity(getPackageManager()) != null;
 
-        return false;
     }
 
     @Override

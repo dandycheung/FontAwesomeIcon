@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.Random;
 
 /**
- * Created by sahoos16 on 7/27/2017.
+ * Created by Sumit on 7/27/2017.
  */
 
 public class Util {
@@ -72,11 +72,7 @@ public class Util {
     public static boolean isWriteOnExternalStorageAllowed() {
         // get the state of external storage
         String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            // if storage is mounted return true
-            return true;
-        }
-        return false;
+        return Environment.MEDIA_MOUNTED.equals(state);
     }
 
     public static String exportXmlToSdCard(Context context, String xmlContent) {

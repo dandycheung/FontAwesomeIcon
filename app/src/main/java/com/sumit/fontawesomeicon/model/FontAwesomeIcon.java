@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by sahoos16 on 7/27/2017.
+ * Created by Sumit on 7/27/2017.
  */
 
 public class FontAwesomeIcon implements Parcelable{

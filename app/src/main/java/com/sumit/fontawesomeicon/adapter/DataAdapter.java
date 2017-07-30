@@ -1,7 +1,7 @@
 package com.sumit.fontawesomeicon.adapter;
 
 /**
- * Created by sahoos16 on 7/27/2017.
+ * Created by Sumit on 7/27/2017.
  */
 
 import android.content.Context;
@@ -15,10 +15,9 @@ import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-
-import com.sumit.fontawesomeicon.util.FontManager;
 import com.sumit.fontawesomeicon.R;
 import com.sumit.fontawesomeicon.model.FontAwesomeIcon;
+import com.sumit.fontawesomeicon.util.FontManager;
 
 import java.util.ArrayList;
 
