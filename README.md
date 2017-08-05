@@ -16,12 +16,12 @@ To show any alert or message App uses Alerter which is quite cool, have a look h
 #### Screenshots :
 
 <p align="center">
-  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-07-30-222219.png" width="350"/>
-  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-07-30-222250.png" width="350"/>
-  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-07-30-222306.png" width="350"/>
-  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-07-30-222321.png" width="350"/>
-  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-07-30-222349.png" width="350"/>
-  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-07-30-222406.png" width="350"/>
+  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-08-05-234922.png" width="350"/>
+  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-08-05-234937.png" width="350"/>
+  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-08-05-234950.png" width="350"/>
+  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-08-05-235016.png" width="350"/>
+  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-08-05-235041.png" width="350"/>
+  <img src="https://github.com/sumitsahoo/FontAwesomeIcon/blob/master/screenshots/device-2017-08-05-235059.png" width="350"/>
 </p><br />
 Happy Coding :) <br /> 
 Fork -> Improve -> Share -> Repeat
