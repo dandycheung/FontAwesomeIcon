@@ -11,9 +11,11 @@ import android.os.Environment;
 import com.sumit.fontawesomeicon.R;
 import com.sumit.fontawesomeicon.model.FontAwesomeIcon;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -35,7 +37,7 @@ public class Util {
     }
 
     public static String getRandomFontAwesomeString(Context context) {
-        String[] faIcons = context.getResources().getStringArray(R.array.array_fa_icons);
+        String[] faIcons = context.getResources().getStringArray(R.array.array_fa_icon_unicode);
         return faIcons[new Random().nextInt(faIcons.length)];
     }
 
@@ -60,16 +62,54 @@ public class Util {
                 + currentDateTime
                 + " -->\n";
 
-        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
-            xmlContent += "\n\t<string name=\"" + fontAwesomeIcon.getIconClassName() + "\">" + fontAwesomeIcon.getIconUnicode() + "</string>";
-        }
+        xmlContent += generateIconStringResource(fontAwesomeIcons);
+
+        // To display all icons an array is needed both for unicode and icon names
+
+        xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
+        xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
 
         xmlContent += "\n\n </resources>";
 
         return xmlContent;
     }
 
-    public static boolean isWriteOnExternalStorageAllowed() {
+    private static String generateIconStringResource(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+
+        String iconStringResource = "";
+
+        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
+            iconStringResource += "\n\t<string name=\"" + fontAwesomeIcon.getIconClassName() + "\">" + fontAwesomeIcon.getIconUnicode() + "</string>";
+        }
+
+        return iconStringResource;
+    }
+
+    private static String generateIconUnicodeArray(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+        String iconUnicodeArray = "\t<string-array name=\"array_fa_icon_unicode\">";
+
+        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
+            iconUnicodeArray += "\n\t\t<item>@string/" + fontAwesomeIcon.getIconClassName() + "</item>";
+        }
+
+        iconUnicodeArray += "\n\t</string-array>";
+
+        return iconUnicodeArray;
+    }
+
+    private static String generateIconClassNameArray(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+        String iconClassNameArray = "\t<string-array name=\"array_fa_icon_class_name\">";
+
+        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
+            iconClassNameArray += "\n\t\t<item>" + fontAwesomeIcon.getIconClassName() + "</item>";
+        }
+
+        iconClassNameArray += "\n\t</string-array>";
+
+        return iconClassNameArray;
+    }
+
+    private static boolean isWriteOnExternalStorageAllowed() {
         // get the state of external storage
         String state = Environment.getExternalStorageState();
         return Environment.MEDIA_MOUNTED.equals(state);
@@ -77,13 +117,13 @@ public class Util {
 
     public static String exportXmlToSdCard(Context context, String xmlContent) {
 
-        if(isWriteOnExternalStorageAllowed()){
+        if (isWriteOnExternalStorageAllowed()) {
             // get the path to sdcard
             File sdcard = Environment.getExternalStorageDirectory();
             // to this path add a new directory path
             File dir = new File(sdcard.getAbsolutePath() + "/" + DIR_NAME + "/");
             // create this directory if not already created
-            if(!dir.exists())
+            if (!dir.exists())
                 dir.mkdir();
 
             // create the file in which we will write the contents
@@ -91,7 +131,18 @@ public class Util {
             FileOutputStream fileOutputStream = null;
             try {
                 fileOutputStream = new FileOutputStream(file);
-                fileOutputStream.write(xmlContent.getBytes());
+                //fileOutputStream.write(xmlContent.getBytes());
+                //fileOutputStream.close();
+                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, "UTF-8");
+                BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
+                bufferedWriter.write(xmlContent, 0, xmlContent.length());
+
+                fileOutputStream.flush();
+                outputStreamWriter.flush();
+                bufferedWriter.flush();
+
+                bufferedWriter.close();
+                outputStreamWriter.close();
                 fileOutputStream.close();
 
                 // Initiate media scan and put the new things into the path array to

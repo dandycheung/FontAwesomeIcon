@@ -46,7 +46,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
         viewHolder.textViewIconUnicode.setText(fontAwesomeIcons.get(i).getIconUnicode());
         viewHolder.textViewIconUnicode.setTextColor(fontAwesomeIcons.get(i).getIconColor());
+        viewHolder.textViewIconId.setText("#" + (fontAwesomeIcons.get(i).getId() + 1));
         viewHolder.textViewIconName.setText(fontAwesomeIcons.get(i).getIconClassName());
+        viewHolder.textViewIconName.setSelected(true);
 
         // Dynamically change the stroke color
         GradientDrawable gradientDrawable = (GradientDrawable) viewHolder.linearLayoutRoot.getBackground();
@@ -82,6 +84,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
         private LinearLayout linearLayoutRoot;
         private TextView textViewIconUnicode;
+        private TextView textViewIconId;
         private TextView textViewIconName;
 
         ViewHolder(View view) {
@@ -89,6 +92,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
             linearLayoutRoot = view.findViewById(R.id.layout_root);
             textViewIconUnicode = view.findViewById(R.id.text_icon_unicode);
+            textViewIconId = view.findViewById(R.id.text_icon_id);
             textViewIconName = view.findViewById(R.id.text_icon_name);
 
             Typeface iconFont = FontManager.getTypeface(context.getApplicationContext(), FontManager.FONT_AWESOME);

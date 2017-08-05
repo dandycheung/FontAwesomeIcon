@@ -1,1581 +1,2372 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- More fonts here : http://fontawesome.io/cheatsheet/ -->
 
-    <string name="fa_500px">&#xf26e;</string>
-    <string name="fa_address_book">&#xf2b9;</string>
-    <string name="fa_address_book_o">&#xf2ba;</string>
-    <string name="fa_address_card">&#xf2bb;</string>
-    <string name="fa_address_card_o">&#xf2bc;</string>
-    <string name="fa_adjust">&#xf042;</string>
-    <string name="fa_adn">&#xf170;</string>
-    <string name="fa_align_center">&#xf037;</string>
-    <string name="fa_align_justify">&#xf039;</string>
-    <string name="fa_align_left">&#xf036;</string>
-    <string name="fa_align_right">&#xf038;</string>
-    <string name="fa_amazon">&#xf270;</string>
-    <string name="fa_ambulance">&#xf0f9;</string>
-    <string name="fa_american_sign_language_interpreting">&#xf2a3;</string>
-    <string name="fa_anchor">&#xf13d;</string>
-    <string name="fa_android">&#xf17b;</string>
-    <string name="fa_angellist">&#xf209;</string>
-    <string name="fa_angle_double_down">&#xf103;</string>
-    <string name="fa_angle_double_left">&#xf100;</string>
-    <string name="fa_angle_double_right">&#xf101;</string>
-    <string name="fa_angle_double_up">&#xf102;</string>
-    <string name="fa_angle_down">&#xf107;</string>
-    <string name="fa_angle_left">&#xf104;</string>
-    <string name="fa_angle_right">&#xf105;</string>
-    <string name="fa_angle_up">&#xf106;</string>
-    <string name="fa_apple">&#xf179;</string>
-    <string name="fa_archive">&#xf187;</string>
-    <string name="fa_area_chart">&#xf1fe;</string>
-    <string name="fa_arrow_circle_down">&#xf0ab;</string>
-    <string name="fa_arrow_circle_left">&#xf0a8;</string>
-    <string name="fa_arrow_circle_o_down">&#xf01a;</string>
-    <string name="fa_arrow_circle_o_left">&#xf190;</string>
-    <string name="fa_arrow_circle_o_right">&#xf18e;</string>
-    <string name="fa_arrow_circle_o_up">&#xf01b;</string>
-    <string name="fa_arrow_circle_right">&#xf0a9;</string>
-    <string name="fa_arrow_circle_up">&#xf0aa;</string>
-    <string name="fa_arrow_down">&#xf063;</string>
-    <string name="fa_arrow_left">&#xf060;</string>
-    <string name="fa_arrow_right">&#xf061;</string>
-    <string name="fa_arrow_up">&#xf062;</string>
-    <string name="fa_arrows">&#xf047;</string>
-    <string name="fa_arrows_alt">&#xf0b2;</string>
-    <string name="fa_arrows_h">&#xf07e;</string>
-    <string name="fa_arrows_v">&#xf07d;</string>
-    <string name="fa_asl_interpreting_alias">&#xf2a3;</string>
-    <string name="fa_assistive_listening_systems">&#xf2a2;</string>
-    <string name="fa_asterisk">&#xf069;</string>
-    <string name="fa_at">&#xf1fa;</string>
-    <string name="fa_audio_description">&#xf29e;</string>
-    <string name="fa_automobile_alias">&#xf1b9;</string>
-    <string name="fa_backward">&#xf04a;</string>
-    <string name="fa_balance_scale">&#xf24e;</string>
-    <string name="fa_ban">&#xf05e;</string>
-    <string name="fa_bandcamp">&#xf2d5;</string>
-    <string name="fa_bank_alias">&#xf19c;</string>
-    <string name="fa_bar_chart">&#xf080;</string>
-    <string name="fa_bar_chart_o_alias">&#xf080;</string>
-    <string name="fa_barcode">&#xf02a;</string>
-    <string name="fa_bars">&#xf0c9;</string>
-    <string name="fa_bath">&#xf2cd;</string>
-    <string name="fa_bathtub_alias">&#xf2cd;</string>
-    <string name="fa_battery_alias">&#xf240;</string>
-    <string name="fa_battery_0_alias">&#xf244;</string>
-    <string name="fa_battery_1_alias">&#xf243;</string>
-    <string name="fa_battery_2_alias">&#xf242;</string>
-    <string name="fa_battery_3_alias">&#xf241;</string>
-    <string name="fa_battery_4_alias">&#xf240;</string>
-    <string name="fa_battery_empty">&#xf244;</string>
-    <string name="fa_battery_full">&#xf240;</string>
-    <string name="fa_battery_half">&#xf242;</string>
-    <string name="fa_battery_quarter">&#xf243;</string>
-    <string name="fa_battery_three_quarters">&#xf241;</string>
-    <string name="fa_bed">&#xf236;</string>
-    <string name="fa_beer">&#xf0fc;</string>
-    <string name="fa_behance">&#xf1b4;</string>
-    <string name="fa_behance_square">&#xf1b5;</string>
-    <string name="fa_bell">&#xf0f3;</string>
-    <string name="fa_bell_o">&#xf0a2;</string>
-    <string name="fa_bell_slash">&#xf1f6;</string>
-    <string name="fa_bell_slash_o">&#xf1f7;</string>
-    <string name="fa_bicycle">&#xf206;</string>
-    <string name="fa_binoculars">&#xf1e5;</string>
-    <string name="fa_birthday_cake">&#xf1fd;</string>
-    <string name="fa_bitbucket">&#xf171;</string>
-    <string name="fa_bitbucket_square">&#xf172;</string>
-    <string name="fa_bitcoin_alias">&#xf15a;</string>
-    <string name="fa_black_tie">&#xf27e;</string>
-    <string name="fa_blind">&#xf29d;</string>
-    <string name="fa_bluetooth">&#xf293;</string>
-    <string name="fa_bluetooth_b">&#xf294;</string>
-    <string name="fa_bold">&#xf032;</string>
-    <string name="fa_bolt">&#xf0e7;</string>
-    <string name="fa_bomb">&#xf1e2;</string>
-    <string name="fa_book">&#xf02d;</string>
-    <string name="fa_bookmark">&#xf02e;</string>
-    <string name="fa_bookmark_o">&#xf097;</string>
-    <string name="fa_braille">&#xf2a1;</string>
-    <string name="fa_briefcase">&#xf0b1;</string>
-    <string name="fa_btc">&#xf15a;</string>
-    <string name="fa_bug">&#xf188;</string>
-    <string name="fa_building">&#xf1ad;</string>
-    <string name="fa_building_o">&#xf0f7;</string>
-    <string name="fa_bullhorn">&#xf0a1;</string>
-    <string name="fa_bullseye">&#xf140;</string>
-    <string name="fa_bus">&#xf207;</string>
-    <string name="fa_buysellads">&#xf20d;</string>
-    <string name="fa_cab_alias">&#xf1ba;</string>
-    <string name="fa_calculator">&#xf1ec;</string>
-    <string name="fa_calendar">&#xf073;</string>
-    <string name="fa_calendar_check_o">&#xf274;</string>
-    <string name="fa_calendar_minus_o">&#xf272;</string>
-    <string name="fa_calendar_o">&#xf133;</string>
-    <string name="fa_calendar_plus_o">&#xf271;</string>
-    <string name="fa_calendar_times_o">&#xf273;</string>
-    <string name="fa_camera">&#xf030;</string>
-    <string name="fa_camera_retro">&#xf083;</string>
-    <string name="fa_car">&#xf1b9;</string>
-    <string name="fa_caret_down">&#xf0d7;</string>
-    <string name="fa_caret_left">&#xf0d9;</string>
-    <string name="fa_caret_right">&#xf0da;</string>
-    <string name="fa_caret_square_o_down">&#xf150;</string>
-    <string name="fa_caret_square_o_left">&#xf191;</string>
-    <string name="fa_caret_square_o_right">&#xf152;</string>
-    <string name="fa_caret_square_o_up">&#xf151;</string>
-    <string name="fa_caret_up">&#xf0d8;</string>
-    <string name="fa_cart_arrow_down">&#xf218;</string>
-    <string name="fa_cart_plus">&#xf217;</string>
-    <string name="fa_cc">&#xf20a;</string>
-    <string name="fa_cc_amex">&#xf1f3;</string>
-    <string name="fa_cc_diners_club">&#xf24c;</string>
-    <string name="fa_cc_discover">&#xf1f2;</string>
-    <string name="fa_cc_jcb">&#xf24b;</string>
-    <string name="fa_cc_mastercard">&#xf1f1;</string>
-    <string name="fa_cc_paypal">&#xf1f4;</string>
-    <string name="fa_cc_stripe">&#xf1f5;</string>
-    <string name="fa_cc_visa">&#xf1f0;</string>
-    <string name="fa_certificate">&#xf0a3;</string>
-    <string name="fa_chain_alias">&#xf0c1;</string>
-    <string name="fa_chain_broken">&#xf127;</string>
-    <string name="fa_check">&#xf00c;</string>
-    <string name="fa_check_circle">&#xf058;</string>
-    <string name="fa_check_circle_o">&#xf05d;</string>
-    <string name="fa_check_square">&#xf14a;</string>
-    <string name="fa_check_square_o">&#xf046;</string>
-    <string name="fa_chevron_circle_down">&#xf13a;</string>
-    <string name="fa_chevron_circle_left">&#xf137;</string>
-    <string name="fa_chevron_circle_right">&#xf138;</string>
-    <string name="fa_chevron_circle_up">&#xf139;</string>
-    <string name="fa_chevron_down">&#xf078;</string>
-    <string name="fa_chevron_left">&#xf053;</string>
-    <string name="fa_chevron_right">&#xf054;</string>
-    <string name="fa_chevron_up">&#xf077;</string>
-    <string name="fa_child">&#xf1ae;</string>
-    <string name="fa_chrome">&#xf268;</string>
-    <string name="fa_circle">&#xf111;</string>
-    <string name="fa_circle_o">&#xf10c;</string>
-    <string name="fa_circle_o_notch">&#xf1ce;</string>
-    <string name="fa_circle_thin">&#xf1db;</string>
-    <string name="fa_clipboard">&#xf0ea;</string>
-    <string name="fa_clock_o">&#xf017;</string>
-    <string name="fa_clone">&#xf24d;</string>
-    <string name="fa_close_alias">&#xf00d;</string>
-    <string name="fa_cloud">&#xf0c2;</string>
-    <string name="fa_cloud_download">&#xf0ed;</string>
-    <string name="fa_cloud_upload">&#xf0ee;</string>
-    <string name="fa_cny_alias">&#xf157;</string>
-    <string name="fa_code">&#xf121;</string>
-    <string name="fa_code_fork">&#xf126;</string>
-    <string name="fa_codepen">&#xf1cb;</string>
-    <string name="fa_codiepie">&#xf284;</string>
-    <string name="fa_coffee">&#xf0f4;</string>
-    <string name="fa_cog">&#xf013;</string>
-    <string name="fa_cogs">&#xf085;</string>
-    <string name="fa_columns">&#xf0db;</string>
-    <string name="fa_comment">&#xf075;</string>
-    <string name="fa_comment_o">&#xf0e5;</string>
-    <string name="fa_commenting">&#xf27a;</string>
-    <string name="fa_commenting_o">&#xf27b;</string>
-    <string name="fa_comments">&#xf086;</string>
-    <string name="fa_comments_o">&#xf0e6;</string>
-    <string name="fa_compass">&#xf14e;</string>
-    <string name="fa_compress">&#xf066;</string>
-    <string name="fa_connectdevelop">&#xf20e;</string>
-    <string name="fa_contao">&#xf26d;</string>
-    <string name="fa_copy_alias">&#xf0c5;</string>
-    <string name="fa_copyright">&#xf1f9;</string>
-    <string name="fa_creative_commons">&#xf25e;</string>
-    <string name="fa_credit_card">&#xf09d;</string>
-    <string name="fa_credit_card_alt">&#xf283;</string>
-    <string name="fa_crop">&#xf125;</string>
-    <string name="fa_crosshairs">&#xf05b;</string>
-    <string name="fa_css3">&#xf13c;</string>
-    <string name="fa_cube">&#xf1b2;</string>
-    <string name="fa_cubes">&#xf1b3;</string>
-    <string name="fa_cut_alias">&#xf0c4;</string>
-    <string name="fa_cutlery">&#xf0f5;</string>
-    <string name="fa_dashboard_alias">&#xf0e4;</string>
-    <string name="fa_dashcube">&#xf210;</string>
-    <string name="fa_database">&#xf1c0;</string>
-    <string name="fa_deaf">&#xf2a4;</string>
-    <string name="fa_deafness_alias">&#xf2a4;</string>
-    <string name="fa_dedent_alias">&#xf03b;</string>
-    <string name="fa_delicious">&#xf1a5;</string>
-    <string name="fa_desktop">&#xf108;</string>
-    <string name="fa_deviantart">&#xf1bd;</string>
-    <string name="fa_diamond">&#xf219;</string>
-    <string name="fa_digg">&#xf1a6;</string>
-    <string name="fa_dollar_alias">&#xf155;</string>
-    <string name="fa_dot_circle_o">&#xf192;</string>
-    <string name="fa_download">&#xf019;</string>
-    <string name="fa_dribbble">&#xf17d;</string>
-    <string name="fa_drivers_license_alias">&#xf2c2;</string>
-    <string name="fa_drivers_license_o_alias">&#xf2c3;</string>
-    <string name="fa_dropbox">&#xf16b;</string>
-    <string name="fa_drupal">&#xf1a9;</string>
-    <string name="fa_edge">&#xf282;</string>
-    <string name="fa_edit_alias">&#xf044;</string>
-    <string name="fa_eercast">&#xf2da;</string>
-    <string name="fa_eject">&#xf052;</string>
-    <string name="fa_ellipsis_h">&#xf141;</string>
-    <string name="fa_ellipsis_v">&#xf142;</string>
-    <string name="fa_empire">&#xf1d1;</string>
-    <string name="fa_envelope">&#xf0e0;</string>
-    <string name="fa_envelope_o">&#xf003;</string>
-    <string name="fa_envelope_open">&#xf2b6;</string>
-    <string name="fa_envelope_open_o">&#xf2b7;</string>
-    <string name="fa_envelope_square">&#xf199;</string>
-    <string name="fa_envira">&#xf299;</string>
-    <string name="fa_eraser">&#xf12d;</string>
-    <string name="fa_etsy">&#xf2d7;</string>
-    <string name="fa_eur">&#xf153;</string>
-    <string name="fa_euro_alias">&#xf153;</string>
-    <string name="fa_exchange">&#xf0ec;</string>
-    <string name="fa_exclamation">&#xf12a;</string>
-    <string name="fa_exclamation_circle">&#xf06a;</string>
-    <string name="fa_exclamation_triangle">&#xf071;</string>
-    <string name="fa_expand">&#xf065;</string>
-    <string name="fa_expeditedssl">&#xf23e;</string>
-    <string name="fa_external_link">&#xf08e;</string>
-    <string name="fa_external_link_square">&#xf14c;</string>
-    <string name="fa_eye">&#xf06e;</string>
-    <string name="fa_eye_slash">&#xf070;</string>
-    <string name="fa_eyedropper">&#xf1fb;</string>
-    <string name="fa_fa_alias">&#xf2b4;</string>
-    <string name="fa_facebook">&#xf09a;</string>
-    <string name="fa_facebook_f_alias">&#xf09a;</string>
-    <string name="fa_facebook_official">&#xf230;</string>
-    <string name="fa_facebook_square">&#xf082;</string>
-    <string name="fa_fast_backward">&#xf049;</string>
-    <string name="fa_fast_forward">&#xf050;</string>
-    <string name="fa_fax">&#xf1ac;</string>
-    <string name="fa_feed_alias">&#xf09e;</string>
-    <string name="fa_female">&#xf182;</string>
-    <string name="fa_fighter_jet">&#xf0fb;</string>
-    <string name="fa_file">&#xf15b;</string>
-    <string name="fa_file_archive_o">&#xf1c6;</string>
-    <string name="fa_file_audio_o">&#xf1c7;</string>
-    <string name="fa_file_code_o">&#xf1c9;</string>
-    <string name="fa_file_excel_o">&#xf1c3;</string>
-    <string name="fa_file_image_o">&#xf1c5;</string>
-    <string name="fa_file_movie_o_alias">&#xf1c8;</string>
-    <string name="fa_file_o">&#xf016;</string>
-    <string name="fa_file_pdf_o">&#xf1c1;</string>
-    <string name="fa_file_photo_o_alias">&#xf1c5;</string>
-    <string name="fa_file_picture_o_alias">&#xf1c5;</string>
-    <string name="fa_file_powerpoint_o">&#xf1c4;</string>
-    <string name="fa_file_sound_o_alias">&#xf1c7;</string>
-    <string name="fa_file_text">&#xf15c;</string>
-    <string name="fa_file_text_o">&#xf0f6;</string>
-    <string name="fa_file_video_o">&#xf1c8;</string>
-    <string name="fa_file_word_o">&#xf1c2;</string>
-    <string name="fa_file_zip_o_alias">&#xf1c6;</string>
-    <string name="fa_files_o">&#xf0c5;</string>
-    <string name="fa_film">&#xf008;</string>
-    <string name="fa_filter">&#xf0b0;</string>
-    <string name="fa_fire">&#xf06d;</string>
-    <string name="fa_fire_extinguisher">&#xf134;</string>
-    <string name="fa_firefox">&#xf269;</string>
-    <string name="fa_first_order">&#xf2b0;</string>
-    <string name="fa_flag">&#xf024;</string>
-    <string name="fa_flag_checkered">&#xf11e;</string>
-    <string name="fa_flag_o">&#xf11d;</string>
-    <string name="fa_flash_alias">&#xf0e7;</string>
-    <string name="fa_flask">&#xf0c3;</string>
-    <string name="fa_flickr">&#xf16e;</string>
-    <string name="fa_floppy_o">&#xf0c7;</string>
-    <string name="fa_folder">&#xf07b;</string>
-    <string name="fa_folder_o">&#xf114;</string>
-    <string name="fa_folder_open">&#xf07c;</string>
-    <string name="fa_folder_open_o">&#xf115;</string>
-    <string name="fa_font">&#xf031;</string>
-    <string name="fa_font_awesome">&#xf2b4;</string>
-    <string name="fa_fonticons">&#xf280;</string>
-    <string name="fa_fort_awesome">&#xf286;</string>
-    <string name="fa_forumbee">&#xf211;</string>
-    <string name="fa_forward">&#xf04e;</string>
-    <string name="fa_foursquare">&#xf180;</string>
-    <string name="fa_free_code_camp">&#xf2c5;</string>
-    <string name="fa_frown_o">&#xf119;</string>
-    <string name="fa_futbol_o">&#xf1e3;</string>
-    <string name="fa_gamepad">&#xf11b;</string>
-    <string name="fa_gavel">&#xf0e3;</string>
-    <string name="fa_gbp">&#xf154;</string>
-    <string name="fa_ge_alias">&#xf1d1;</string>
-    <string name="fa_gear_alias">&#xf013;</string>
-    <string name="fa_gears_alias">&#xf085;</string>
-    <string name="fa_genderless">&#xf22d;</string>
-    <string name="fa_get_pocket">&#xf265;</string>
-    <string name="fa_gg">&#xf260;</string>
-    <string name="fa_gg_circle">&#xf261;</string>
-    <string name="fa_gift">&#xf06b;</string>
-    <string name="fa_git">&#xf1d3;</string>
-    <string name="fa_git_square">&#xf1d2;</string>
-    <string name="fa_github">&#xf09b;</string>
-    <string name="fa_github_alt">&#xf113;</string>
-    <string name="fa_github_square">&#xf092;</string>
-    <string name="fa_gitlab">&#xf296;</string>
-    <string name="fa_gittip_alias">&#xf184;</string>
-    <string name="fa_glass">&#xf000;</string>
-    <string name="fa_glide">&#xf2a5;</string>
-    <string name="fa_glide_g">&#xf2a6;</string>
-    <string name="fa_globe">&#xf0ac;</string>
-    <string name="fa_google">&#xf1a0;</string>
-    <string name="fa_google_plus">&#xf0d5;</string>
-    <string name="fa_google_plus_circle_alias">&#xf2b3;</string>
-    <string name="fa_google_plus_official">&#xf2b3;</string>
-    <string name="fa_google_plus_square">&#xf0d4;</string>
-    <string name="fa_google_wallet">&#xf1ee;</string>
-    <string name="fa_graduation_cap">&#xf19d;</string>
-    <string name="fa_gratipay">&#xf184;</string>
-    <string name="fa_grav">&#xf2d6;</string>
-    <string name="fa_group_alias">&#xf0c0;</string>
-    <string name="fa_h_square">&#xf0fd;</string>
-    <string name="fa_hacker_news">&#xf1d4;</string>
-    <string name="fa_hand_grab_o_alias">&#xf255;</string>
-    <string name="fa_hand_lizard_o">&#xf258;</string>
-    <string name="fa_hand_o_down">&#xf0a7;</string>
-    <string name="fa_hand_o_left">&#xf0a5;</string>
-    <string name="fa_hand_o_right">&#xf0a4;</string>
-    <string name="fa_hand_o_up">&#xf0a6;</string>
-    <string name="fa_hand_paper_o">&#xf256;</string>
-    <string name="fa_hand_peace_o">&#xf25b;</string>
-    <string name="fa_hand_pointer_o">&#xf25a;</string>
-    <string name="fa_hand_rock_o">&#xf255;</string>
-    <string name="fa_hand_scissors_o">&#xf257;</string>
-    <string name="fa_hand_spock_o">&#xf259;</string>
-    <string name="fa_hand_stop_o_alias">&#xf256;</string>
-    <string name="fa_handshake_o">&#xf2b5;</string>
-    <string name="fa_hard_of_hearing_alias">&#xf2a4;</string>
-    <string name="fa_hashtag">&#xf292;</string>
-    <string name="fa_hdd_o">&#xf0a0;</string>
-    <string name="fa_header">&#xf1dc;</string>
-    <string name="fa_headphones">&#xf025;</string>
-    <string name="fa_heart">&#xf004;</string>
-    <string name="fa_heart_o">&#xf08a;</string>
-    <string name="fa_heartbeat">&#xf21e;</string>
-    <string name="fa_history">&#xf1da;</string>
-    <string name="fa_home">&#xf015;</string>
-    <string name="fa_hospital_o">&#xf0f8;</string>
-    <string name="fa_hotel_alias">&#xf236;</string>
-    <string name="fa_hourglass">&#xf254;</string>
-    <string name="fa_hourglass_1_alias">&#xf251;</string>
-    <string name="fa_hourglass_2_alias">&#xf252;</string>
-    <string name="fa_hourglass_3_alias">&#xf253;</string>
-    <string name="fa_hourglass_end">&#xf253;</string>
-    <string name="fa_hourglass_half">&#xf252;</string>
-    <string name="fa_hourglass_o">&#xf250;</string>
-    <string name="fa_hourglass_start">&#xf251;</string>
-    <string name="fa_houzz">&#xf27c;</string>
-    <string name="fa_html5">&#xf13b;</string>
-    <string name="fa_i_cursor">&#xf246;</string>
-    <string name="fa_id_badge">&#xf2c1;</string>
-    <string name="fa_id_card">&#xf2c2;</string>
-    <string name="fa_id_card_o">&#xf2c3;</string>
-    <string name="fa_ils">&#xf20b;</string>
-    <string name="fa_image_alias">&#xf03e;</string>
-    <string name="fa_imdb">&#xf2d8;</string>
-    <string name="fa_inbox">&#xf01c;</string>
-    <string name="fa_indent">&#xf03c;</string>
-    <string name="fa_industry">&#xf275;</string>
-    <string name="fa_info">&#xf129;</string>
-    <string name="fa_info_circle">&#xf05a;</string>
-    <string name="fa_inr">&#xf156;</string>
-    <string name="fa_instagram">&#xf16d;</string>
-    <string name="fa_institution_alias">&#xf19c;</string>
-    <string name="fa_internet_explorer">&#xf26b;</string>
-    <string name="fa_intersex_alias">&#xf224;</string>
-    <string name="fa_ioxhost">&#xf208;</string>
-    <string name="fa_italic">&#xf033;</string>
-    <string name="fa_joomla">&#xf1aa;</string>
-    <string name="fa_jpy">&#xf157;</string>
-    <string name="fa_jsfiddle">&#xf1cc;</string>
-    <string name="fa_key">&#xf084;</string>
-    <string name="fa_keyboard_o">&#xf11c;</string>
-    <string name="fa_krw">&#xf159;</string>
-    <string name="fa_language">&#xf1ab;</string>
-    <string name="fa_laptop">&#xf109;</string>
-    <string name="fa_lastfm">&#xf202;</string>
-    <string name="fa_lastfm_square">&#xf203;</string>
-    <string name="fa_leaf">&#xf06c;</string>
-    <string name="fa_leanpub">&#xf212;</string>
-    <string name="fa_legal_alias">&#xf0e3;</string>
-    <string name="fa_lemon_o">&#xf094;</string>
-    <string name="fa_level_down">&#xf149;</string>
-    <string name="fa_level_up">&#xf148;</string>
-    <string name="fa_life_bouy_alias">&#xf1cd;</string>
-    <string name="fa_life_buoy_alias">&#xf1cd;</string>
-    <string name="fa_life_ring">&#xf1cd;</string>
-    <string name="fa_life_saver_alias">&#xf1cd;</string>
-    <string name="fa_lightbulb_o">&#xf0eb;</string>
-    <string name="fa_line_chart">&#xf201;</string>
-    <string name="fa_link">&#xf0c1;</string>
-    <string name="fa_linkedin">&#xf0e1;</string>
-    <string name="fa_linkedin_square">&#xf08c;</string>
-    <string name="fa_linode">&#xf2b8;</string>
-    <string name="fa_linux">&#xf17c;</string>
-    <string name="fa_list">&#xf03a;</string>
-    <string name="fa_list_alt">&#xf022;</string>
-    <string name="fa_list_ol">&#xf0cb;</string>
-    <string name="fa_list_ul">&#xf0ca;</string>
-    <string name="fa_location_arrow">&#xf124;</string>
-    <string name="fa_lock">&#xf023;</string>
-    <string name="fa_long_arrow_down">&#xf175;</string>
-    <string name="fa_long_arrow_left">&#xf177;</string>
-    <string name="fa_long_arrow_right">&#xf178;</string>
-    <string name="fa_long_arrow_up">&#xf176;</string>
-    <string name="fa_low_vision">&#xf2a8;</string>
-    <string name="fa_magic">&#xf0d0;</string>
-    <string name="fa_magnet">&#xf076;</string>
-    <string name="fa_mail_forward_alias">&#xf064;</string>
-    <string name="fa_mail_reply_alias">&#xf112;</string>
-    <string name="fa_mail_reply_all_alias">&#xf122;</string>
-    <string name="fa_male">&#xf183;</string>
-    <string name="fa_map">&#xf279;</string>
-    <string name="fa_map_marker">&#xf041;</string>
-    <string name="fa_map_o">&#xf278;</string>
-    <string name="fa_map_pin">&#xf276;</string>
-    <string name="fa_map_signs">&#xf277;</string>
-    <string name="fa_mars">&#xf222;</string>
-    <string name="fa_mars_double">&#xf227;</string>
-    <string name="fa_mars_stroke">&#xf229;</string>
-    <string name="fa_mars_stroke_h">&#xf22b;</string>
-    <string name="fa_mars_stroke_v">&#xf22a;</string>
-    <string name="fa_maxcdn">&#xf136;</string>
-    <string name="fa_meanpath">&#xf20c;</string>
-    <string name="fa_medium">&#xf23a;</string>
-    <string name="fa_medkit">&#xf0fa;</string>
-    <string name="fa_meetup">&#xf2e0;</string>
-    <string name="fa_meh_o">&#xf11a;</string>
-    <string name="fa_mercury">&#xf223;</string>
-    <string name="fa_microchip">&#xf2db;</string>
-    <string name="fa_microphone">&#xf130;</string>
-    <string name="fa_microphone_slash">&#xf131;</string>
-    <string name="fa_minus">&#xf068;</string>
-    <string name="fa_minus_circle">&#xf056;</string>
-    <string name="fa_minus_square">&#xf146;</string>
-    <string name="fa_minus_square_o">&#xf147;</string>
-    <string name="fa_mixcloud">&#xf289;</string>
-    <string name="fa_mobile">&#xf10b;</string>
-    <string name="fa_mobile_phone_alias">&#xf10b;</string>
-    <string name="fa_modx">&#xf285;</string>
-    <string name="fa_money">&#xf0d6;</string>
-    <string name="fa_moon_o">&#xf186;</string>
-    <string name="fa_mortar_board_alias">&#xf19d;</string>
-    <string name="fa_motorcycle">&#xf21c;</string>
-    <string name="fa_mouse_pointer">&#xf245;</string>
-    <string name="fa_music">&#xf001;</string>
-    <string name="fa_navicon_alias">&#xf0c9;</string>
-    <string name="fa_neuter">&#xf22c;</string>
-    <string name="fa_newspaper_o">&#xf1ea;</string>
-    <string name="fa_object_group">&#xf247;</string>
-    <string name="fa_object_ungroup">&#xf248;</string>
-    <string name="fa_odnoklassniki">&#xf263;</string>
-    <string name="fa_odnoklassniki_square">&#xf264;</string>
-    <string name="fa_opencart">&#xf23d;</string>
-    <string name="fa_openid">&#xf19b;</string>
-    <string name="fa_opera">&#xf26a;</string>
-    <string name="fa_optin_monster">&#xf23c;</string>
-    <string name="fa_outdent">&#xf03b;</string>
-    <string name="fa_pagelines">&#xf18c;</string>
-    <string name="fa_paint_brush">&#xf1fc;</string>
-    <string name="fa_paper_plane">&#xf1d8;</string>
-    <string name="fa_paper_plane_o">&#xf1d9;</string>
-    <string name="fa_paperclip">&#xf0c6;</string>
-    <string name="fa_paragraph">&#xf1dd;</string>
-    <string name="fa_paste_alias">&#xf0ea;</string>
-    <string name="fa_pause">&#xf04c;</string>
-    <string name="fa_pause_circle">&#xf28b;</string>
-    <string name="fa_pause_circle_o">&#xf28c;</string>
-    <string name="fa_paw">&#xf1b0;</string>
-    <string name="fa_paypal">&#xf1ed;</string>
-    <string name="fa_pencil">&#xf040;</string>
-    <string name="fa_pencil_square">&#xf14b;</string>
-    <string name="fa_pencil_square_o">&#xf044;</string>
-    <string name="fa_percent">&#xf295;</string>
-    <string name="fa_phone">&#xf095;</string>
-    <string name="fa_phone_square">&#xf098;</string>
-    <string name="fa_photo_alias">&#xf03e;</string>
-    <string name="fa_picture_o">&#xf03e;</string>
-    <string name="fa_pie_chart">&#xf200;</string>
-    <string name="fa_pied_piper">&#xf2ae;</string>
-    <string name="fa_pied_piper_alt">&#xf1a8;</string>
-    <string name="fa_pied_piper_pp">&#xf1a7;</string>
-    <string name="fa_pinterest">&#xf0d2;</string>
-    <string name="fa_pinterest_p">&#xf231;</string>
-    <string name="fa_pinterest_square">&#xf0d3;</string>
-    <string name="fa_plane">&#xf072;</string>
-    <string name="fa_play">&#xf04b;</string>
-    <string name="fa_play_circle">&#xf144;</string>
-    <string name="fa_play_circle_o">&#xf01d;</string>
-    <string name="fa_plug">&#xf1e6;</string>
-    <string name="fa_plus">&#xf067;</string>
-    <string name="fa_plus_circle">&#xf055;</string>
-    <string name="fa_plus_square">&#xf0fe;</string>
-    <string name="fa_plus_square_o">&#xf196;</string>
-    <string name="fa_podcast">&#xf2ce;</string>
-    <string name="fa_power_off">&#xf011;</string>
-    <string name="fa_print">&#xf02f;</string>
-    <string name="fa_product_hunt">&#xf288;</string>
-    <string name="fa_puzzle_piece">&#xf12e;</string>
-    <string name="fa_qq">&#xf1d6;</string>
-    <string name="fa_qrcode">&#xf029;</string>
-    <string name="fa_question">&#xf128;</string>
-    <string name="fa_question_circle">&#xf059;</string>
-    <string name="fa_question_circle_o">&#xf29c;</string>
-    <string name="fa_quora">&#xf2c4;</string>
-    <string name="fa_quote_left">&#xf10d;</string>
-    <string name="fa_quote_right">&#xf10e;</string>
-    <string name="fa_ra_alias">&#xf1d0;</string>
-    <string name="fa_random">&#xf074;</string>
-    <string name="fa_ravelry">&#xf2d9;</string>
-    <string name="fa_rebel">&#xf1d0;</string>
-    <string name="fa_recycle">&#xf1b8;</string>
-    <string name="fa_reddit">&#xf1a1;</string>
-    <string name="fa_reddit_alien">&#xf281;</string>
-    <string name="fa_reddit_square">&#xf1a2;</string>
-    <string name="fa_refresh">&#xf021;</string>
-    <string name="fa_registered">&#xf25d;</string>
-    <string name="fa_remove_alias">&#xf00d;</string>
-    <string name="fa_renren">&#xf18b;</string>
-    <string name="fa_reorder_alias">&#xf0c9;</string>
-    <string name="fa_repeat">&#xf01e;</string>
-    <string name="fa_reply">&#xf112;</string>
-    <string name="fa_reply_all">&#xf122;</string>
-    <string name="fa_resistance_alias">&#xf1d0;</string>
-    <string name="fa_retweet">&#xf079;</string>
-    <string name="fa_rmb_alias">&#xf157;</string>
-    <string name="fa_road">&#xf018;</string>
-    <string name="fa_rocket">&#xf135;</string>
-    <string name="fa_rotate_left_alias">&#xf0e2;</string>
-    <string name="fa_rotate_right_alias">&#xf01e;</string>
-    <string name="fa_rouble_alias">&#xf158;</string>
-    <string name="fa_rss">&#xf09e;</string>
-    <string name="fa_rss_square">&#xf143;</string>
-    <string name="fa_rub">&#xf158;</string>
-    <string name="fa_ruble_alias">&#xf158;</string>
-    <string name="fa_rupee_alias">&#xf156;</string>
-    <string name="fa_s15_alias">&#xf2cd;</string>
-    <string name="fa_safari">&#xf267;</string>
-    <string name="fa_save_alias">&#xf0c7;</string>
-    <string name="fa_scissors">&#xf0c4;</string>
-    <string name="fa_scribd">&#xf28a;</string>
-    <string name="fa_search">&#xf002;</string>
-    <string name="fa_search_minus">&#xf010;</string>
-    <string name="fa_search_plus">&#xf00e;</string>
-    <string name="fa_sellsy">&#xf213;</string>
-    <string name="fa_send_alias">&#xf1d8;</string>
-    <string name="fa_send_o_alias">&#xf1d9;</string>
-    <string name="fa_server">&#xf233;</string>
-    <string name="fa_share">&#xf064;</string>
-    <string name="fa_share_alt">&#xf1e0;</string>
-    <string name="fa_share_alt_square">&#xf1e1;</string>
-    <string name="fa_share_square">&#xf14d;</string>
-    <string name="fa_share_square_o">&#xf045;</string>
-    <string name="fa_shekel_alias">&#xf20b;</string>
-    <string name="fa_sheqel_alias">&#xf20b;</string>
-    <string name="fa_shield">&#xf132;</string>
-    <string name="fa_ship">&#xf21a;</string>
-    <string name="fa_shirtsinbulk">&#xf214;</string>
-    <string name="fa_shopping_bag">&#xf290;</string>
-    <string name="fa_shopping_basket">&#xf291;</string>
-    <string name="fa_shopping_cart">&#xf07a;</string>
-    <string name="fa_shower">&#xf2cc;</string>
-    <string name="fa_sign_in">&#xf090;</string>
-    <string name="fa_sign_language">&#xf2a7;</string>
-    <string name="fa_sign_out">&#xf08b;</string>
-    <string name="fa_signal">&#xf012;</string>
-    <string name="fa_signing_alias">&#xf2a7;</string>
-    <string name="fa_simplybuilt">&#xf215;</string>
-    <string name="fa_sitemap">&#xf0e8;</string>
-    <string name="fa_skyatlas">&#xf216;</string>
-    <string name="fa_skype">&#xf17e;</string>
-    <string name="fa_slack">&#xf198;</string>
-    <string name="fa_sliders">&#xf1de;</string>
-    <string name="fa_slideshare">&#xf1e7;</string>
-    <string name="fa_smile_o">&#xf118;</string>
-    <string name="fa_snapchat">&#xf2ab;</string>
-    <string name="fa_snapchat_ghost">&#xf2ac;</string>
-    <string name="fa_snapchat_square">&#xf2ad;</string>
-    <string name="fa_snowflake_o">&#xf2dc;</string>
-    <string name="fa_soccer_ball_o_alias">&#xf1e3;</string>
-    <string name="fa_sort">&#xf0dc;</string>
-    <string name="fa_sort_alpha_asc">&#xf15d;</string>
-    <string name="fa_sort_alpha_desc">&#xf15e;</string>
-    <string name="fa_sort_amount_asc">&#xf160;</string>
-    <string name="fa_sort_amount_desc">&#xf161;</string>
-    <string name="fa_sort_asc">&#xf0de;</string>
-    <string name="fa_sort_desc">&#xf0dd;</string>
-    <string name="fa_sort_down_alias">&#xf0dd;</string>
-    <string name="fa_sort_numeric_asc">&#xf162;</string>
-    <string name="fa_sort_numeric_desc">&#xf163;</string>
-    <string name="fa_sort_up_alias">&#xf0de;</string>
-    <string name="fa_soundcloud">&#xf1be;</string>
-    <string name="fa_space_shuttle">&#xf197;</string>
-    <string name="fa_spinner">&#xf110;</string>
-    <string name="fa_spoon">&#xf1b1;</string>
-    <string name="fa_spotify">&#xf1bc;</string>
-    <string name="fa_square">&#xf0c8;</string>
-    <string name="fa_square_o">&#xf096;</string>
-    <string name="fa_stack_exchange">&#xf18d;</string>
-    <string name="fa_stack_overflow">&#xf16c;</string>
-    <string name="fa_star">&#xf005;</string>
-    <string name="fa_star_half">&#xf089;</string>
-    <string name="fa_star_half_empty_alias">&#xf123;</string>
-    <string name="fa_star_half_full_alias">&#xf123;</string>
-    <string name="fa_star_half_o">&#xf123;</string>
-    <string name="fa_star_o">&#xf006;</string>
-    <string name="fa_steam">&#xf1b6;</string>
-    <string name="fa_steam_square">&#xf1b7;</string>
-    <string name="fa_step_backward">&#xf048;</string>
-    <string name="fa_step_forward">&#xf051;</string>
-    <string name="fa_stethoscope">&#xf0f1;</string>
-    <string name="fa_sticky_note">&#xf249;</string>
-    <string name="fa_sticky_note_o">&#xf24a;</string>
-    <string name="fa_stop">&#xf04d;</string>
-    <string name="fa_stop_circle">&#xf28d;</string>
-    <string name="fa_stop_circle_o">&#xf28e;</string>
-    <string name="fa_street_view">&#xf21d;</string>
-    <string name="fa_strikethrough">&#xf0cc;</string>
-    <string name="fa_stumbleupon">&#xf1a4;</string>
-    <string name="fa_stumbleupon_circle">&#xf1a3;</string>
-    <string name="fa_subscript">&#xf12c;</string>
-    <string name="fa_subway">&#xf239;</string>
-    <string name="fa_suitcase">&#xf0f2;</string>
-    <string name="fa_sun_o">&#xf185;</string>
-    <string name="fa_superpowers">&#xf2dd;</string>
-    <string name="fa_superscript">&#xf12b;</string>
-    <string name="fa_support_alias">&#xf1cd;</string>
-    <string name="fa_table">&#xf0ce;</string>
-    <string name="fa_tablet">&#xf10a;</string>
-    <string name="fa_tachometer">&#xf0e4;</string>
-    <string name="fa_tag">&#xf02b;</string>
-    <string name="fa_tags">&#xf02c;</string>
-    <string name="fa_tasks">&#xf0ae;</string>
-    <string name="fa_taxi">&#xf1ba;</string>
-    <string name="fa_telegram">&#xf2c6;</string>
-    <string name="fa_television">&#xf26c;</string>
-    <string name="fa_tencent_weibo">&#xf1d5;</string>
-    <string name="fa_terminal">&#xf120;</string>
-    <string name="fa_text_height">&#xf034;</string>
-    <string name="fa_text_width">&#xf035;</string>
-    <string name="fa_th">&#xf00a;</string>
-    <string name="fa_th_large">&#xf009;</string>
-    <string name="fa_th_list">&#xf00b;</string>
-    <string name="fa_themeisle">&#xf2b2;</string>
-    <string name="fa_thermometer_alias">&#xf2c7;</string>
-    <string name="fa_thermometer_0_alias">&#xf2cb;</string>
-    <string name="fa_thermometer_1_alias">&#xf2ca;</string>
-    <string name="fa_thermometer_2_alias">&#xf2c9;</string>
-    <string name="fa_thermometer_3_alias">&#xf2c8;</string>
-    <string name="fa_thermometer_4_alias">&#xf2c7;</string>
-    <string name="fa_thermometer_empty">&#xf2cb;</string>
-    <string name="fa_thermometer_full">&#xf2c7;</string>
-    <string name="fa_thermometer_half">&#xf2c9;</string>
-    <string name="fa_thermometer_quarter">&#xf2ca;</string>
-    <string name="fa_thermometer_three_quarters">&#xf2c8;</string>
-    <string name="fa_thumb_tack">&#xf08d;</string>
-    <string name="fa_thumbs_down">&#xf165;</string>
-    <string name="fa_thumbs_o_down">&#xf088;</string>
-    <string name="fa_thumbs_o_up">&#xf087;</string>
-    <string name="fa_thumbs_up">&#xf164;</string>
-    <string name="fa_ticket">&#xf145;</string>
-    <string name="fa_times">&#xf00d;</string>
-    <string name="fa_times_circle">&#xf057;</string>
-    <string name="fa_times_circle_o">&#xf05c;</string>
-    <string name="fa_times_rectangle_alias">&#xf2d3;</string>
-    <string name="fa_times_rectangle_o_alias">&#xf2d4;</string>
-    <string name="fa_tint">&#xf043;</string>
-    <string name="fa_toggle_down_alias">&#xf150;</string>
-    <string name="fa_toggle_left_alias">&#xf191;</string>
-    <string name="fa_toggle_off">&#xf204;</string>
-    <string name="fa_toggle_on">&#xf205;</string>
-    <string name="fa_toggle_right_alias">&#xf152;</string>
-    <string name="fa_toggle_up_alias">&#xf151;</string>
-    <string name="fa_trademark">&#xf25c;</string>
-    <string name="fa_train">&#xf238;</string>
-    <string name="fa_transgender">&#xf224;</string>
-    <string name="fa_transgender_alt">&#xf225;</string>
-    <string name="fa_trash">&#xf1f8;</string>
-    <string name="fa_trash_o">&#xf014;</string>
-    <string name="fa_tree">&#xf1bb;</string>
-    <string name="fa_trello">&#xf181;</string>
-    <string name="fa_tripadvisor">&#xf262;</string>
-    <string name="fa_trophy">&#xf091;</string>
-    <string name="fa_truck">&#xf0d1;</string>
-    <string name="fa_try">&#xf195;</string>
-    <string name="fa_tty">&#xf1e4;</string>
-    <string name="fa_tumblr">&#xf173;</string>
-    <string name="fa_tumblr_square">&#xf174;</string>
-    <string name="fa_turkish_lira_alias">&#xf195;</string>
-    <string name="fa_tv_alias">&#xf26c;</string>
-    <string name="fa_twitch">&#xf1e8;</string>
-    <string name="fa_twitter">&#xf099;</string>
-    <string name="fa_twitter_square">&#xf081;</string>
-    <string name="fa_umbrella">&#xf0e9;</string>
-    <string name="fa_underline">&#xf0cd;</string>
-    <string name="fa_undo">&#xf0e2;</string>
-    <string name="fa_universal_access">&#xf29a;</string>
-    <string name="fa_university">&#xf19c;</string>
-    <string name="fa_unlink_alias">&#xf127;</string>
-    <string name="fa_unlock">&#xf09c;</string>
-    <string name="fa_unlock_alt">&#xf13e;</string>
-    <string name="fa_unsorted_alias">&#xf0dc;</string>
-    <string name="fa_upload">&#xf093;</string>
-    <string name="fa_usb">&#xf287;</string>
-    <string name="fa_usd">&#xf155;</string>
-    <string name="fa_user">&#xf007;</string>
-    <string name="fa_user_circle">&#xf2bd;</string>
-    <string name="fa_user_circle_o">&#xf2be;</string>
-    <string name="fa_user_md">&#xf0f0;</string>
-    <string name="fa_user_o">&#xf2c0;</string>
-    <string name="fa_user_plus">&#xf234;</string>
-    <string name="fa_user_secret">&#xf21b;</string>
-    <string name="fa_user_times">&#xf235;</string>
-    <string name="fa_users">&#xf0c0;</string>
-    <string name="fa_vcard_alias">&#xf2bb;</string>
-    <string name="fa_vcard_o_alias">&#xf2bc;</string>
-    <string name="fa_venus">&#xf221;</string>
-    <string name="fa_venus_double">&#xf226;</string>
-    <string name="fa_venus_mars">&#xf228;</string>
-    <string name="fa_viacoin">&#xf237;</string>
-    <string name="fa_viadeo">&#xf2a9;</string>
-    <string name="fa_viadeo_square">&#xf2aa;</string>
-    <string name="fa_video_camera">&#xf03d;</string>
-    <string name="fa_vimeo">&#xf27d;</string>
-    <string name="fa_vimeo_square">&#xf194;</string>
-    <string name="fa_vine">&#xf1ca;</string>
-    <string name="fa_vk">&#xf189;</string>
-    <string name="fa_volume_control_phone">&#xf2a0;</string>
-    <string name="fa_volume_down">&#xf027;</string>
-    <string name="fa_volume_off">&#xf026;</string>
-    <string name="fa_volume_up">&#xf028;</string>
-    <string name="fa_warning_alias">&#xf071;</string>
-    <string name="fa_wechat_alias">&#xf1d7;</string>
-    <string name="fa_weibo">&#xf18a;</string>
-    <string name="fa_weixin">&#xf1d7;</string>
-    <string name="fa_whatsapp">&#xf232;</string>
-    <string name="fa_wheelchair">&#xf193;</string>
-    <string name="fa_wheelchair_alt">&#xf29b;</string>
-    <string name="fa_wifi">&#xf1eb;</string>
-    <string name="fa_wikipedia_w">&#xf266;</string>
-    <string name="fa_window_close">&#xf2d3;</string>
-    <string name="fa_window_close_o">&#xf2d4;</string>
-    <string name="fa_window_maximize">&#xf2d0;</string>
-    <string name="fa_window_minimize">&#xf2d1;</string>
-    <string name="fa_window_restore">&#xf2d2;</string>
-    <string name="fa_windows">&#xf17a;</string>
-    <string name="fa_won_alias">&#xf159;</string>
-    <string name="fa_wordpress">&#xf19a;</string>
-    <string name="fa_wpbeginner">&#xf297;</string>
-    <string name="fa_wpexplorer">&#xf2de;</string>
-    <string name="fa_wpforms">&#xf298;</string>
-    <string name="fa_wrench">&#xf0ad;</string>
-    <string name="fa_xing">&#xf168;</string>
-    <string name="fa_xing_square">&#xf169;</string>
-    <string name="fa_y_combinator">&#xf23b;</string>
-    <string name="fa_y_combinator_square_alias">&#xf1d4;</string>
-    <string name="fa_yahoo">&#xf19e;</string>
-    <string name="fa_yc_alias">&#xf23b;</string>
-    <string name="fa_yc_square_alias">&#xf1d4;</string>
-    <string name="fa_yelp">&#xf1e9;</string>
-    <string name="fa_yen_alias">&#xf157;</string>
-    <string name="fa_yoast">&#xf2b1;</string>
-    <string name="fa_youtube">&#xf167;</string>
-    <string name="fa_youtube_play">&#xf16a;</string>
-    <string name="fa_youtube_square">&#xf166;</string>
+	<!-- Source : http://fontawesome.io/cheatsheet/ -->
+	<!-- Generated On : 2017/08/05 22:56:24 -->
 
+	<string name="fa_500px"></string>
+	<string name="fa_address_book"></string>
+	<string name="fa_address_book_o"></string>
+	<string name="fa_address_card"></string>
+	<string name="fa_address_card_o"></string>
+	<string name="fa_adjust"></string>
+	<string name="fa_adn"></string>
+	<string name="fa_align_center"></string>
+	<string name="fa_align_justify"></string>
+	<string name="fa_align_left"></string>
+	<string name="fa_align_right"></string>
+	<string name="fa_amazon"></string>
+	<string name="fa_ambulance"></string>
+	<string name="fa_american_sign_language_interpreting"></string>
+	<string name="fa_anchor"></string>
+	<string name="fa_android"></string>
+	<string name="fa_angellist"></string>
+	<string name="fa_angle_double_down"></string>
+	<string name="fa_angle_double_left"></string>
+	<string name="fa_angle_double_right"></string>
+	<string name="fa_angle_double_up"></string>
+	<string name="fa_angle_down"></string>
+	<string name="fa_angle_left"></string>
+	<string name="fa_angle_right"></string>
+	<string name="fa_angle_up"></string>
+	<string name="fa_apple"></string>
+	<string name="fa_archive"></string>
+	<string name="fa_area_chart"></string>
+	<string name="fa_arrow_circle_down"></string>
+	<string name="fa_arrow_circle_left"></string>
+	<string name="fa_arrow_circle_o_down"></string>
+	<string name="fa_arrow_circle_o_left"></string>
+	<string name="fa_arrow_circle_o_right"></string>
+	<string name="fa_arrow_circle_o_up"></string>
+	<string name="fa_arrow_circle_right"></string>
+	<string name="fa_arrow_circle_up"></string>
+	<string name="fa_arrow_down"></string>
+	<string name="fa_arrow_left"></string>
+	<string name="fa_arrow_right"></string>
+	<string name="fa_arrow_up"></string>
+	<string name="fa_arrows"></string>
+	<string name="fa_arrows_alt"></string>
+	<string name="fa_arrows_h"></string>
+	<string name="fa_arrows_v"></string>
+	<string name="fa_asl_interpreting"></string>
+	<string name="fa_assistive_listening_systems"></string>
+	<string name="fa_asterisk"></string>
+	<string name="fa_at"></string>
+	<string name="fa_audio_description"></string>
+	<string name="fa_automobile"></string>
+	<string name="fa_backward"></string>
+	<string name="fa_balance_scale"></string>
+	<string name="fa_ban"></string>
+	<string name="fa_bandcamp"></string>
+	<string name="fa_bank"></string>
+	<string name="fa_bar_chart"></string>
+	<string name="fa_bar_chart_o"></string>
+	<string name="fa_barcode"></string>
+	<string name="fa_bars"></string>
+	<string name="fa_bath"></string>
+	<string name="fa_bathtub"></string>
+	<string name="fa_battery"></string>
+	<string name="fa_battery_0"></string>
+	<string name="fa_battery_1"></string>
+	<string name="fa_battery_2"></string>
+	<string name="fa_battery_3"></string>
+	<string name="fa_battery_4"></string>
+	<string name="fa_battery_empty"></string>
+	<string name="fa_battery_full"></string>
+	<string name="fa_battery_half"></string>
+	<string name="fa_battery_quarter"></string>
+	<string name="fa_battery_three_quarters"></string>
+	<string name="fa_bed"></string>
+	<string name="fa_beer"></string>
+	<string name="fa_behance"></string>
+	<string name="fa_behance_square"></string>
+	<string name="fa_bell"></string>
+	<string name="fa_bell_o"></string>
+	<string name="fa_bell_slash"></string>
+	<string name="fa_bell_slash_o"></string>
+	<string name="fa_bicycle"></string>
+	<string name="fa_binoculars"></string>
+	<string name="fa_birthday_cake"></string>
+	<string name="fa_bitbucket"></string>
+	<string name="fa_bitbucket_square"></string>
+	<string name="fa_bitcoin"></string>
+	<string name="fa_black_tie"></string>
+	<string name="fa_blind"></string>
+	<string name="fa_bluetooth"></string>
+	<string name="fa_bluetooth_b"></string>
+	<string name="fa_bold"></string>
+	<string name="fa_bolt"></string>
+	<string name="fa_bomb"></string>
+	<string name="fa_book"></string>
+	<string name="fa_bookmark"></string>
+	<string name="fa_bookmark_o"></string>
+	<string name="fa_braille"></string>
+	<string name="fa_briefcase"></string>
+	<string name="fa_btc"></string>
+	<string name="fa_bug"></string>
+	<string name="fa_building"></string>
+	<string name="fa_building_o"></string>
+	<string name="fa_bullhorn"></string>
+	<string name="fa_bullseye"></string>
+	<string name="fa_bus"></string>
+	<string name="fa_buysellads"></string>
+	<string name="fa_cab"></string>
+	<string name="fa_calculator"></string>
+	<string name="fa_calendar"></string>
+	<string name="fa_calendar_check_o"></string>
+	<string name="fa_calendar_minus_o"></string>
+	<string name="fa_calendar_o"></string>
+	<string name="fa_calendar_plus_o"></string>
+	<string name="fa_calendar_times_o"></string>
+	<string name="fa_camera"></string>
+	<string name="fa_camera_retro"></string>
+	<string name="fa_car"></string>
+	<string name="fa_caret_down"></string>
+	<string name="fa_caret_left"></string>
+	<string name="fa_caret_right"></string>
+	<string name="fa_caret_square_o_down"></string>
+	<string name="fa_caret_square_o_left"></string>
+	<string name="fa_caret_square_o_right"></string>
+	<string name="fa_caret_square_o_up"></string>
+	<string name="fa_caret_up"></string>
+	<string name="fa_cart_arrow_down"></string>
+	<string name="fa_cart_plus"></string>
+	<string name="fa_cc"></string>
+	<string name="fa_cc_amex"></string>
+	<string name="fa_cc_diners_club"></string>
+	<string name="fa_cc_discover"></string>
+	<string name="fa_cc_jcb"></string>
+	<string name="fa_cc_mastercard"></string>
+	<string name="fa_cc_paypal"></string>
+	<string name="fa_cc_stripe"></string>
+	<string name="fa_cc_visa"></string>
+	<string name="fa_certificate"></string>
+	<string name="fa_chain"></string>
+	<string name="fa_chain_broken"></string>
+	<string name="fa_check"></string>
+	<string name="fa_check_circle"></string>
+	<string name="fa_check_circle_o"></string>
+	<string name="fa_check_square"></string>
+	<string name="fa_check_square_o"></string>
+	<string name="fa_chevron_circle_down"></string>
+	<string name="fa_chevron_circle_left"></string>
+	<string name="fa_chevron_circle_right"></string>
+	<string name="fa_chevron_circle_up"></string>
+	<string name="fa_chevron_down"></string>
+	<string name="fa_chevron_left"></string>
+	<string name="fa_chevron_right"></string>
+	<string name="fa_chevron_up"></string>
+	<string name="fa_child"></string>
+	<string name="fa_chrome"></string>
+	<string name="fa_circle"></string>
+	<string name="fa_circle_o"></string>
+	<string name="fa_circle_o_notch"></string>
+	<string name="fa_circle_thin"></string>
+	<string name="fa_clipboard"></string>
+	<string name="fa_clock_o"></string>
+	<string name="fa_clone"></string>
+	<string name="fa_close"></string>
+	<string name="fa_cloud"></string>
+	<string name="fa_cloud_download"></string>
+	<string name="fa_cloud_upload"></string>
+	<string name="fa_cny"></string>
+	<string name="fa_code"></string>
+	<string name="fa_code_fork"></string>
+	<string name="fa_codepen"></string>
+	<string name="fa_codiepie"></string>
+	<string name="fa_coffee"></string>
+	<string name="fa_cog"></string>
+	<string name="fa_cogs"></string>
+	<string name="fa_columns"></string>
+	<string name="fa_comment"></string>
+	<string name="fa_comment_o"></string>
+	<string name="fa_commenting"></string>
+	<string name="fa_commenting_o"></string>
+	<string name="fa_comments"></string>
+	<string name="fa_comments_o"></string>
+	<string name="fa_compass"></string>
+	<string name="fa_compress"></string>
+	<string name="fa_connectdevelop"></string>
+	<string name="fa_contao"></string>
+	<string name="fa_copy"></string>
+	<string name="fa_copyright"></string>
+	<string name="fa_creative_commons"></string>
+	<string name="fa_credit_card"></string>
+	<string name="fa_credit_card_alt"></string>
+	<string name="fa_crop"></string>
+	<string name="fa_crosshairs"></string>
+	<string name="fa_css3"></string>
+	<string name="fa_cube"></string>
+	<string name="fa_cubes"></string>
+	<string name="fa_cut"></string>
+	<string name="fa_cutlery"></string>
+	<string name="fa_dashboard"></string>
+	<string name="fa_dashcube"></string>
+	<string name="fa_database"></string>
+	<string name="fa_deaf"></string>
+	<string name="fa_deafness"></string>
+	<string name="fa_dedent"></string>
+	<string name="fa_delicious"></string>
+	<string name="fa_desktop"></string>
+	<string name="fa_deviantart"></string>
+	<string name="fa_diamond"></string>
+	<string name="fa_digg"></string>
+	<string name="fa_dollar"></string>
+	<string name="fa_dot_circle_o"></string>
+	<string name="fa_download"></string>
+	<string name="fa_dribbble"></string>
+	<string name="fa_drivers_license"></string>
+	<string name="fa_drivers_license_o"></string>
+	<string name="fa_dropbox"></string>
+	<string name="fa_drupal"></string>
+	<string name="fa_edge"></string>
+	<string name="fa_edit"></string>
+	<string name="fa_eercast"></string>
+	<string name="fa_eject"></string>
+	<string name="fa_ellipsis_h"></string>
+	<string name="fa_ellipsis_v"></string>
+	<string name="fa_empire"></string>
+	<string name="fa_envelope"></string>
+	<string name="fa_envelope_o"></string>
+	<string name="fa_envelope_open"></string>
+	<string name="fa_envelope_open_o"></string>
+	<string name="fa_envelope_square"></string>
+	<string name="fa_envira"></string>
+	<string name="fa_eraser"></string>
+	<string name="fa_etsy"></string>
+	<string name="fa_eur"></string>
+	<string name="fa_euro"></string>
+	<string name="fa_exchange"></string>
+	<string name="fa_exclamation"></string>
+	<string name="fa_exclamation_circle"></string>
+	<string name="fa_exclamation_triangle"></string>
+	<string name="fa_expand"></string>
+	<string name="fa_expeditedssl"></string>
+	<string name="fa_external_link"></string>
+	<string name="fa_external_link_square"></string>
+	<string name="fa_eye"></string>
+	<string name="fa_eye_slash"></string>
+	<string name="fa_eyedropper"></string>
+	<string name="fa_fa"></string>
+	<string name="fa_facebook"></string>
+	<string name="fa_facebook_f"></string>
+	<string name="fa_facebook_official"></string>
+	<string name="fa_facebook_square"></string>
+	<string name="fa_fast_backward"></string>
+	<string name="fa_fast_forward"></string>
+	<string name="fa_fax"></string>
+	<string name="fa_feed"></string>
+	<string name="fa_female"></string>
+	<string name="fa_fighter_jet"></string>
+	<string name="fa_file"></string>
+	<string name="fa_file_archive_o"></string>
+	<string name="fa_file_audio_o"></string>
+	<string name="fa_file_code_o"></string>
+	<string name="fa_file_excel_o"></string>
+	<string name="fa_file_image_o"></string>
+	<string name="fa_file_movie_o"></string>
+	<string name="fa_file_o"></string>
+	<string name="fa_file_pdf_o"></string>
+	<string name="fa_file_photo_o"></string>
+	<string name="fa_file_picture_o"></string>
+	<string name="fa_file_powerpoint_o"></string>
+	<string name="fa_file_sound_o"></string>
+	<string name="fa_file_text"></string>
+	<string name="fa_file_text_o"></string>
+	<string name="fa_file_video_o"></string>
+	<string name="fa_file_word_o"></string>
+	<string name="fa_file_zip_o"></string>
+	<string name="fa_files_o"></string>
+	<string name="fa_film"></string>
+	<string name="fa_filter"></string>
+	<string name="fa_fire"></string>
+	<string name="fa_fire_extinguisher"></string>
+	<string name="fa_firefox"></string>
+	<string name="fa_first_order"></string>
+	<string name="fa_flag"></string>
+	<string name="fa_flag_checkered"></string>
+	<string name="fa_flag_o"></string>
+	<string name="fa_flash"></string>
+	<string name="fa_flask"></string>
+	<string name="fa_flickr"></string>
+	<string name="fa_floppy_o"></string>
+	<string name="fa_folder"></string>
+	<string name="fa_folder_o"></string>
+	<string name="fa_folder_open"></string>
+	<string name="fa_folder_open_o"></string>
+	<string name="fa_font"></string>
+	<string name="fa_font_awesome"></string>
+	<string name="fa_fonticons"></string>
+	<string name="fa_fort_awesome"></string>
+	<string name="fa_forumbee"></string>
+	<string name="fa_forward"></string>
+	<string name="fa_foursquare"></string>
+	<string name="fa_free_code_camp"></string>
+	<string name="fa_frown_o"></string>
+	<string name="fa_futbol_o"></string>
+	<string name="fa_gamepad"></string>
+	<string name="fa_gavel"></string>
+	<string name="fa_gbp"></string>
+	<string name="fa_ge"></string>
+	<string name="fa_gear"></string>
+	<string name="fa_gears"></string>
+	<string name="fa_genderless"></string>
+	<string name="fa_get_pocket"></string>
+	<string name="fa_gg"></string>
+	<string name="fa_gg_circle"></string>
+	<string name="fa_gift"></string>
+	<string name="fa_git"></string>
+	<string name="fa_git_square"></string>
+	<string name="fa_github"></string>
+	<string name="fa_github_alt"></string>
+	<string name="fa_github_square"></string>
+	<string name="fa_gitlab"></string>
+	<string name="fa_gittip"></string>
+	<string name="fa_glass"></string>
+	<string name="fa_glide"></string>
+	<string name="fa_glide_g"></string>
+	<string name="fa_globe"></string>
+	<string name="fa_google"></string>
+	<string name="fa_google_plus"></string>
+	<string name="fa_google_plus_circle"></string>
+	<string name="fa_google_plus_official"></string>
+	<string name="fa_google_plus_square"></string>
+	<string name="fa_google_wallet"></string>
+	<string name="fa_graduation_cap"></string>
+	<string name="fa_gratipay"></string>
+	<string name="fa_grav"></string>
+	<string name="fa_group"></string>
+	<string name="fa_h_square"></string>
+	<string name="fa_hacker_news"></string>
+	<string name="fa_hand_grab_o"></string>
+	<string name="fa_hand_lizard_o"></string>
+	<string name="fa_hand_o_down"></string>
+	<string name="fa_hand_o_left"></string>
+	<string name="fa_hand_o_right"></string>
+	<string name="fa_hand_o_up"></string>
+	<string name="fa_hand_paper_o"></string>
+	<string name="fa_hand_peace_o"></string>
+	<string name="fa_hand_pointer_o"></string>
+	<string name="fa_hand_rock_o"></string>
+	<string name="fa_hand_scissors_o"></string>
+	<string name="fa_hand_spock_o"></string>
+	<string name="fa_hand_stop_o"></string>
+	<string name="fa_handshake_o"></string>
+	<string name="fa_hard_of_hearing"></string>
+	<string name="fa_hashtag"></string>
+	<string name="fa_hdd_o"></string>
+	<string name="fa_header"></string>
+	<string name="fa_headphones"></string>
+	<string name="fa_heart"></string>
+	<string name="fa_heart_o"></string>
+	<string name="fa_heartbeat"></string>
+	<string name="fa_history"></string>
+	<string name="fa_home"></string>
+	<string name="fa_hospital_o"></string>
+	<string name="fa_hotel"></string>
+	<string name="fa_hourglass"></string>
+	<string name="fa_hourglass_1"></string>
+	<string name="fa_hourglass_2"></string>
+	<string name="fa_hourglass_3"></string>
+	<string name="fa_hourglass_end"></string>
+	<string name="fa_hourglass_half"></string>
+	<string name="fa_hourglass_o"></string>
+	<string name="fa_hourglass_start"></string>
+	<string name="fa_houzz"></string>
+	<string name="fa_html5"></string>
+	<string name="fa_i_cursor"></string>
+	<string name="fa_id_badge"></string>
+	<string name="fa_id_card"></string>
+	<string name="fa_id_card_o"></string>
+	<string name="fa_ils"></string>
+	<string name="fa_image"></string>
+	<string name="fa_imdb"></string>
+	<string name="fa_inbox"></string>
+	<string name="fa_indent"></string>
+	<string name="fa_industry"></string>
+	<string name="fa_info"></string>
+	<string name="fa_info_circle"></string>
+	<string name="fa_inr"></string>
+	<string name="fa_instagram"></string>
+	<string name="fa_institution"></string>
+	<string name="fa_internet_explorer"></string>
+	<string name="fa_intersex"></string>
+	<string name="fa_ioxhost"></string>
+	<string name="fa_italic"></string>
+	<string name="fa_joomla"></string>
+	<string name="fa_jpy"></string>
+	<string name="fa_jsfiddle"></string>
+	<string name="fa_key"></string>
+	<string name="fa_keyboard_o"></string>
+	<string name="fa_krw"></string>
+	<string name="fa_language"></string>
+	<string name="fa_laptop"></string>
+	<string name="fa_lastfm"></string>
+	<string name="fa_lastfm_square"></string>
+	<string name="fa_leaf"></string>
+	<string name="fa_leanpub"></string>
+	<string name="fa_legal"></string>
+	<string name="fa_lemon_o"></string>
+	<string name="fa_level_down"></string>
+	<string name="fa_level_up"></string>
+	<string name="fa_life_bouy"></string>
+	<string name="fa_life_buoy"></string>
+	<string name="fa_life_ring"></string>
+	<string name="fa_life_saver"></string>
+	<string name="fa_lightbulb_o"></string>
+	<string name="fa_line_chart"></string>
+	<string name="fa_link"></string>
+	<string name="fa_linkedin"></string>
+	<string name="fa_linkedin_square"></string>
+	<string name="fa_linode"></string>
+	<string name="fa_linux"></string>
+	<string name="fa_list"></string>
+	<string name="fa_list_alt"></string>
+	<string name="fa_list_ol"></string>
+	<string name="fa_list_ul"></string>
+	<string name="fa_location_arrow"></string>
+	<string name="fa_lock"></string>
+	<string name="fa_long_arrow_down"></string>
+	<string name="fa_long_arrow_left"></string>
+	<string name="fa_long_arrow_right"></string>
+	<string name="fa_long_arrow_up"></string>
+	<string name="fa_low_vision"></string>
+	<string name="fa_magic"></string>
+	<string name="fa_magnet"></string>
+	<string name="fa_mail_forward"></string>
+	<string name="fa_mail_reply"></string>
+	<string name="fa_mail_reply_all"></string>
+	<string name="fa_male"></string>
+	<string name="fa_map"></string>
+	<string name="fa_map_marker"></string>
+	<string name="fa_map_o"></string>
+	<string name="fa_map_pin"></string>
+	<string name="fa_map_signs"></string>
+	<string name="fa_mars"></string>
+	<string name="fa_mars_double"></string>
+	<string name="fa_mars_stroke"></string>
+	<string name="fa_mars_stroke_h"></string>
+	<string name="fa_mars_stroke_v"></string>
+	<string name="fa_maxcdn"></string>
+	<string name="fa_meanpath"></string>
+	<string name="fa_medium"></string>
+	<string name="fa_medkit"></string>
+	<string name="fa_meetup"></string>
+	<string name="fa_meh_o"></string>
+	<string name="fa_mercury"></string>
+	<string name="fa_microchip"></string>
+	<string name="fa_microphone"></string>
+	<string name="fa_microphone_slash"></string>
+	<string name="fa_minus"></string>
+	<string name="fa_minus_circle"></string>
+	<string name="fa_minus_square"></string>
+	<string name="fa_minus_square_o"></string>
+	<string name="fa_mixcloud"></string>
+	<string name="fa_mobile"></string>
+	<string name="fa_mobile_phone"></string>
+	<string name="fa_modx"></string>
+	<string name="fa_money"></string>
+	<string name="fa_moon_o"></string>
+	<string name="fa_mortar_board"></string>
+	<string name="fa_motorcycle"></string>
+	<string name="fa_mouse_pointer"></string>
+	<string name="fa_music"></string>
+	<string name="fa_navicon"></string>
+	<string name="fa_neuter"></string>
+	<string name="fa_newspaper_o"></string>
+	<string name="fa_object_group"></string>
+	<string name="fa_object_ungroup"></string>
+	<string name="fa_odnoklassniki"></string>
+	<string name="fa_odnoklassniki_square"></string>
+	<string name="fa_opencart"></string>
+	<string name="fa_openid"></string>
+	<string name="fa_opera"></string>
+	<string name="fa_optin_monster"></string>
+	<string name="fa_outdent"></string>
+	<string name="fa_pagelines"></string>
+	<string name="fa_paint_brush"></string>
+	<string name="fa_paper_plane"></string>
+	<string name="fa_paper_plane_o"></string>
+	<string name="fa_paperclip"></string>
+	<string name="fa_paragraph"></string>
+	<string name="fa_paste"></string>
+	<string name="fa_pause"></string>
+	<string name="fa_pause_circle"></string>
+	<string name="fa_pause_circle_o"></string>
+	<string name="fa_paw"></string>
+	<string name="fa_paypal"></string>
+	<string name="fa_pencil"></string>
+	<string name="fa_pencil_square"></string>
+	<string name="fa_pencil_square_o"></string>
+	<string name="fa_percent"></string>
+	<string name="fa_phone"></string>
+	<string name="fa_phone_square"></string>
+	<string name="fa_photo"></string>
+	<string name="fa_picture_o"></string>
+	<string name="fa_pie_chart"></string>
+	<string name="fa_pied_piper"></string>
+	<string name="fa_pied_piper_alt"></string>
+	<string name="fa_pied_piper_pp"></string>
+	<string name="fa_pinterest"></string>
+	<string name="fa_pinterest_p"></string>
+	<string name="fa_pinterest_square"></string>
+	<string name="fa_plane"></string>
+	<string name="fa_play"></string>
+	<string name="fa_play_circle"></string>
+	<string name="fa_play_circle_o"></string>
+	<string name="fa_plug"></string>
+	<string name="fa_plus"></string>
+	<string name="fa_plus_circle"></string>
+	<string name="fa_plus_square"></string>
+	<string name="fa_plus_square_o"></string>
+	<string name="fa_podcast"></string>
+	<string name="fa_power_off"></string>
+	<string name="fa_print"></string>
+	<string name="fa_product_hunt"></string>
+	<string name="fa_puzzle_piece"></string>
+	<string name="fa_qq"></string>
+	<string name="fa_qrcode"></string>
+	<string name="fa_question"></string>
+	<string name="fa_question_circle"></string>
+	<string name="fa_question_circle_o"></string>
+	<string name="fa_quora"></string>
+	<string name="fa_quote_left"></string>
+	<string name="fa_quote_right"></string>
+	<string name="fa_ra"></string>
+	<string name="fa_random"></string>
+	<string name="fa_ravelry"></string>
+	<string name="fa_rebel"></string>
+	<string name="fa_recycle"></string>
+	<string name="fa_reddit"></string>
+	<string name="fa_reddit_alien"></string>
+	<string name="fa_reddit_square"></string>
+	<string name="fa_refresh"></string>
+	<string name="fa_registered"></string>
+	<string name="fa_remove"></string>
+	<string name="fa_renren"></string>
+	<string name="fa_reorder"></string>
+	<string name="fa_repeat"></string>
+	<string name="fa_reply"></string>
+	<string name="fa_reply_all"></string>
+	<string name="fa_resistance"></string>
+	<string name="fa_retweet"></string>
+	<string name="fa_rmb"></string>
+	<string name="fa_road"></string>
+	<string name="fa_rocket"></string>
+	<string name="fa_rotate_left"></string>
+	<string name="fa_rotate_right"></string>
+	<string name="fa_rouble"></string>
+	<string name="fa_rss"></string>
+	<string name="fa_rss_square"></string>
+	<string name="fa_rub"></string>
+	<string name="fa_ruble"></string>
+	<string name="fa_rupee"></string>
+	<string name="fa_s15"></string>
+	<string name="fa_safari"></string>
+	<string name="fa_save"></string>
+	<string name="fa_scissors"></string>
+	<string name="fa_scribd"></string>
+	<string name="fa_search"></string>
+	<string name="fa_search_minus"></string>
+	<string name="fa_search_plus"></string>
+	<string name="fa_sellsy"></string>
+	<string name="fa_send"></string>
+	<string name="fa_send_o"></string>
+	<string name="fa_server"></string>
+	<string name="fa_share"></string>
+	<string name="fa_share_alt"></string>
+	<string name="fa_share_alt_square"></string>
+	<string name="fa_share_square"></string>
+	<string name="fa_share_square_o"></string>
+	<string name="fa_shekel"></string>
+	<string name="fa_sheqel"></string>
+	<string name="fa_shield"></string>
+	<string name="fa_ship"></string>
+	<string name="fa_shirtsinbulk"></string>
+	<string name="fa_shopping_bag"></string>
+	<string name="fa_shopping_basket"></string>
+	<string name="fa_shopping_cart"></string>
+	<string name="fa_shower"></string>
+	<string name="fa_sign_in"></string>
+	<string name="fa_sign_language"></string>
+	<string name="fa_sign_out"></string>
+	<string name="fa_signal"></string>
+	<string name="fa_signing"></string>
+	<string name="fa_simplybuilt"></string>
+	<string name="fa_sitemap"></string>
+	<string name="fa_skyatlas"></string>
+	<string name="fa_skype"></string>
+	<string name="fa_slack"></string>
+	<string name="fa_sliders"></string>
+	<string name="fa_slideshare"></string>
+	<string name="fa_smile_o"></string>
+	<string name="fa_snapchat"></string>
+	<string name="fa_snapchat_ghost"></string>
+	<string name="fa_snapchat_square"></string>
+	<string name="fa_snowflake_o"></string>
+	<string name="fa_soccer_ball_o"></string>
+	<string name="fa_sort"></string>
+	<string name="fa_sort_alpha_asc"></string>
+	<string name="fa_sort_alpha_desc"></string>
+	<string name="fa_sort_amount_asc"></string>
+	<string name="fa_sort_amount_desc"></string>
+	<string name="fa_sort_asc"></string>
+	<string name="fa_sort_desc"></string>
+	<string name="fa_sort_down"></string>
+	<string name="fa_sort_numeric_asc"></string>
+	<string name="fa_sort_numeric_desc"></string>
+	<string name="fa_sort_up"></string>
+	<string name="fa_soundcloud"></string>
+	<string name="fa_space_shuttle"></string>
+	<string name="fa_spinner"></string>
+	<string name="fa_spoon"></string>
+	<string name="fa_spotify"></string>
+	<string name="fa_square"></string>
+	<string name="fa_square_o"></string>
+	<string name="fa_stack_exchange"></string>
+	<string name="fa_stack_overflow"></string>
+	<string name="fa_star"></string>
+	<string name="fa_star_half"></string>
+	<string name="fa_star_half_empty"></string>
+	<string name="fa_star_half_full"></string>
+	<string name="fa_star_half_o"></string>
+	<string name="fa_star_o"></string>
+	<string name="fa_steam"></string>
+	<string name="fa_steam_square"></string>
+	<string name="fa_step_backward"></string>
+	<string name="fa_step_forward"></string>
+	<string name="fa_stethoscope"></string>
+	<string name="fa_sticky_note"></string>
+	<string name="fa_sticky_note_o"></string>
+	<string name="fa_stop"></string>
+	<string name="fa_stop_circle"></string>
+	<string name="fa_stop_circle_o"></string>
+	<string name="fa_street_view"></string>
+	<string name="fa_strikethrough"></string>
+	<string name="fa_stumbleupon"></string>
+	<string name="fa_stumbleupon_circle"></string>
+	<string name="fa_subscript"></string>
+	<string name="fa_subway"></string>
+	<string name="fa_suitcase"></string>
+	<string name="fa_sun_o"></string>
+	<string name="fa_superpowers"></string>
+	<string name="fa_superscript"></string>
+	<string name="fa_support"></string>
+	<string name="fa_table"></string>
+	<string name="fa_tablet"></string>
+	<string name="fa_tachometer"></string>
+	<string name="fa_tag"></string>
+	<string name="fa_tags"></string>
+	<string name="fa_tasks"></string>
+	<string name="fa_taxi"></string>
+	<string name="fa_telegram"></string>
+	<string name="fa_television"></string>
+	<string name="fa_tencent_weibo"></string>
+	<string name="fa_terminal"></string>
+	<string name="fa_text_height"></string>
+	<string name="fa_text_width"></string>
+	<string name="fa_th"></string>
+	<string name="fa_th_large"></string>
+	<string name="fa_th_list"></string>
+	<string name="fa_themeisle"></string>
+	<string name="fa_thermometer"></string>
+	<string name="fa_thermometer_0"></string>
+	<string name="fa_thermometer_1"></string>
+	<string name="fa_thermometer_2"></string>
+	<string name="fa_thermometer_3"></string>
+	<string name="fa_thermometer_4"></string>
+	<string name="fa_thermometer_empty"></string>
+	<string name="fa_thermometer_full"></string>
+	<string name="fa_thermometer_half"></string>
+	<string name="fa_thermometer_quarter"></string>
+	<string name="fa_thermometer_three_quarters"></string>
+	<string name="fa_thumb_tack"></string>
+	<string name="fa_thumbs_down"></string>
+	<string name="fa_thumbs_o_down"></string>
+	<string name="fa_thumbs_o_up"></string>
+	<string name="fa_thumbs_up"></string>
+	<string name="fa_ticket"></string>
+	<string name="fa_times"></string>
+	<string name="fa_times_circle"></string>
+	<string name="fa_times_circle_o"></string>
+	<string name="fa_times_rectangle"></string>
+	<string name="fa_times_rectangle_o"></string>
+	<string name="fa_tint"></string>
+	<string name="fa_toggle_down"></string>
+	<string name="fa_toggle_left"></string>
+	<string name="fa_toggle_off"></string>
+	<string name="fa_toggle_on"></string>
+	<string name="fa_toggle_right"></string>
+	<string name="fa_toggle_up"></string>
+	<string name="fa_trademark"></string>
+	<string name="fa_train"></string>
+	<string name="fa_transgender"></string>
+	<string name="fa_transgender_alt"></string>
+	<string name="fa_trash"></string>
+	<string name="fa_trash_o"></string>
+	<string name="fa_tree"></string>
+	<string name="fa_trello"></string>
+	<string name="fa_tripadvisor"></string>
+	<string name="fa_trophy"></string>
+	<string name="fa_truck"></string>
+	<string name="fa_try"></string>
+	<string name="fa_tty"></string>
+	<string name="fa_tumblr"></string>
+	<string name="fa_tumblr_square"></string>
+	<string name="fa_turkish_lira"></string>
+	<string name="fa_tv"></string>
+	<string name="fa_twitch"></string>
+	<string name="fa_twitter"></string>
+	<string name="fa_twitter_square"></string>
+	<string name="fa_umbrella"></string>
+	<string name="fa_underline"></string>
+	<string name="fa_undo"></string>
+	<string name="fa_universal_access"></string>
+	<string name="fa_university"></string>
+	<string name="fa_unlink"></string>
+	<string name="fa_unlock"></string>
+	<string name="fa_unlock_alt"></string>
+	<string name="fa_unsorted"></string>
+	<string name="fa_upload"></string>
+	<string name="fa_usb"></string>
+	<string name="fa_usd"></string>
+	<string name="fa_user"></string>
+	<string name="fa_user_circle"></string>
+	<string name="fa_user_circle_o"></string>
+	<string name="fa_user_md"></string>
+	<string name="fa_user_o"></string>
+	<string name="fa_user_plus"></string>
+	<string name="fa_user_secret"></string>
+	<string name="fa_user_times"></string>
+	<string name="fa_users"></string>
+	<string name="fa_vcard"></string>
+	<string name="fa_vcard_o"></string>
+	<string name="fa_venus"></string>
+	<string name="fa_venus_double"></string>
+	<string name="fa_venus_mars"></string>
+	<string name="fa_viacoin"></string>
+	<string name="fa_viadeo"></string>
+	<string name="fa_viadeo_square"></string>
+	<string name="fa_video_camera"></string>
+	<string name="fa_vimeo"></string>
+	<string name="fa_vimeo_square"></string>
+	<string name="fa_vine"></string>
+	<string name="fa_vk"></string>
+	<string name="fa_volume_control_phone"></string>
+	<string name="fa_volume_down"></string>
+	<string name="fa_volume_off"></string>
+	<string name="fa_volume_up"></string>
+	<string name="fa_warning"></string>
+	<string name="fa_wechat"></string>
+	<string name="fa_weibo"></string>
+	<string name="fa_weixin"></string>
+	<string name="fa_whatsapp"></string>
+	<string name="fa_wheelchair"></string>
+	<string name="fa_wheelchair_alt"></string>
+	<string name="fa_wifi"></string>
+	<string name="fa_wikipedia_w"></string>
+	<string name="fa_window_close"></string>
+	<string name="fa_window_close_o"></string>
+	<string name="fa_window_maximize"></string>
+	<string name="fa_window_minimize"></string>
+	<string name="fa_window_restore"></string>
+	<string name="fa_windows"></string>
+	<string name="fa_won"></string>
+	<string name="fa_wordpress"></string>
+	<string name="fa_wpbeginner"></string>
+	<string name="fa_wpexplorer"></string>
+	<string name="fa_wpforms"></string>
+	<string name="fa_wrench"></string>
+	<string name="fa_xing"></string>
+	<string name="fa_xing_square"></string>
+	<string name="fa_y_combinator"></string>
+	<string name="fa_y_combinator_square"></string>
+	<string name="fa_yahoo"></string>
+	<string name="fa_yc"></string>
+	<string name="fa_yc_square"></string>
+	<string name="fa_yelp"></string>
+	<string name="fa_yen"></string>
+	<string name="fa_yoast"></string>
+	<string name="fa_youtube"></string>
+	<string name="fa_youtube_play"></string>
+	<string name="fa_youtube_square"></string>
 
-    <string-array name="array_fa_icons">
-        <item>@string/fa_500px</item>
-        <item>@string/fa_address_book</item>
-        <item>@string/fa_address_book_o</item>
-        <item>@string/fa_address_card</item>
-        <item>@string/fa_address_card_o</item>
-        <item>@string/fa_adjust</item>
-        <item>@string/fa_adn</item>
-        <item>@string/fa_align_center</item>
-        <item>@string/fa_align_justify</item>
-        <item>@string/fa_align_left</item>
-        <item>@string/fa_align_right</item>
-        <item>@string/fa_amazon</item>
-        <item>@string/fa_ambulance</item>
-        <item>@string/fa_american_sign_language_interpreting</item>
-        <item>@string/fa_anchor</item>
-        <item>@string/fa_android</item>
-        <item>@string/fa_angellist</item>
-        <item>@string/fa_angle_double_down</item>
-        <item>@string/fa_angle_double_left</item>
-        <item>@string/fa_angle_double_right</item>
-        <item>@string/fa_angle_double_up</item>
-        <item>@string/fa_angle_down</item>
-        <item>@string/fa_angle_left</item>
-        <item>@string/fa_angle_right</item>
-        <item>@string/fa_angle_up</item>
-        <item>@string/fa_apple</item>
-        <item>@string/fa_archive</item>
-        <item>@string/fa_area_chart</item>
-        <item>@string/fa_arrow_circle_down</item>
-        <item>@string/fa_arrow_circle_left</item>
-        <item>@string/fa_arrow_circle_o_down</item>
-        <item>@string/fa_arrow_circle_o_left</item>
-        <item>@string/fa_arrow_circle_o_right</item>
-        <item>@string/fa_arrow_circle_o_up</item>
-        <item>@string/fa_arrow_circle_right</item>
-        <item>@string/fa_arrow_circle_up</item>
-        <item>@string/fa_arrow_down</item>
-        <item>@string/fa_arrow_left</item>
-        <item>@string/fa_arrow_right</item>
-        <item>@string/fa_arrow_up</item>
-        <item>@string/fa_arrows</item>
-        <item>@string/fa_arrows_alt</item>
-        <item>@string/fa_arrows_h</item>
-        <item>@string/fa_arrows_v</item>
-        <item>@string/fa_asl_interpreting_alias</item>
-        <item>@string/fa_assistive_listening_systems</item>
-        <item>@string/fa_asterisk</item>
-        <item>@string/fa_at</item>
-        <item>@string/fa_audio_description</item>
-        <item>@string/fa_automobile_alias</item>
-        <item>@string/fa_backward</item>
-        <item>@string/fa_balance_scale</item>
-        <item>@string/fa_ban</item>
-        <item>@string/fa_bandcamp</item>
-        <item>@string/fa_bank_alias</item>
-        <item>@string/fa_bar_chart</item>
-        <item>@string/fa_bar_chart_o_alias</item>
-        <item>@string/fa_barcode</item>
-        <item>@string/fa_bars</item>
-        <item>@string/fa_bath</item>
-        <item>@string/fa_bathtub_alias</item>
-        <item>@string/fa_battery_alias</item>
-        <item>@string/fa_battery_0_alias</item>
-        <item>@string/fa_battery_1_alias</item>
-        <item>@string/fa_battery_2_alias</item>
-        <item>@string/fa_battery_3_alias</item>
-        <item>@string/fa_battery_4_alias</item>
-        <item>@string/fa_battery_empty</item>
-        <item>@string/fa_battery_full</item>
-        <item>@string/fa_battery_half</item>
-        <item>@string/fa_battery_quarter</item>
-        <item>@string/fa_battery_three_quarters</item>
-        <item>@string/fa_bed</item>
-        <item>@string/fa_beer</item>
-        <item>@string/fa_behance</item>
-        <item>@string/fa_behance_square</item>
-        <item>@string/fa_bell</item>
-        <item>@string/fa_bell_o</item>
-        <item>@string/fa_bell_slash</item>
-        <item>@string/fa_bell_slash_o</item>
-        <item>@string/fa_bicycle</item>
-        <item>@string/fa_binoculars</item>
-        <item>@string/fa_birthday_cake</item>
-        <item>@string/fa_bitbucket</item>
-        <item>@string/fa_bitbucket_square</item>
-        <item>@string/fa_bitcoin_alias</item>
-        <item>@string/fa_black_tie</item>
-        <item>@string/fa_blind</item>
-        <item>@string/fa_bluetooth</item>
-        <item>@string/fa_bluetooth_b</item>
-        <item>@string/fa_bold</item>
-        <item>@string/fa_bolt</item>
-        <item>@string/fa_bomb</item>
-        <item>@string/fa_book</item>
-        <item>@string/fa_bookmark</item>
-        <item>@string/fa_bookmark_o</item>
-        <item>@string/fa_braille</item>
-        <item>@string/fa_briefcase</item>
-        <item>@string/fa_btc</item>
-        <item>@string/fa_bug</item>
-        <item>@string/fa_building</item>
-        <item>@string/fa_building_o</item>
-        <item>@string/fa_bullhorn</item>
-        <item>@string/fa_bullseye</item>
-        <item>@string/fa_bus</item>
-        <item>@string/fa_buysellads</item>
-        <item>@string/fa_cab_alias</item>
-        <item>@string/fa_calculator</item>
-        <item>@string/fa_calendar</item>
-        <item>@string/fa_calendar_check_o</item>
-        <item>@string/fa_calendar_minus_o</item>
-        <item>@string/fa_calendar_o</item>
-        <item>@string/fa_calendar_plus_o</item>
-        <item>@string/fa_calendar_times_o</item>
-        <item>@string/fa_camera</item>
-        <item>@string/fa_camera_retro</item>
-        <item>@string/fa_car</item>
-        <item>@string/fa_caret_down</item>
-        <item>@string/fa_caret_left</item>
-        <item>@string/fa_caret_right</item>
-        <item>@string/fa_caret_square_o_down</item>
-        <item>@string/fa_caret_square_o_left</item>
-        <item>@string/fa_caret_square_o_right</item>
-        <item>@string/fa_caret_square_o_up</item>
-        <item>@string/fa_caret_up</item>
-        <item>@string/fa_cart_arrow_down</item>
-        <item>@string/fa_cart_plus</item>
-        <item>@string/fa_cc</item>
-        <item>@string/fa_cc_amex</item>
-        <item>@string/fa_cc_diners_club</item>
-        <item>@string/fa_cc_discover</item>
-        <item>@string/fa_cc_jcb</item>
-        <item>@string/fa_cc_mastercard</item>
-        <item>@string/fa_cc_paypal</item>
-        <item>@string/fa_cc_stripe</item>
-        <item>@string/fa_cc_visa</item>
-        <item>@string/fa_certificate</item>
-        <item>@string/fa_chain_alias</item>
-        <item>@string/fa_chain_broken</item>
-        <item>@string/fa_check</item>
-        <item>@string/fa_check_circle</item>
-        <item>@string/fa_check_circle_o</item>
-        <item>@string/fa_check_square</item>
-        <item>@string/fa_check_square_o</item>
-        <item>@string/fa_chevron_circle_down</item>
-        <item>@string/fa_chevron_circle_left</item>
-        <item>@string/fa_chevron_circle_right</item>
-        <item>@string/fa_chevron_circle_up</item>
-        <item>@string/fa_chevron_down</item>
-        <item>@string/fa_chevron_left</item>
-        <item>@string/fa_chevron_right</item>
-        <item>@string/fa_chevron_up</item>
-        <item>@string/fa_child</item>
-        <item>@string/fa_chrome</item>
-        <item>@string/fa_circle</item>
-        <item>@string/fa_circle_o</item>
-        <item>@string/fa_circle_o_notch</item>
-        <item>@string/fa_circle_thin</item>
-        <item>@string/fa_clipboard</item>
-        <item>@string/fa_clock_o</item>
-        <item>@string/fa_clone</item>
-        <item>@string/fa_close_alias</item>
-        <item>@string/fa_cloud</item>
-        <item>@string/fa_cloud_download</item>
-        <item>@string/fa_cloud_upload</item>
-        <item>@string/fa_cny_alias</item>
-        <item>@string/fa_code</item>
-        <item>@string/fa_code_fork</item>
-        <item>@string/fa_codepen</item>
-        <item>@string/fa_codiepie</item>
-        <item>@string/fa_coffee</item>
-        <item>@string/fa_cog</item>
-        <item>@string/fa_cogs</item>
-        <item>@string/fa_columns</item>
-        <item>@string/fa_comment</item>
-        <item>@string/fa_comment_o</item>
-        <item>@string/fa_commenting</item>
-        <item>@string/fa_commenting_o</item>
-        <item>@string/fa_comments</item>
-        <item>@string/fa_comments_o</item>
-        <item>@string/fa_compass</item>
-        <item>@string/fa_compress</item>
-        <item>@string/fa_connectdevelop</item>
-        <item>@string/fa_contao</item>
-        <item>@string/fa_copy_alias</item>
-        <item>@string/fa_copyright</item>
-        <item>@string/fa_creative_commons</item>
-        <item>@string/fa_credit_card</item>
-        <item>@string/fa_credit_card_alt</item>
-        <item>@string/fa_crop</item>
-        <item>@string/fa_crosshairs</item>
-        <item>@string/fa_css3</item>
-        <item>@string/fa_cube</item>
-        <item>@string/fa_cubes</item>
-        <item>@string/fa_cut_alias</item>
-        <item>@string/fa_cutlery</item>
-        <item>@string/fa_dashboard_alias</item>
-        <item>@string/fa_dashcube</item>
-        <item>@string/fa_database</item>
-        <item>@string/fa_deaf</item>
-        <item>@string/fa_deafness_alias</item>
-        <item>@string/fa_dedent_alias</item>
-        <item>@string/fa_delicious</item>
-        <item>@string/fa_desktop</item>
-        <item>@string/fa_deviantart</item>
-        <item>@string/fa_diamond</item>
-        <item>@string/fa_digg</item>
-        <item>@string/fa_dollar_alias</item>
-        <item>@string/fa_dot_circle_o</item>
-        <item>@string/fa_download</item>
-        <item>@string/fa_dribbble</item>
-        <item>@string/fa_drivers_license_alias</item>
-        <item>@string/fa_drivers_license_o_alias</item>
-        <item>@string/fa_dropbox</item>
-        <item>@string/fa_drupal</item>
-        <item>@string/fa_edge</item>
-        <item>@string/fa_edit_alias</item>
-        <item>@string/fa_eercast</item>
-        <item>@string/fa_eject</item>
-        <item>@string/fa_ellipsis_h</item>
-        <item>@string/fa_ellipsis_v</item>
-        <item>@string/fa_empire</item>
-        <item>@string/fa_envelope</item>
-        <item>@string/fa_envelope_o</item>
-        <item>@string/fa_envelope_open</item>
-        <item>@string/fa_envelope_open_o</item>
-        <item>@string/fa_envelope_square</item>
-        <item>@string/fa_envira</item>
-        <item>@string/fa_eraser</item>
-        <item>@string/fa_etsy</item>
-        <item>@string/fa_eur</item>
-        <item>@string/fa_euro_alias</item>
-        <item>@string/fa_exchange</item>
-        <item>@string/fa_exclamation</item>
-        <item>@string/fa_exclamation_circle</item>
-        <item>@string/fa_exclamation_triangle</item>
-        <item>@string/fa_expand</item>
-        <item>@string/fa_expeditedssl</item>
-        <item>@string/fa_external_link</item>
-        <item>@string/fa_external_link_square</item>
-        <item>@string/fa_eye</item>
-        <item>@string/fa_eye_slash</item>
-        <item>@string/fa_eyedropper</item>
-        <item>@string/fa_fa_alias</item>
-        <item>@string/fa_facebook</item>
-        <item>@string/fa_facebook_f_alias</item>
-        <item>@string/fa_facebook_official</item>
-        <item>@string/fa_facebook_square</item>
-        <item>@string/fa_fast_backward</item>
-        <item>@string/fa_fast_forward</item>
-        <item>@string/fa_fax</item>
-        <item>@string/fa_feed_alias</item>
-        <item>@string/fa_female</item>
-        <item>@string/fa_fighter_jet</item>
-        <item>@string/fa_file</item>
-        <item>@string/fa_file_archive_o</item>
-        <item>@string/fa_file_audio_o</item>
-        <item>@string/fa_file_code_o</item>
-        <item>@string/fa_file_excel_o</item>
-        <item>@string/fa_file_image_o</item>
-        <item>@string/fa_file_movie_o_alias</item>
-        <item>@string/fa_file_o</item>
-        <item>@string/fa_file_pdf_o</item>
-        <item>@string/fa_file_photo_o_alias</item>
-        <item>@string/fa_file_picture_o_alias</item>
-        <item>@string/fa_file_powerpoint_o</item>
-        <item>@string/fa_file_sound_o_alias</item>
-        <item>@string/fa_file_text</item>
-        <item>@string/fa_file_text_o</item>
-        <item>@string/fa_file_video_o</item>
-        <item>@string/fa_file_word_o</item>
-        <item>@string/fa_file_zip_o_alias</item>
-        <item>@string/fa_files_o</item>
-        <item>@string/fa_film</item>
-        <item>@string/fa_filter</item>
-        <item>@string/fa_fire</item>
-        <item>@string/fa_fire_extinguisher</item>
-        <item>@string/fa_firefox</item>
-        <item>@string/fa_first_order</item>
-        <item>@string/fa_flag</item>
-        <item>@string/fa_flag_checkered</item>
-        <item>@string/fa_flag_o</item>
-        <item>@string/fa_flash_alias</item>
-        <item>@string/fa_flask</item>
-        <item>@string/fa_flickr</item>
-        <item>@string/fa_floppy_o</item>
-        <item>@string/fa_folder</item>
-        <item>@string/fa_folder_o</item>
-        <item>@string/fa_folder_open</item>
-        <item>@string/fa_folder_open_o</item>
-        <item>@string/fa_font</item>
-        <item>@string/fa_font_awesome</item>
-        <item>@string/fa_fonticons</item>
-        <item>@string/fa_fort_awesome</item>
-        <item>@string/fa_forumbee</item>
-        <item>@string/fa_forward</item>
-        <item>@string/fa_foursquare</item>
-        <item>@string/fa_free_code_camp</item>
-        <item>@string/fa_frown_o</item>
-        <item>@string/fa_futbol_o</item>
-        <item>@string/fa_gamepad</item>
-        <item>@string/fa_gavel</item>
-        <item>@string/fa_gbp</item>
-        <item>@string/fa_ge_alias</item>
-        <item>@string/fa_gear_alias</item>
-        <item>@string/fa_gears_alias</item>
-        <item>@string/fa_genderless</item>
-        <item>@string/fa_get_pocket</item>
-        <item>@string/fa_gg</item>
-        <item>@string/fa_gg_circle</item>
-        <item>@string/fa_gift</item>
-        <item>@string/fa_git</item>
-        <item>@string/fa_git_square</item>
-        <item>@string/fa_github</item>
-        <item>@string/fa_github_alt</item>
-        <item>@string/fa_github_square</item>
-        <item>@string/fa_gitlab</item>
-        <item>@string/fa_gittip_alias</item>
-        <item>@string/fa_glass</item>
-        <item>@string/fa_glide</item>
-        <item>@string/fa_glide_g</item>
-        <item>@string/fa_globe</item>
-        <item>@string/fa_google</item>
-        <item>@string/fa_google_plus</item>
-        <item>@string/fa_google_plus_circle_alias</item>
-        <item>@string/fa_google_plus_official</item>
-        <item>@string/fa_google_plus_square</item>
-        <item>@string/fa_google_wallet</item>
-        <item>@string/fa_graduation_cap</item>
-        <item>@string/fa_gratipay</item>
-        <item>@string/fa_grav</item>
-        <item>@string/fa_group_alias</item>
-        <item>@string/fa_h_square</item>
-        <item>@string/fa_hacker_news</item>
-        <item>@string/fa_hand_grab_o_alias</item>
-        <item>@string/fa_hand_lizard_o</item>
-        <item>@string/fa_hand_o_down</item>
-        <item>@string/fa_hand_o_left</item>
-        <item>@string/fa_hand_o_right</item>
-        <item>@string/fa_hand_o_up</item>
-        <item>@string/fa_hand_paper_o</item>
-        <item>@string/fa_hand_peace_o</item>
-        <item>@string/fa_hand_pointer_o</item>
-        <item>@string/fa_hand_rock_o</item>
-        <item>@string/fa_hand_scissors_o</item>
-        <item>@string/fa_hand_spock_o</item>
-        <item>@string/fa_hand_stop_o_alias</item>
-        <item>@string/fa_handshake_o</item>
-        <item>@string/fa_hard_of_hearing_alias</item>
-        <item>@string/fa_hashtag</item>
-        <item>@string/fa_hdd_o</item>
-        <item>@string/fa_header</item>
-        <item>@string/fa_headphones</item>
-        <item>@string/fa_heart</item>
-        <item>@string/fa_heart_o</item>
-        <item>@string/fa_heartbeat</item>
-        <item>@string/fa_history</item>
-        <item>@string/fa_home</item>
-        <item>@string/fa_hospital_o</item>
-        <item>@string/fa_hotel_alias</item>
-        <item>@string/fa_hourglass</item>
-        <item>@string/fa_hourglass_1_alias</item>
-        <item>@string/fa_hourglass_2_alias</item>
-        <item>@string/fa_hourglass_3_alias</item>
-        <item>@string/fa_hourglass_end</item>
-        <item>@string/fa_hourglass_half</item>
-        <item>@string/fa_hourglass_o</item>
-        <item>@string/fa_hourglass_start</item>
-        <item>@string/fa_houzz</item>
-        <item>@string/fa_html5</item>
-        <item>@string/fa_i_cursor</item>
-        <item>@string/fa_id_badge</item>
-        <item>@string/fa_id_card</item>
-        <item>@string/fa_id_card_o</item>
-        <item>@string/fa_ils</item>
-        <item>@string/fa_image_alias</item>
-        <item>@string/fa_imdb</item>
-        <item>@string/fa_inbox</item>
-        <item>@string/fa_indent</item>
-        <item>@string/fa_industry</item>
-        <item>@string/fa_info</item>
-        <item>@string/fa_info_circle</item>
-        <item>@string/fa_inr</item>
-        <item>@string/fa_instagram</item>
-        <item>@string/fa_institution_alias</item>
-        <item>@string/fa_internet_explorer</item>
-        <item>@string/fa_intersex_alias</item>
-        <item>@string/fa_ioxhost</item>
-        <item>@string/fa_italic</item>
-        <item>@string/fa_joomla</item>
-        <item>@string/fa_jpy</item>
-        <item>@string/fa_jsfiddle</item>
-        <item>@string/fa_key</item>
-        <item>@string/fa_keyboard_o</item>
-        <item>@string/fa_krw</item>
-        <item>@string/fa_language</item>
-        <item>@string/fa_laptop</item>
-        <item>@string/fa_lastfm</item>
-        <item>@string/fa_lastfm_square</item>
-        <item>@string/fa_leaf</item>
-        <item>@string/fa_leanpub</item>
-        <item>@string/fa_legal_alias</item>
-        <item>@string/fa_lemon_o</item>
-        <item>@string/fa_level_down</item>
-        <item>@string/fa_level_up</item>
-        <item>@string/fa_life_bouy_alias</item>
-        <item>@string/fa_life_buoy_alias</item>
-        <item>@string/fa_life_ring</item>
-        <item>@string/fa_life_saver_alias</item>
-        <item>@string/fa_lightbulb_o</item>
-        <item>@string/fa_line_chart</item>
-        <item>@string/fa_link</item>
-        <item>@string/fa_linkedin</item>
-        <item>@string/fa_linkedin_square</item>
-        <item>@string/fa_linode</item>
-        <item>@string/fa_linux</item>
-        <item>@string/fa_list</item>
-        <item>@string/fa_list_alt</item>
-        <item>@string/fa_list_ol</item>
-        <item>@string/fa_list_ul</item>
-        <item>@string/fa_location_arrow</item>
-        <item>@string/fa_lock</item>
-        <item>@string/fa_long_arrow_down</item>
-        <item>@string/fa_long_arrow_left</item>
-        <item>@string/fa_long_arrow_right</item>
-        <item>@string/fa_long_arrow_up</item>
-        <item>@string/fa_low_vision</item>
-        <item>@string/fa_magic</item>
-        <item>@string/fa_magnet</item>
-        <item>@string/fa_mail_forward_alias</item>
-        <item>@string/fa_mail_reply_alias</item>
-        <item>@string/fa_mail_reply_all_alias</item>
-        <item>@string/fa_male</item>
-        <item>@string/fa_map</item>
-        <item>@string/fa_map_marker</item>
-        <item>@string/fa_map_o</item>
-        <item>@string/fa_map_pin</item>
-        <item>@string/fa_map_signs</item>
-        <item>@string/fa_mars</item>
-        <item>@string/fa_mars_double</item>
-        <item>@string/fa_mars_stroke</item>
-        <item>@string/fa_mars_stroke_h</item>
-        <item>@string/fa_mars_stroke_v</item>
-        <item>@string/fa_maxcdn</item>
-        <item>@string/fa_meanpath</item>
-        <item>@string/fa_medium</item>
-        <item>@string/fa_medkit</item>
-        <item>@string/fa_meetup</item>
-        <item>@string/fa_meh_o</item>
-        <item>@string/fa_mercury</item>
-        <item>@string/fa_microchip</item>
-        <item>@string/fa_microphone</item>
-        <item>@string/fa_microphone_slash</item>
-        <item>@string/fa_minus</item>
-        <item>@string/fa_minus_circle</item>
-        <item>@string/fa_minus_square</item>
-        <item>@string/fa_minus_square_o</item>
-        <item>@string/fa_mixcloud</item>
-        <item>@string/fa_mobile</item>
-        <item>@string/fa_mobile_phone_alias</item>
-        <item>@string/fa_modx</item>
-        <item>@string/fa_money</item>
-        <item>@string/fa_moon_o</item>
-        <item>@string/fa_mortar_board_alias</item>
-        <item>@string/fa_motorcycle</item>
-        <item>@string/fa_mouse_pointer</item>
-        <item>@string/fa_music</item>
-        <item>@string/fa_navicon_alias</item>
-        <item>@string/fa_neuter</item>
-        <item>@string/fa_newspaper_o</item>
-        <item>@string/fa_object_group</item>
-        <item>@string/fa_object_ungroup</item>
-        <item>@string/fa_odnoklassniki</item>
-        <item>@string/fa_odnoklassniki_square</item>
-        <item>@string/fa_opencart</item>
-        <item>@string/fa_openid</item>
-        <item>@string/fa_opera</item>
-        <item>@string/fa_optin_monster</item>
-        <item>@string/fa_outdent</item>
-        <item>@string/fa_pagelines</item>
-        <item>@string/fa_paint_brush</item>
-        <item>@string/fa_paper_plane</item>
-        <item>@string/fa_paper_plane_o</item>
-        <item>@string/fa_paperclip</item>
-        <item>@string/fa_paragraph</item>
-        <item>@string/fa_paste_alias</item>
-        <item>@string/fa_pause</item>
-        <item>@string/fa_pause_circle</item>
-        <item>@string/fa_pause_circle_o</item>
-        <item>@string/fa_paw</item>
-        <item>@string/fa_paypal</item>
-        <item>@string/fa_pencil</item>
-        <item>@string/fa_pencil_square</item>
-        <item>@string/fa_pencil_square_o</item>
-        <item>@string/fa_percent</item>
-        <item>@string/fa_phone</item>
-        <item>@string/fa_phone_square</item>
-        <item>@string/fa_photo_alias</item>
-        <item>@string/fa_picture_o</item>
-        <item>@string/fa_pie_chart</item>
-        <item>@string/fa_pied_piper</item>
-        <item>@string/fa_pied_piper_alt</item>
-        <item>@string/fa_pied_piper_pp</item>
-        <item>@string/fa_pinterest</item>
-        <item>@string/fa_pinterest_p</item>
-        <item>@string/fa_pinterest_square</item>
-        <item>@string/fa_plane</item>
-        <item>@string/fa_play</item>
-        <item>@string/fa_play_circle</item>
-        <item>@string/fa_play_circle_o</item>
-        <item>@string/fa_plug</item>
-        <item>@string/fa_plus</item>
-        <item>@string/fa_plus_circle</item>
-        <item>@string/fa_plus_square</item>
-        <item>@string/fa_plus_square_o</item>
-        <item>@string/fa_podcast</item>
-        <item>@string/fa_power_off</item>
-        <item>@string/fa_print</item>
-        <item>@string/fa_product_hunt</item>
-        <item>@string/fa_puzzle_piece</item>
-        <item>@string/fa_qq</item>
-        <item>@string/fa_qrcode</item>
-        <item>@string/fa_question</item>
-        <item>@string/fa_question_circle</item>
-        <item>@string/fa_question_circle_o</item>
-        <item>@string/fa_quora</item>
-        <item>@string/fa_quote_left</item>
-        <item>@string/fa_quote_right</item>
-        <item>@string/fa_ra_alias</item>
-        <item>@string/fa_random</item>
-        <item>@string/fa_ravelry</item>
-        <item>@string/fa_rebel</item>
-        <item>@string/fa_recycle</item>
-        <item>@string/fa_reddit</item>
-        <item>@string/fa_reddit_alien</item>
-        <item>@string/fa_reddit_square</item>
-        <item>@string/fa_refresh</item>
-        <item>@string/fa_registered</item>
-        <item>@string/fa_remove_alias</item>
-        <item>@string/fa_renren</item>
-        <item>@string/fa_reorder_alias</item>
-        <item>@string/fa_repeat</item>
-        <item>@string/fa_reply</item>
-        <item>@string/fa_reply_all</item>
-        <item>@string/fa_resistance_alias</item>
-        <item>@string/fa_retweet</item>
-        <item>@string/fa_rmb_alias</item>
-        <item>@string/fa_road</item>
-        <item>@string/fa_rocket</item>
-        <item>@string/fa_rotate_left_alias</item>
-        <item>@string/fa_rotate_right_alias</item>
-        <item>@string/fa_rouble_alias</item>
-        <item>@string/fa_rss</item>
-        <item>@string/fa_rss_square</item>
-        <item>@string/fa_rub</item>
-        <item>@string/fa_ruble_alias</item>
-        <item>@string/fa_rupee_alias</item>
-        <item>@string/fa_s15_alias</item>
-        <item>@string/fa_safari</item>
-        <item>@string/fa_save_alias</item>
-        <item>@string/fa_scissors</item>
-        <item>@string/fa_scribd</item>
-        <item>@string/fa_search</item>
-        <item>@string/fa_search_minus</item>
-        <item>@string/fa_search_plus</item>
-        <item>@string/fa_sellsy</item>
-        <item>@string/fa_send_alias</item>
-        <item>@string/fa_send_o_alias</item>
-        <item>@string/fa_server</item>
-        <item>@string/fa_share</item>
-        <item>@string/fa_share_alt</item>
-        <item>@string/fa_share_alt_square</item>
-        <item>@string/fa_share_square</item>
-        <item>@string/fa_share_square_o</item>
-        <item>@string/fa_shekel_alias</item>
-        <item>@string/fa_sheqel_alias</item>
-        <item>@string/fa_shield</item>
-        <item>@string/fa_ship</item>
-        <item>@string/fa_shirtsinbulk</item>
-        <item>@string/fa_shopping_bag</item>
-        <item>@string/fa_shopping_basket</item>
-        <item>@string/fa_shopping_cart</item>
-        <item>@string/fa_shower</item>
-        <item>@string/fa_sign_in</item>
-        <item>@string/fa_sign_language</item>
-        <item>@string/fa_sign_out</item>
-        <item>@string/fa_signal</item>
-        <item>@string/fa_signing_alias</item>
-        <item>@string/fa_simplybuilt</item>
-        <item>@string/fa_sitemap</item>
-        <item>@string/fa_skyatlas</item>
-        <item>@string/fa_skype</item>
-        <item>@string/fa_slack</item>
-        <item>@string/fa_sliders</item>
-        <item>@string/fa_slideshare</item>
-        <item>@string/fa_smile_o</item>
-        <item>@string/fa_snapchat</item>
-        <item>@string/fa_snapchat_ghost</item>
-        <item>@string/fa_snapchat_square</item>
-        <item>@string/fa_snowflake_o</item>
-        <item>@string/fa_soccer_ball_o_alias</item>
-        <item>@string/fa_sort</item>
-        <item>@string/fa_sort_alpha_asc</item>
-        <item>@string/fa_sort_alpha_desc</item>
-        <item>@string/fa_sort_amount_asc</item>
-        <item>@string/fa_sort_amount_desc</item>
-        <item>@string/fa_sort_asc</item>
-        <item>@string/fa_sort_desc</item>
-        <item>@string/fa_sort_down_alias</item>
-        <item>@string/fa_sort_numeric_asc</item>
-        <item>@string/fa_sort_numeric_desc</item>
-        <item>@string/fa_sort_up_alias</item>
-        <item>@string/fa_soundcloud</item>
-        <item>@string/fa_space_shuttle</item>
-        <item>@string/fa_spinner</item>
-        <item>@string/fa_spoon</item>
-        <item>@string/fa_spotify</item>
-        <item>@string/fa_square</item>
-        <item>@string/fa_square_o</item>
-        <item>@string/fa_stack_exchange</item>
-        <item>@string/fa_stack_overflow</item>
-        <item>@string/fa_star</item>
-        <item>@string/fa_star_half</item>
-        <item>@string/fa_star_half_empty_alias</item>
-        <item>@string/fa_star_half_full_alias</item>
-        <item>@string/fa_star_half_o</item>
-        <item>@string/fa_star_o</item>
-        <item>@string/fa_steam</item>
-        <item>@string/fa_steam_square</item>
-        <item>@string/fa_step_backward</item>
-        <item>@string/fa_step_forward</item>
-        <item>@string/fa_stethoscope</item>
-        <item>@string/fa_sticky_note</item>
-        <item>@string/fa_sticky_note_o</item>
-        <item>@string/fa_stop</item>
-        <item>@string/fa_stop_circle</item>
-        <item>@string/fa_stop_circle_o</item>
-        <item>@string/fa_street_view</item>
-        <item>@string/fa_strikethrough</item>
-        <item>@string/fa_stumbleupon</item>
-        <item>@string/fa_stumbleupon_circle</item>
-        <item>@string/fa_subscript</item>
-        <item>@string/fa_subway</item>
-        <item>@string/fa_suitcase</item>
-        <item>@string/fa_sun_o</item>
-        <item>@string/fa_superpowers</item>
-        <item>@string/fa_superscript</item>
-        <item>@string/fa_support_alias</item>
-        <item>@string/fa_table</item>
-        <item>@string/fa_tablet</item>
-        <item>@string/fa_tachometer</item>
-        <item>@string/fa_tag</item>
-        <item>@string/fa_tags</item>
-        <item>@string/fa_tasks</item>
-        <item>@string/fa_taxi</item>
-        <item>@string/fa_telegram</item>
-        <item>@string/fa_television</item>
-        <item>@string/fa_tencent_weibo</item>
-        <item>@string/fa_terminal</item>
-        <item>@string/fa_text_height</item>
-        <item>@string/fa_text_width</item>
-        <item>@string/fa_th</item>
-        <item>@string/fa_th_large</item>
-        <item>@string/fa_th_list</item>
-        <item>@string/fa_themeisle</item>
-        <item>@string/fa_thermometer_alias</item>
-        <item>@string/fa_thermometer_0_alias</item>
-        <item>@string/fa_thermometer_1_alias</item>
-        <item>@string/fa_thermometer_2_alias</item>
-        <item>@string/fa_thermometer_3_alias</item>
-        <item>@string/fa_thermometer_4_alias</item>
-        <item>@string/fa_thermometer_empty</item>
-        <item>@string/fa_thermometer_full</item>
-        <item>@string/fa_thermometer_half</item>
-        <item>@string/fa_thermometer_quarter</item>
-        <item>@string/fa_thermometer_three_quarters</item>
-        <item>@string/fa_thumb_tack</item>
-        <item>@string/fa_thumbs_down</item>
-        <item>@string/fa_thumbs_o_down</item>
-        <item>@string/fa_thumbs_o_up</item>
-        <item>@string/fa_thumbs_up</item>
-        <item>@string/fa_ticket</item>
-        <item>@string/fa_times</item>
-        <item>@string/fa_times_circle</item>
-        <item>@string/fa_times_circle_o</item>
-        <item>@string/fa_times_rectangle_alias</item>
-        <item>@string/fa_times_rectangle_o_alias</item>
-        <item>@string/fa_tint</item>
-        <item>@string/fa_toggle_down_alias</item>
-        <item>@string/fa_toggle_left_alias</item>
-        <item>@string/fa_toggle_off</item>
-        <item>@string/fa_toggle_on</item>
-        <item>@string/fa_toggle_right_alias</item>
-        <item>@string/fa_toggle_up_alias</item>
-        <item>@string/fa_trademark</item>
-        <item>@string/fa_train</item>
-        <item>@string/fa_transgender</item>
-        <item>@string/fa_transgender_alt</item>
-        <item>@string/fa_trash</item>
-        <item>@string/fa_trash_o</item>
-        <item>@string/fa_tree</item>
-        <item>@string/fa_trello</item>
-        <item>@string/fa_tripadvisor</item>
-        <item>@string/fa_trophy</item>
-        <item>@string/fa_truck</item>
-        <item>@string/fa_try</item>
-        <item>@string/fa_tty</item>
-        <item>@string/fa_tumblr</item>
-        <item>@string/fa_tumblr_square</item>
-        <item>@string/fa_turkish_lira_alias</item>
-        <item>@string/fa_tv_alias</item>
-        <item>@string/fa_twitch</item>
-        <item>@string/fa_twitter</item>
-        <item>@string/fa_twitter_square</item>
-        <item>@string/fa_umbrella</item>
-        <item>@string/fa_underline</item>
-        <item>@string/fa_undo</item>
-        <item>@string/fa_universal_access</item>
-        <item>@string/fa_university</item>
-        <item>@string/fa_unlink_alias</item>
-        <item>@string/fa_unlock</item>
-        <item>@string/fa_unlock_alt</item>
-        <item>@string/fa_unsorted_alias</item>
-        <item>@string/fa_upload</item>
-        <item>@string/fa_usb</item>
-        <item>@string/fa_usd</item>
-        <item>@string/fa_user</item>
-        <item>@string/fa_user_circle</item>
-        <item>@string/fa_user_circle_o</item>
-        <item>@string/fa_user_md</item>
-        <item>@string/fa_user_o</item>
-        <item>@string/fa_user_plus</item>
-        <item>@string/fa_user_secret</item>
-        <item>@string/fa_user_times</item>
-        <item>@string/fa_users</item>
-        <item>@string/fa_vcard_alias</item>
-        <item>@string/fa_vcard_o_alias</item>
-        <item>@string/fa_venus</item>
-        <item>@string/fa_venus_double</item>
-        <item>@string/fa_venus_mars</item>
-        <item>@string/fa_viacoin</item>
-        <item>@string/fa_viadeo</item>
-        <item>@string/fa_viadeo_square</item>
-        <item>@string/fa_video_camera</item>
-        <item>@string/fa_vimeo</item>
-        <item>@string/fa_vimeo_square</item>
-        <item>@string/fa_vine</item>
-        <item>@string/fa_vk</item>
-        <item>@string/fa_volume_control_phone</item>
-        <item>@string/fa_volume_down</item>
-        <item>@string/fa_volume_off</item>
-        <item>@string/fa_volume_up</item>
-        <item>@string/fa_warning_alias</item>
-        <item>@string/fa_wechat_alias</item>
-        <item>@string/fa_weibo</item>
-        <item>@string/fa_weixin</item>
-        <item>@string/fa_whatsapp</item>
-        <item>@string/fa_wheelchair</item>
-        <item>@string/fa_wheelchair_alt</item>
-        <item>@string/fa_wifi</item>
-        <item>@string/fa_wikipedia_w</item>
-        <item>@string/fa_window_close</item>
-        <item>@string/fa_window_close_o</item>
-        <item>@string/fa_window_maximize</item>
-        <item>@string/fa_window_minimize</item>
-        <item>@string/fa_window_restore</item>
-        <item>@string/fa_windows</item>
-        <item>@string/fa_won_alias</item>
-        <item>@string/fa_wordpress</item>
-        <item>@string/fa_wpbeginner</item>
-        <item>@string/fa_wpexplorer</item>
-        <item>@string/fa_wpforms</item>
-        <item>@string/fa_wrench</item>
-        <item>@string/fa_xing</item>
-        <item>@string/fa_xing_square</item>
-        <item>@string/fa_y_combinator</item>
-        <item>@string/fa_y_combinator_square_alias</item>
-        <item>@string/fa_yahoo</item>
-        <item>@string/fa_yc_alias</item>
-        <item>@string/fa_yc_square_alias</item>
-        <item>@string/fa_yelp</item>
-        <item>@string/fa_yen_alias</item>
-        <item>@string/fa_yoast</item>
-        <item>@string/fa_youtube</item>
-        <item>@string/fa_youtube_play</item>
-        <item>@string/fa_youtube_square</item>
-    </string-array>
+	<string-array name="array_fa_icon_unicode">
+		<item>@string/fa_500px</item>
+		<item>@string/fa_address_book</item>
+		<item>@string/fa_address_book_o</item>
+		<item>@string/fa_address_card</item>
+		<item>@string/fa_address_card_o</item>
+		<item>@string/fa_adjust</item>
+		<item>@string/fa_adn</item>
+		<item>@string/fa_align_center</item>
+		<item>@string/fa_align_justify</item>
+		<item>@string/fa_align_left</item>
+		<item>@string/fa_align_right</item>
+		<item>@string/fa_amazon</item>
+		<item>@string/fa_ambulance</item>
+		<item>@string/fa_american_sign_language_interpreting</item>
+		<item>@string/fa_anchor</item>
+		<item>@string/fa_android</item>
+		<item>@string/fa_angellist</item>
+		<item>@string/fa_angle_double_down</item>
+		<item>@string/fa_angle_double_left</item>
+		<item>@string/fa_angle_double_right</item>
+		<item>@string/fa_angle_double_up</item>
+		<item>@string/fa_angle_down</item>
+		<item>@string/fa_angle_left</item>
+		<item>@string/fa_angle_right</item>
+		<item>@string/fa_angle_up</item>
+		<item>@string/fa_apple</item>
+		<item>@string/fa_archive</item>
+		<item>@string/fa_area_chart</item>
+		<item>@string/fa_arrow_circle_down</item>
+		<item>@string/fa_arrow_circle_left</item>
+		<item>@string/fa_arrow_circle_o_down</item>
+		<item>@string/fa_arrow_circle_o_left</item>
+		<item>@string/fa_arrow_circle_o_right</item>
+		<item>@string/fa_arrow_circle_o_up</item>
+		<item>@string/fa_arrow_circle_right</item>
+		<item>@string/fa_arrow_circle_up</item>
+		<item>@string/fa_arrow_down</item>
+		<item>@string/fa_arrow_left</item>
+		<item>@string/fa_arrow_right</item>
+		<item>@string/fa_arrow_up</item>
+		<item>@string/fa_arrows</item>
+		<item>@string/fa_arrows_alt</item>
+		<item>@string/fa_arrows_h</item>
+		<item>@string/fa_arrows_v</item>
+		<item>@string/fa_asl_interpreting</item>
+		<item>@string/fa_assistive_listening_systems</item>
+		<item>@string/fa_asterisk</item>
+		<item>@string/fa_at</item>
+		<item>@string/fa_audio_description</item>
+		<item>@string/fa_automobile</item>
+		<item>@string/fa_backward</item>
+		<item>@string/fa_balance_scale</item>
+		<item>@string/fa_ban</item>
+		<item>@string/fa_bandcamp</item>
+		<item>@string/fa_bank</item>
+		<item>@string/fa_bar_chart</item>
+		<item>@string/fa_bar_chart_o</item>
+		<item>@string/fa_barcode</item>
+		<item>@string/fa_bars</item>
+		<item>@string/fa_bath</item>
+		<item>@string/fa_bathtub</item>
+		<item>@string/fa_battery</item>
+		<item>@string/fa_battery_0</item>
+		<item>@string/fa_battery_1</item>
+		<item>@string/fa_battery_2</item>
+		<item>@string/fa_battery_3</item>
+		<item>@string/fa_battery_4</item>
+		<item>@string/fa_battery_empty</item>
+		<item>@string/fa_battery_full</item>
+		<item>@string/fa_battery_half</item>
+		<item>@string/fa_battery_quarter</item>
+		<item>@string/fa_battery_three_quarters</item>
+		<item>@string/fa_bed</item>
+		<item>@string/fa_beer</item>
+		<item>@string/fa_behance</item>
+		<item>@string/fa_behance_square</item>
+		<item>@string/fa_bell</item>
+		<item>@string/fa_bell_o</item>
+		<item>@string/fa_bell_slash</item>
+		<item>@string/fa_bell_slash_o</item>
+		<item>@string/fa_bicycle</item>
+		<item>@string/fa_binoculars</item>
+		<item>@string/fa_birthday_cake</item>
+		<item>@string/fa_bitbucket</item>
+		<item>@string/fa_bitbucket_square</item>
+		<item>@string/fa_bitcoin</item>
+		<item>@string/fa_black_tie</item>
+		<item>@string/fa_blind</item>
+		<item>@string/fa_bluetooth</item>
+		<item>@string/fa_bluetooth_b</item>
+		<item>@string/fa_bold</item>
+		<item>@string/fa_bolt</item>
+		<item>@string/fa_bomb</item>
+		<item>@string/fa_book</item>
+		<item>@string/fa_bookmark</item>
+		<item>@string/fa_bookmark_o</item>
+		<item>@string/fa_braille</item>
+		<item>@string/fa_briefcase</item>
+		<item>@string/fa_btc</item>
+		<item>@string/fa_bug</item>
+		<item>@string/fa_building</item>
+		<item>@string/fa_building_o</item>
+		<item>@string/fa_bullhorn</item>
+		<item>@string/fa_bullseye</item>
+		<item>@string/fa_bus</item>
+		<item>@string/fa_buysellads</item>
+		<item>@string/fa_cab</item>
+		<item>@string/fa_calculator</item>
+		<item>@string/fa_calendar</item>
+		<item>@string/fa_calendar_check_o</item>
+		<item>@string/fa_calendar_minus_o</item>
+		<item>@string/fa_calendar_o</item>
+		<item>@string/fa_calendar_plus_o</item>
+		<item>@string/fa_calendar_times_o</item>
+		<item>@string/fa_camera</item>
+		<item>@string/fa_camera_retro</item>
+		<item>@string/fa_car</item>
+		<item>@string/fa_caret_down</item>
+		<item>@string/fa_caret_left</item>
+		<item>@string/fa_caret_right</item>
+		<item>@string/fa_caret_square_o_down</item>
+		<item>@string/fa_caret_square_o_left</item>
+		<item>@string/fa_caret_square_o_right</item>
+		<item>@string/fa_caret_square_o_up</item>
+		<item>@string/fa_caret_up</item>
+		<item>@string/fa_cart_arrow_down</item>
+		<item>@string/fa_cart_plus</item>
+		<item>@string/fa_cc</item>
+		<item>@string/fa_cc_amex</item>
+		<item>@string/fa_cc_diners_club</item>
+		<item>@string/fa_cc_discover</item>
+		<item>@string/fa_cc_jcb</item>
+		<item>@string/fa_cc_mastercard</item>
+		<item>@string/fa_cc_paypal</item>
+		<item>@string/fa_cc_stripe</item>
+		<item>@string/fa_cc_visa</item>
+		<item>@string/fa_certificate</item>
+		<item>@string/fa_chain</item>
+		<item>@string/fa_chain_broken</item>
+		<item>@string/fa_check</item>
+		<item>@string/fa_check_circle</item>
+		<item>@string/fa_check_circle_o</item>
+		<item>@string/fa_check_square</item>
+		<item>@string/fa_check_square_o</item>
+		<item>@string/fa_chevron_circle_down</item>
+		<item>@string/fa_chevron_circle_left</item>
+		<item>@string/fa_chevron_circle_right</item>
+		<item>@string/fa_chevron_circle_up</item>
+		<item>@string/fa_chevron_down</item>
+		<item>@string/fa_chevron_left</item>
+		<item>@string/fa_chevron_right</item>
+		<item>@string/fa_chevron_up</item>
+		<item>@string/fa_child</item>
+		<item>@string/fa_chrome</item>
+		<item>@string/fa_circle</item>
+		<item>@string/fa_circle_o</item>
+		<item>@string/fa_circle_o_notch</item>
+		<item>@string/fa_circle_thin</item>
+		<item>@string/fa_clipboard</item>
+		<item>@string/fa_clock_o</item>
+		<item>@string/fa_clone</item>
+		<item>@string/fa_close</item>
+		<item>@string/fa_cloud</item>
+		<item>@string/fa_cloud_download</item>
+		<item>@string/fa_cloud_upload</item>
+		<item>@string/fa_cny</item>
+		<item>@string/fa_code</item>
+		<item>@string/fa_code_fork</item>
+		<item>@string/fa_codepen</item>
+		<item>@string/fa_codiepie</item>
+		<item>@string/fa_coffee</item>
+		<item>@string/fa_cog</item>
+		<item>@string/fa_cogs</item>
+		<item>@string/fa_columns</item>
+		<item>@string/fa_comment</item>
+		<item>@string/fa_comment_o</item>
+		<item>@string/fa_commenting</item>
+		<item>@string/fa_commenting_o</item>
+		<item>@string/fa_comments</item>
+		<item>@string/fa_comments_o</item>
+		<item>@string/fa_compass</item>
+		<item>@string/fa_compress</item>
+		<item>@string/fa_connectdevelop</item>
+		<item>@string/fa_contao</item>
+		<item>@string/fa_copy</item>
+		<item>@string/fa_copyright</item>
+		<item>@string/fa_creative_commons</item>
+		<item>@string/fa_credit_card</item>
+		<item>@string/fa_credit_card_alt</item>
+		<item>@string/fa_crop</item>
+		<item>@string/fa_crosshairs</item>
+		<item>@string/fa_css3</item>
+		<item>@string/fa_cube</item>
+		<item>@string/fa_cubes</item>
+		<item>@string/fa_cut</item>
+		<item>@string/fa_cutlery</item>
+		<item>@string/fa_dashboard</item>
+		<item>@string/fa_dashcube</item>
+		<item>@string/fa_database</item>
+		<item>@string/fa_deaf</item>
+		<item>@string/fa_deafness</item>
+		<item>@string/fa_dedent</item>
+		<item>@string/fa_delicious</item>
+		<item>@string/fa_desktop</item>
+		<item>@string/fa_deviantart</item>
+		<item>@string/fa_diamond</item>
+		<item>@string/fa_digg</item>
+		<item>@string/fa_dollar</item>
+		<item>@string/fa_dot_circle_o</item>
+		<item>@string/fa_download</item>
+		<item>@string/fa_dribbble</item>
+		<item>@string/fa_drivers_license</item>
+		<item>@string/fa_drivers_license_o</item>
+		<item>@string/fa_dropbox</item>
+		<item>@string/fa_drupal</item>
+		<item>@string/fa_edge</item>
+		<item>@string/fa_edit</item>
+		<item>@string/fa_eercast</item>
+		<item>@string/fa_eject</item>
+		<item>@string/fa_ellipsis_h</item>
+		<item>@string/fa_ellipsis_v</item>
+		<item>@string/fa_empire</item>
+		<item>@string/fa_envelope</item>
+		<item>@string/fa_envelope_o</item>
+		<item>@string/fa_envelope_open</item>
+		<item>@string/fa_envelope_open_o</item>
+		<item>@string/fa_envelope_square</item>
+		<item>@string/fa_envira</item>
+		<item>@string/fa_eraser</item>
+		<item>@string/fa_etsy</item>
+		<item>@string/fa_eur</item>
+		<item>@string/fa_euro</item>
+		<item>@string/fa_exchange</item>
+		<item>@string/fa_exclamation</item>
+		<item>@string/fa_exclamation_circle</item>
+		<item>@string/fa_exclamation_triangle</item>
+		<item>@string/fa_expand</item>
+		<item>@string/fa_expeditedssl</item>
+		<item>@string/fa_external_link</item>
+		<item>@string/fa_external_link_square</item>
+		<item>@string/fa_eye</item>
+		<item>@string/fa_eye_slash</item>
+		<item>@string/fa_eyedropper</item>
+		<item>@string/fa_fa</item>
+		<item>@string/fa_facebook</item>
+		<item>@string/fa_facebook_f</item>
+		<item>@string/fa_facebook_official</item>
+		<item>@string/fa_facebook_square</item>
+		<item>@string/fa_fast_backward</item>
+		<item>@string/fa_fast_forward</item>
+		<item>@string/fa_fax</item>
+		<item>@string/fa_feed</item>
+		<item>@string/fa_female</item>
+		<item>@string/fa_fighter_jet</item>
+		<item>@string/fa_file</item>
+		<item>@string/fa_file_archive_o</item>
+		<item>@string/fa_file_audio_o</item>
+		<item>@string/fa_file_code_o</item>
+		<item>@string/fa_file_excel_o</item>
+		<item>@string/fa_file_image_o</item>
+		<item>@string/fa_file_movie_o</item>
+		<item>@string/fa_file_o</item>
+		<item>@string/fa_file_pdf_o</item>
+		<item>@string/fa_file_photo_o</item>
+		<item>@string/fa_file_picture_o</item>
+		<item>@string/fa_file_powerpoint_o</item>
+		<item>@string/fa_file_sound_o</item>
+		<item>@string/fa_file_text</item>
+		<item>@string/fa_file_text_o</item>
+		<item>@string/fa_file_video_o</item>
+		<item>@string/fa_file_word_o</item>
+		<item>@string/fa_file_zip_o</item>
+		<item>@string/fa_files_o</item>
+		<item>@string/fa_film</item>
+		<item>@string/fa_filter</item>
+		<item>@string/fa_fire</item>
+		<item>@string/fa_fire_extinguisher</item>
+		<item>@string/fa_firefox</item>
+		<item>@string/fa_first_order</item>
+		<item>@string/fa_flag</item>
+		<item>@string/fa_flag_checkered</item>
+		<item>@string/fa_flag_o</item>
+		<item>@string/fa_flash</item>
+		<item>@string/fa_flask</item>
+		<item>@string/fa_flickr</item>
+		<item>@string/fa_floppy_o</item>
+		<item>@string/fa_folder</item>
+		<item>@string/fa_folder_o</item>
+		<item>@string/fa_folder_open</item>
+		<item>@string/fa_folder_open_o</item>
+		<item>@string/fa_font</item>
+		<item>@string/fa_font_awesome</item>
+		<item>@string/fa_fonticons</item>
+		<item>@string/fa_fort_awesome</item>
+		<item>@string/fa_forumbee</item>
+		<item>@string/fa_forward</item>
+		<item>@string/fa_foursquare</item>
+		<item>@string/fa_free_code_camp</item>
+		<item>@string/fa_frown_o</item>
+		<item>@string/fa_futbol_o</item>
+		<item>@string/fa_gamepad</item>
+		<item>@string/fa_gavel</item>
+		<item>@string/fa_gbp</item>
+		<item>@string/fa_ge</item>
+		<item>@string/fa_gear</item>
+		<item>@string/fa_gears</item>
+		<item>@string/fa_genderless</item>
+		<item>@string/fa_get_pocket</item>
+		<item>@string/fa_gg</item>
+		<item>@string/fa_gg_circle</item>
+		<item>@string/fa_gift</item>
+		<item>@string/fa_git</item>
+		<item>@string/fa_git_square</item>
+		<item>@string/fa_github</item>
+		<item>@string/fa_github_alt</item>
+		<item>@string/fa_github_square</item>
+		<item>@string/fa_gitlab</item>
+		<item>@string/fa_gittip</item>
+		<item>@string/fa_glass</item>
+		<item>@string/fa_glide</item>
+		<item>@string/fa_glide_g</item>
+		<item>@string/fa_globe</item>
+		<item>@string/fa_google</item>
+		<item>@string/fa_google_plus</item>
+		<item>@string/fa_google_plus_circle</item>
+		<item>@string/fa_google_plus_official</item>
+		<item>@string/fa_google_plus_square</item>
+		<item>@string/fa_google_wallet</item>
+		<item>@string/fa_graduation_cap</item>
+		<item>@string/fa_gratipay</item>
+		<item>@string/fa_grav</item>
+		<item>@string/fa_group</item>
+		<item>@string/fa_h_square</item>
+		<item>@string/fa_hacker_news</item>
+		<item>@string/fa_hand_grab_o</item>
+		<item>@string/fa_hand_lizard_o</item>
+		<item>@string/fa_hand_o_down</item>
+		<item>@string/fa_hand_o_left</item>
+		<item>@string/fa_hand_o_right</item>
+		<item>@string/fa_hand_o_up</item>
+		<item>@string/fa_hand_paper_o</item>
+		<item>@string/fa_hand_peace_o</item>
+		<item>@string/fa_hand_pointer_o</item>
+		<item>@string/fa_hand_rock_o</item>
+		<item>@string/fa_hand_scissors_o</item>
+		<item>@string/fa_hand_spock_o</item>
+		<item>@string/fa_hand_stop_o</item>
+		<item>@string/fa_handshake_o</item>
+		<item>@string/fa_hard_of_hearing</item>
+		<item>@string/fa_hashtag</item>
+		<item>@string/fa_hdd_o</item>
+		<item>@string/fa_header</item>
+		<item>@string/fa_headphones</item>
+		<item>@string/fa_heart</item>
+		<item>@string/fa_heart_o</item>
+		<item>@string/fa_heartbeat</item>
+		<item>@string/fa_history</item>
+		<item>@string/fa_home</item>
+		<item>@string/fa_hospital_o</item>
+		<item>@string/fa_hotel</item>
+		<item>@string/fa_hourglass</item>
+		<item>@string/fa_hourglass_1</item>
+		<item>@string/fa_hourglass_2</item>
+		<item>@string/fa_hourglass_3</item>
+		<item>@string/fa_hourglass_end</item>
+		<item>@string/fa_hourglass_half</item>
+		<item>@string/fa_hourglass_o</item>
+		<item>@string/fa_hourglass_start</item>
+		<item>@string/fa_houzz</item>
+		<item>@string/fa_html5</item>
+		<item>@string/fa_i_cursor</item>
+		<item>@string/fa_id_badge</item>
+		<item>@string/fa_id_card</item>
+		<item>@string/fa_id_card_o</item>
+		<item>@string/fa_ils</item>
+		<item>@string/fa_image</item>
+		<item>@string/fa_imdb</item>
+		<item>@string/fa_inbox</item>
+		<item>@string/fa_indent</item>
+		<item>@string/fa_industry</item>
+		<item>@string/fa_info</item>
+		<item>@string/fa_info_circle</item>
+		<item>@string/fa_inr</item>
+		<item>@string/fa_instagram</item>
+		<item>@string/fa_institution</item>
+		<item>@string/fa_internet_explorer</item>
+		<item>@string/fa_intersex</item>
+		<item>@string/fa_ioxhost</item>
+		<item>@string/fa_italic</item>
+		<item>@string/fa_joomla</item>
+		<item>@string/fa_jpy</item>
+		<item>@string/fa_jsfiddle</item>
+		<item>@string/fa_key</item>
+		<item>@string/fa_keyboard_o</item>
+		<item>@string/fa_krw</item>
+		<item>@string/fa_language</item>
+		<item>@string/fa_laptop</item>
+		<item>@string/fa_lastfm</item>
+		<item>@string/fa_lastfm_square</item>
+		<item>@string/fa_leaf</item>
+		<item>@string/fa_leanpub</item>
+		<item>@string/fa_legal</item>
+		<item>@string/fa_lemon_o</item>
+		<item>@string/fa_level_down</item>
+		<item>@string/fa_level_up</item>
+		<item>@string/fa_life_bouy</item>
+		<item>@string/fa_life_buoy</item>
+		<item>@string/fa_life_ring</item>
+		<item>@string/fa_life_saver</item>
+		<item>@string/fa_lightbulb_o</item>
+		<item>@string/fa_line_chart</item>
+		<item>@string/fa_link</item>
+		<item>@string/fa_linkedin</item>
+		<item>@string/fa_linkedin_square</item>
+		<item>@string/fa_linode</item>
+		<item>@string/fa_linux</item>
+		<item>@string/fa_list</item>
+		<item>@string/fa_list_alt</item>
+		<item>@string/fa_list_ol</item>
+		<item>@string/fa_list_ul</item>
+		<item>@string/fa_location_arrow</item>
+		<item>@string/fa_lock</item>
+		<item>@string/fa_long_arrow_down</item>
+		<item>@string/fa_long_arrow_left</item>
+		<item>@string/fa_long_arrow_right</item>
+		<item>@string/fa_long_arrow_up</item>
+		<item>@string/fa_low_vision</item>
+		<item>@string/fa_magic</item>
+		<item>@string/fa_magnet</item>
+		<item>@string/fa_mail_forward</item>
+		<item>@string/fa_mail_reply</item>
+		<item>@string/fa_mail_reply_all</item>
+		<item>@string/fa_male</item>
+		<item>@string/fa_map</item>
+		<item>@string/fa_map_marker</item>
+		<item>@string/fa_map_o</item>
+		<item>@string/fa_map_pin</item>
+		<item>@string/fa_map_signs</item>
+		<item>@string/fa_mars</item>
+		<item>@string/fa_mars_double</item>
+		<item>@string/fa_mars_stroke</item>
+		<item>@string/fa_mars_stroke_h</item>
+		<item>@string/fa_mars_stroke_v</item>
+		<item>@string/fa_maxcdn</item>
+		<item>@string/fa_meanpath</item>
+		<item>@string/fa_medium</item>
+		<item>@string/fa_medkit</item>
+		<item>@string/fa_meetup</item>
+		<item>@string/fa_meh_o</item>
+		<item>@string/fa_mercury</item>
+		<item>@string/fa_microchip</item>
+		<item>@string/fa_microphone</item>
+		<item>@string/fa_microphone_slash</item>
+		<item>@string/fa_minus</item>
+		<item>@string/fa_minus_circle</item>
+		<item>@string/fa_minus_square</item>
+		<item>@string/fa_minus_square_o</item>
+		<item>@string/fa_mixcloud</item>
+		<item>@string/fa_mobile</item>
+		<item>@string/fa_mobile_phone</item>
+		<item>@string/fa_modx</item>
+		<item>@string/fa_money</item>
+		<item>@string/fa_moon_o</item>
+		<item>@string/fa_mortar_board</item>
+		<item>@string/fa_motorcycle</item>
+		<item>@string/fa_mouse_pointer</item>
+		<item>@string/fa_music</item>
+		<item>@string/fa_navicon</item>
+		<item>@string/fa_neuter</item>
+		<item>@string/fa_newspaper_o</item>
+		<item>@string/fa_object_group</item>
+		<item>@string/fa_object_ungroup</item>
+		<item>@string/fa_odnoklassniki</item>
+		<item>@string/fa_odnoklassniki_square</item>
+		<item>@string/fa_opencart</item>
+		<item>@string/fa_openid</item>
+		<item>@string/fa_opera</item>
+		<item>@string/fa_optin_monster</item>
+		<item>@string/fa_outdent</item>
+		<item>@string/fa_pagelines</item>
+		<item>@string/fa_paint_brush</item>
+		<item>@string/fa_paper_plane</item>
+		<item>@string/fa_paper_plane_o</item>
+		<item>@string/fa_paperclip</item>
+		<item>@string/fa_paragraph</item>
+		<item>@string/fa_paste</item>
+		<item>@string/fa_pause</item>
+		<item>@string/fa_pause_circle</item>
+		<item>@string/fa_pause_circle_o</item>
+		<item>@string/fa_paw</item>
+		<item>@string/fa_paypal</item>
+		<item>@string/fa_pencil</item>
+		<item>@string/fa_pencil_square</item>
+		<item>@string/fa_pencil_square_o</item>
+		<item>@string/fa_percent</item>
+		<item>@string/fa_phone</item>
+		<item>@string/fa_phone_square</item>
+		<item>@string/fa_photo</item>
+		<item>@string/fa_picture_o</item>
+		<item>@string/fa_pie_chart</item>
+		<item>@string/fa_pied_piper</item>
+		<item>@string/fa_pied_piper_alt</item>
+		<item>@string/fa_pied_piper_pp</item>
+		<item>@string/fa_pinterest</item>
+		<item>@string/fa_pinterest_p</item>
+		<item>@string/fa_pinterest_square</item>
+		<item>@string/fa_plane</item>
+		<item>@string/fa_play</item>
+		<item>@string/fa_play_circle</item>
+		<item>@string/fa_play_circle_o</item>
+		<item>@string/fa_plug</item>
+		<item>@string/fa_plus</item>
+		<item>@string/fa_plus_circle</item>
+		<item>@string/fa_plus_square</item>
+		<item>@string/fa_plus_square_o</item>
+		<item>@string/fa_podcast</item>
+		<item>@string/fa_power_off</item>
+		<item>@string/fa_print</item>
+		<item>@string/fa_product_hunt</item>
+		<item>@string/fa_puzzle_piece</item>
+		<item>@string/fa_qq</item>
+		<item>@string/fa_qrcode</item>
+		<item>@string/fa_question</item>
+		<item>@string/fa_question_circle</item>
+		<item>@string/fa_question_circle_o</item>
+		<item>@string/fa_quora</item>
+		<item>@string/fa_quote_left</item>
+		<item>@string/fa_quote_right</item>
+		<item>@string/fa_ra</item>
+		<item>@string/fa_random</item>
+		<item>@string/fa_ravelry</item>
+		<item>@string/fa_rebel</item>
+		<item>@string/fa_recycle</item>
+		<item>@string/fa_reddit</item>
+		<item>@string/fa_reddit_alien</item>
+		<item>@string/fa_reddit_square</item>
+		<item>@string/fa_refresh</item>
+		<item>@string/fa_registered</item>
+		<item>@string/fa_remove</item>
+		<item>@string/fa_renren</item>
+		<item>@string/fa_reorder</item>
+		<item>@string/fa_repeat</item>
+		<item>@string/fa_reply</item>
+		<item>@string/fa_reply_all</item>
+		<item>@string/fa_resistance</item>
+		<item>@string/fa_retweet</item>
+		<item>@string/fa_rmb</item>
+		<item>@string/fa_road</item>
+		<item>@string/fa_rocket</item>
+		<item>@string/fa_rotate_left</item>
+		<item>@string/fa_rotate_right</item>
+		<item>@string/fa_rouble</item>
+		<item>@string/fa_rss</item>
+		<item>@string/fa_rss_square</item>
+		<item>@string/fa_rub</item>
+		<item>@string/fa_ruble</item>
+		<item>@string/fa_rupee</item>
+		<item>@string/fa_s15</item>
+		<item>@string/fa_safari</item>
+		<item>@string/fa_save</item>
+		<item>@string/fa_scissors</item>
+		<item>@string/fa_scribd</item>
+		<item>@string/fa_search</item>
+		<item>@string/fa_search_minus</item>
+		<item>@string/fa_search_plus</item>
+		<item>@string/fa_sellsy</item>
+		<item>@string/fa_send</item>
+		<item>@string/fa_send_o</item>
+		<item>@string/fa_server</item>
+		<item>@string/fa_share</item>
+		<item>@string/fa_share_alt</item>
+		<item>@string/fa_share_alt_square</item>
+		<item>@string/fa_share_square</item>
+		<item>@string/fa_share_square_o</item>
+		<item>@string/fa_shekel</item>
+		<item>@string/fa_sheqel</item>
+		<item>@string/fa_shield</item>
+		<item>@string/fa_ship</item>
+		<item>@string/fa_shirtsinbulk</item>
+		<item>@string/fa_shopping_bag</item>
+		<item>@string/fa_shopping_basket</item>
+		<item>@string/fa_shopping_cart</item>
+		<item>@string/fa_shower</item>
+		<item>@string/fa_sign_in</item>
+		<item>@string/fa_sign_language</item>
+		<item>@string/fa_sign_out</item>
+		<item>@string/fa_signal</item>
+		<item>@string/fa_signing</item>
+		<item>@string/fa_simplybuilt</item>
+		<item>@string/fa_sitemap</item>
+		<item>@string/fa_skyatlas</item>
+		<item>@string/fa_skype</item>
+		<item>@string/fa_slack</item>
+		<item>@string/fa_sliders</item>
+		<item>@string/fa_slideshare</item>
+		<item>@string/fa_smile_o</item>
+		<item>@string/fa_snapchat</item>
+		<item>@string/fa_snapchat_ghost</item>
+		<item>@string/fa_snapchat_square</item>
+		<item>@string/fa_snowflake_o</item>
+		<item>@string/fa_soccer_ball_o</item>
+		<item>@string/fa_sort</item>
+		<item>@string/fa_sort_alpha_asc</item>
+		<item>@string/fa_sort_alpha_desc</item>
+		<item>@string/fa_sort_amount_asc</item>
+		<item>@string/fa_sort_amount_desc</item>
+		<item>@string/fa_sort_asc</item>
+		<item>@string/fa_sort_desc</item>
+		<item>@string/fa_sort_down</item>
+		<item>@string/fa_sort_numeric_asc</item>
+		<item>@string/fa_sort_numeric_desc</item>
+		<item>@string/fa_sort_up</item>
+		<item>@string/fa_soundcloud</item>
+		<item>@string/fa_space_shuttle</item>
+		<item>@string/fa_spinner</item>
+		<item>@string/fa_spoon</item>
+		<item>@string/fa_spotify</item>
+		<item>@string/fa_square</item>
+		<item>@string/fa_square_o</item>
+		<item>@string/fa_stack_exchange</item>
+		<item>@string/fa_stack_overflow</item>
+		<item>@string/fa_star</item>
+		<item>@string/fa_star_half</item>
+		<item>@string/fa_star_half_empty</item>
+		<item>@string/fa_star_half_full</item>
+		<item>@string/fa_star_half_o</item>
+		<item>@string/fa_star_o</item>
+		<item>@string/fa_steam</item>
+		<item>@string/fa_steam_square</item>
+		<item>@string/fa_step_backward</item>
+		<item>@string/fa_step_forward</item>
+		<item>@string/fa_stethoscope</item>
+		<item>@string/fa_sticky_note</item>
+		<item>@string/fa_sticky_note_o</item>
+		<item>@string/fa_stop</item>
+		<item>@string/fa_stop_circle</item>
+		<item>@string/fa_stop_circle_o</item>
+		<item>@string/fa_street_view</item>
+		<item>@string/fa_strikethrough</item>
+		<item>@string/fa_stumbleupon</item>
+		<item>@string/fa_stumbleupon_circle</item>
+		<item>@string/fa_subscript</item>
+		<item>@string/fa_subway</item>
+		<item>@string/fa_suitcase</item>
+		<item>@string/fa_sun_o</item>
+		<item>@string/fa_superpowers</item>
+		<item>@string/fa_superscript</item>
+		<item>@string/fa_support</item>
+		<item>@string/fa_table</item>
+		<item>@string/fa_tablet</item>
+		<item>@string/fa_tachometer</item>
+		<item>@string/fa_tag</item>
+		<item>@string/fa_tags</item>
+		<item>@string/fa_tasks</item>
+		<item>@string/fa_taxi</item>
+		<item>@string/fa_telegram</item>
+		<item>@string/fa_television</item>
+		<item>@string/fa_tencent_weibo</item>
+		<item>@string/fa_terminal</item>
+		<item>@string/fa_text_height</item>
+		<item>@string/fa_text_width</item>
+		<item>@string/fa_th</item>
+		<item>@string/fa_th_large</item>
+		<item>@string/fa_th_list</item>
+		<item>@string/fa_themeisle</item>
+		<item>@string/fa_thermometer</item>
+		<item>@string/fa_thermometer_0</item>
+		<item>@string/fa_thermometer_1</item>
+		<item>@string/fa_thermometer_2</item>
+		<item>@string/fa_thermometer_3</item>
+		<item>@string/fa_thermometer_4</item>
+		<item>@string/fa_thermometer_empty</item>
+		<item>@string/fa_thermometer_full</item>
+		<item>@string/fa_thermometer_half</item>
+		<item>@string/fa_thermometer_quarter</item>
+		<item>@string/fa_thermometer_three_quarters</item>
+		<item>@string/fa_thumb_tack</item>
+		<item>@string/fa_thumbs_down</item>
+		<item>@string/fa_thumbs_o_down</item>
+		<item>@string/fa_thumbs_o_up</item>
+		<item>@string/fa_thumbs_up</item>
+		<item>@string/fa_ticket</item>
+		<item>@string/fa_times</item>
+		<item>@string/fa_times_circle</item>
+		<item>@string/fa_times_circle_o</item>
+		<item>@string/fa_times_rectangle</item>
+		<item>@string/fa_times_rectangle_o</item>
+		<item>@string/fa_tint</item>
+		<item>@string/fa_toggle_down</item>
+		<item>@string/fa_toggle_left</item>
+		<item>@string/fa_toggle_off</item>
+		<item>@string/fa_toggle_on</item>
+		<item>@string/fa_toggle_right</item>
+		<item>@string/fa_toggle_up</item>
+		<item>@string/fa_trademark</item>
+		<item>@string/fa_train</item>
+		<item>@string/fa_transgender</item>
+		<item>@string/fa_transgender_alt</item>
+		<item>@string/fa_trash</item>
+		<item>@string/fa_trash_o</item>
+		<item>@string/fa_tree</item>
+		<item>@string/fa_trello</item>
+		<item>@string/fa_tripadvisor</item>
+		<item>@string/fa_trophy</item>
+		<item>@string/fa_truck</item>
+		<item>@string/fa_try</item>
+		<item>@string/fa_tty</item>
+		<item>@string/fa_tumblr</item>
+		<item>@string/fa_tumblr_square</item>
+		<item>@string/fa_turkish_lira</item>
+		<item>@string/fa_tv</item>
+		<item>@string/fa_twitch</item>
+		<item>@string/fa_twitter</item>
+		<item>@string/fa_twitter_square</item>
+		<item>@string/fa_umbrella</item>
+		<item>@string/fa_underline</item>
+		<item>@string/fa_undo</item>
+		<item>@string/fa_universal_access</item>
+		<item>@string/fa_university</item>
+		<item>@string/fa_unlink</item>
+		<item>@string/fa_unlock</item>
+		<item>@string/fa_unlock_alt</item>
+		<item>@string/fa_unsorted</item>
+		<item>@string/fa_upload</item>
+		<item>@string/fa_usb</item>
+		<item>@string/fa_usd</item>
+		<item>@string/fa_user</item>
+		<item>@string/fa_user_circle</item>
+		<item>@string/fa_user_circle_o</item>
+		<item>@string/fa_user_md</item>
+		<item>@string/fa_user_o</item>
+		<item>@string/fa_user_plus</item>
+		<item>@string/fa_user_secret</item>
+		<item>@string/fa_user_times</item>
+		<item>@string/fa_users</item>
+		<item>@string/fa_vcard</item>
+		<item>@string/fa_vcard_o</item>
+		<item>@string/fa_venus</item>
+		<item>@string/fa_venus_double</item>
+		<item>@string/fa_venus_mars</item>
+		<item>@string/fa_viacoin</item>
+		<item>@string/fa_viadeo</item>
+		<item>@string/fa_viadeo_square</item>
+		<item>@string/fa_video_camera</item>
+		<item>@string/fa_vimeo</item>
+		<item>@string/fa_vimeo_square</item>
+		<item>@string/fa_vine</item>
+		<item>@string/fa_vk</item>
+		<item>@string/fa_volume_control_phone</item>
+		<item>@string/fa_volume_down</item>
+		<item>@string/fa_volume_off</item>
+		<item>@string/fa_volume_up</item>
+		<item>@string/fa_warning</item>
+		<item>@string/fa_wechat</item>
+		<item>@string/fa_weibo</item>
+		<item>@string/fa_weixin</item>
+		<item>@string/fa_whatsapp</item>
+		<item>@string/fa_wheelchair</item>
+		<item>@string/fa_wheelchair_alt</item>
+		<item>@string/fa_wifi</item>
+		<item>@string/fa_wikipedia_w</item>
+		<item>@string/fa_window_close</item>
+		<item>@string/fa_window_close_o</item>
+		<item>@string/fa_window_maximize</item>
+		<item>@string/fa_window_minimize</item>
+		<item>@string/fa_window_restore</item>
+		<item>@string/fa_windows</item>
+		<item>@string/fa_won</item>
+		<item>@string/fa_wordpress</item>
+		<item>@string/fa_wpbeginner</item>
+		<item>@string/fa_wpexplorer</item>
+		<item>@string/fa_wpforms</item>
+		<item>@string/fa_wrench</item>
+		<item>@string/fa_xing</item>
+		<item>@string/fa_xing_square</item>
+		<item>@string/fa_y_combinator</item>
+		<item>@string/fa_y_combinator_square</item>
+		<item>@string/fa_yahoo</item>
+		<item>@string/fa_yc</item>
+		<item>@string/fa_yc_square</item>
+		<item>@string/fa_yelp</item>
+		<item>@string/fa_yen</item>
+		<item>@string/fa_yoast</item>
+		<item>@string/fa_youtube</item>
+		<item>@string/fa_youtube_play</item>
+		<item>@string/fa_youtube_square</item>
+	</string-array>
+
+	<string-array name="array_fa_icon_class_name">
+		<item>fa_500px</item>
+		<item>fa_address_book</item>
+		<item>fa_address_book_o</item>
+		<item>fa_address_card</item>
+		<item>fa_address_card_o</item>
+		<item>fa_adjust</item>
+		<item>fa_adn</item>
+		<item>fa_align_center</item>
+		<item>fa_align_justify</item>
+		<item>fa_align_left</item>
+		<item>fa_align_right</item>
+		<item>fa_amazon</item>
+		<item>fa_ambulance</item>
+		<item>fa_american_sign_language_interpreting</item>
+		<item>fa_anchor</item>
+		<item>fa_android</item>
+		<item>fa_angellist</item>
+		<item>fa_angle_double_down</item>
+		<item>fa_angle_double_left</item>
+		<item>fa_angle_double_right</item>
+		<item>fa_angle_double_up</item>
+		<item>fa_angle_down</item>
+		<item>fa_angle_left</item>
+		<item>fa_angle_right</item>
+		<item>fa_angle_up</item>
+		<item>fa_apple</item>
+		<item>fa_archive</item>
+		<item>fa_area_chart</item>
+		<item>fa_arrow_circle_down</item>
+		<item>fa_arrow_circle_left</item>
+		<item>fa_arrow_circle_o_down</item>
+		<item>fa_arrow_circle_o_left</item>
+		<item>fa_arrow_circle_o_right</item>
+		<item>fa_arrow_circle_o_up</item>
+		<item>fa_arrow_circle_right</item>
+		<item>fa_arrow_circle_up</item>
+		<item>fa_arrow_down</item>
+		<item>fa_arrow_left</item>
+		<item>fa_arrow_right</item>
+		<item>fa_arrow_up</item>
+		<item>fa_arrows</item>
+		<item>fa_arrows_alt</item>
+		<item>fa_arrows_h</item>
+		<item>fa_arrows_v</item>
+		<item>fa_asl_interpreting</item>
+		<item>fa_assistive_listening_systems</item>
+		<item>fa_asterisk</item>
+		<item>fa_at</item>
+		<item>fa_audio_description</item>
+		<item>fa_automobile</item>
+		<item>fa_backward</item>
+		<item>fa_balance_scale</item>
+		<item>fa_ban</item>
+		<item>fa_bandcamp</item>
+		<item>fa_bank</item>
+		<item>fa_bar_chart</item>
+		<item>fa_bar_chart_o</item>
+		<item>fa_barcode</item>
+		<item>fa_bars</item>
+		<item>fa_bath</item>
+		<item>fa_bathtub</item>
+		<item>fa_battery</item>
+		<item>fa_battery_0</item>
+		<item>fa_battery_1</item>
+		<item>fa_battery_2</item>
+		<item>fa_battery_3</item>
+		<item>fa_battery_4</item>
+		<item>fa_battery_empty</item>
+		<item>fa_battery_full</item>
+		<item>fa_battery_half</item>
+		<item>fa_battery_quarter</item>
+		<item>fa_battery_three_quarters</item>
+		<item>fa_bed</item>
+		<item>fa_beer</item>
+		<item>fa_behance</item>
+		<item>fa_behance_square</item>
+		<item>fa_bell</item>
+		<item>fa_bell_o</item>
+		<item>fa_bell_slash</item>
+		<item>fa_bell_slash_o</item>
+		<item>fa_bicycle</item>
+		<item>fa_binoculars</item>
+		<item>fa_birthday_cake</item>
+		<item>fa_bitbucket</item>
+		<item>fa_bitbucket_square</item>
+		<item>fa_bitcoin</item>
+		<item>fa_black_tie</item>
+		<item>fa_blind</item>
+		<item>fa_bluetooth</item>
+		<item>fa_bluetooth_b</item>
+		<item>fa_bold</item>
+		<item>fa_bolt</item>
+		<item>fa_bomb</item>
+		<item>fa_book</item>
+		<item>fa_bookmark</item>
+		<item>fa_bookmark_o</item>
+		<item>fa_braille</item>
+		<item>fa_briefcase</item>
+		<item>fa_btc</item>
+		<item>fa_bug</item>
+		<item>fa_building</item>
+		<item>fa_building_o</item>
+		<item>fa_bullhorn</item>
+		<item>fa_bullseye</item>
+		<item>fa_bus</item>
+		<item>fa_buysellads</item>
+		<item>fa_cab</item>
+		<item>fa_calculator</item>
+		<item>fa_calendar</item>
+		<item>fa_calendar_check_o</item>
+		<item>fa_calendar_minus_o</item>
+		<item>fa_calendar_o</item>
+		<item>fa_calendar_plus_o</item>
+		<item>fa_calendar_times_o</item>
+		<item>fa_camera</item>
+		<item>fa_camera_retro</item>
+		<item>fa_car</item>
+		<item>fa_caret_down</item>
+		<item>fa_caret_left</item>
+		<item>fa_caret_right</item>
+		<item>fa_caret_square_o_down</item>
+		<item>fa_caret_square_o_left</item>
+		<item>fa_caret_square_o_right</item>
+		<item>fa_caret_square_o_up</item>
+		<item>fa_caret_up</item>
+		<item>fa_cart_arrow_down</item>
+		<item>fa_cart_plus</item>
+		<item>fa_cc</item>
+		<item>fa_cc_amex</item>
+		<item>fa_cc_diners_club</item>
+		<item>fa_cc_discover</item>
+		<item>fa_cc_jcb</item>
+		<item>fa_cc_mastercard</item>
+		<item>fa_cc_paypal</item>
+		<item>fa_cc_stripe</item>
+		<item>fa_cc_visa</item>
+		<item>fa_certificate</item>
+		<item>fa_chain</item>
+		<item>fa_chain_broken</item>
+		<item>fa_check</item>
+		<item>fa_check_circle</item>
+		<item>fa_check_circle_o</item>
+		<item>fa_check_square</item>
+		<item>fa_check_square_o</item>
+		<item>fa_chevron_circle_down</item>
+		<item>fa_chevron_circle_left</item>
+		<item>fa_chevron_circle_right</item>
+		<item>fa_chevron_circle_up</item>
+		<item>fa_chevron_down</item>
+		<item>fa_chevron_left</item>
+		<item>fa_chevron_right</item>
+		<item>fa_chevron_up</item>
+		<item>fa_child</item>
+		<item>fa_chrome</item>
+		<item>fa_circle</item>
+		<item>fa_circle_o</item>
+		<item>fa_circle_o_notch</item>
+		<item>fa_circle_thin</item>
+		<item>fa_clipboard</item>
+		<item>fa_clock_o</item>
+		<item>fa_clone</item>
+		<item>fa_close</item>
+		<item>fa_cloud</item>
+		<item>fa_cloud_download</item>
+		<item>fa_cloud_upload</item>
+		<item>fa_cny</item>
+		<item>fa_code</item>
+		<item>fa_code_fork</item>
+		<item>fa_codepen</item>
+		<item>fa_codiepie</item>
+		<item>fa_coffee</item>
+		<item>fa_cog</item>
+		<item>fa_cogs</item>
+		<item>fa_columns</item>
+		<item>fa_comment</item>
+		<item>fa_comment_o</item>
+		<item>fa_commenting</item>
+		<item>fa_commenting_o</item>
+		<item>fa_comments</item>
+		<item>fa_comments_o</item>
+		<item>fa_compass</item>
+		<item>fa_compress</item>
+		<item>fa_connectdevelop</item>
+		<item>fa_contao</item>
+		<item>fa_copy</item>
+		<item>fa_copyright</item>
+		<item>fa_creative_commons</item>
+		<item>fa_credit_card</item>
+		<item>fa_credit_card_alt</item>
+		<item>fa_crop</item>
+		<item>fa_crosshairs</item>
+		<item>fa_css3</item>
+		<item>fa_cube</item>
+		<item>fa_cubes</item>
+		<item>fa_cut</item>
+		<item>fa_cutlery</item>
+		<item>fa_dashboard</item>
+		<item>fa_dashcube</item>
+		<item>fa_database</item>
+		<item>fa_deaf</item>
+		<item>fa_deafness</item>
+		<item>fa_dedent</item>
+		<item>fa_delicious</item>
+		<item>fa_desktop</item>
+		<item>fa_deviantart</item>
+		<item>fa_diamond</item>
+		<item>fa_digg</item>
+		<item>fa_dollar</item>
+		<item>fa_dot_circle_o</item>
+		<item>fa_download</item>
+		<item>fa_dribbble</item>
+		<item>fa_drivers_license</item>
+		<item>fa_drivers_license_o</item>
+		<item>fa_dropbox</item>
+		<item>fa_drupal</item>
+		<item>fa_edge</item>
+		<item>fa_edit</item>
+		<item>fa_eercast</item>
+		<item>fa_eject</item>
+		<item>fa_ellipsis_h</item>
+		<item>fa_ellipsis_v</item>
+		<item>fa_empire</item>
+		<item>fa_envelope</item>
+		<item>fa_envelope_o</item>
+		<item>fa_envelope_open</item>
+		<item>fa_envelope_open_o</item>
+		<item>fa_envelope_square</item>
+		<item>fa_envira</item>
+		<item>fa_eraser</item>
+		<item>fa_etsy</item>
+		<item>fa_eur</item>
+		<item>fa_euro</item>
+		<item>fa_exchange</item>
+		<item>fa_exclamation</item>
+		<item>fa_exclamation_circle</item>
+		<item>fa_exclamation_triangle</item>
+		<item>fa_expand</item>
+		<item>fa_expeditedssl</item>
+		<item>fa_external_link</item>
+		<item>fa_external_link_square</item>
+		<item>fa_eye</item>
+		<item>fa_eye_slash</item>
+		<item>fa_eyedropper</item>
+		<item>fa_fa</item>
+		<item>fa_facebook</item>
+		<item>fa_facebook_f</item>
+		<item>fa_facebook_official</item>
+		<item>fa_facebook_square</item>
+		<item>fa_fast_backward</item>
+		<item>fa_fast_forward</item>
+		<item>fa_fax</item>
+		<item>fa_feed</item>
+		<item>fa_female</item>
+		<item>fa_fighter_jet</item>
+		<item>fa_file</item>
+		<item>fa_file_archive_o</item>
+		<item>fa_file_audio_o</item>
+		<item>fa_file_code_o</item>
+		<item>fa_file_excel_o</item>
+		<item>fa_file_image_o</item>
+		<item>fa_file_movie_o</item>
+		<item>fa_file_o</item>
+		<item>fa_file_pdf_o</item>
+		<item>fa_file_photo_o</item>
+		<item>fa_file_picture_o</item>
+		<item>fa_file_powerpoint_o</item>
+		<item>fa_file_sound_o</item>
+		<item>fa_file_text</item>
+		<item>fa_file_text_o</item>
+		<item>fa_file_video_o</item>
+		<item>fa_file_word_o</item>
+		<item>fa_file_zip_o</item>
+		<item>fa_files_o</item>
+		<item>fa_film</item>
+		<item>fa_filter</item>
+		<item>fa_fire</item>
+		<item>fa_fire_extinguisher</item>
+		<item>fa_firefox</item>
+		<item>fa_first_order</item>
+		<item>fa_flag</item>
+		<item>fa_flag_checkered</item>
+		<item>fa_flag_o</item>
+		<item>fa_flash</item>
+		<item>fa_flask</item>
+		<item>fa_flickr</item>
+		<item>fa_floppy_o</item>
+		<item>fa_folder</item>
+		<item>fa_folder_o</item>
+		<item>fa_folder_open</item>
+		<item>fa_folder_open_o</item>
+		<item>fa_font</item>
+		<item>fa_font_awesome</item>
+		<item>fa_fonticons</item>
+		<item>fa_fort_awesome</item>
+		<item>fa_forumbee</item>
+		<item>fa_forward</item>
+		<item>fa_foursquare</item>
+		<item>fa_free_code_camp</item>
+		<item>fa_frown_o</item>
+		<item>fa_futbol_o</item>
+		<item>fa_gamepad</item>
+		<item>fa_gavel</item>
+		<item>fa_gbp</item>
+		<item>fa_ge</item>
+		<item>fa_gear</item>
+		<item>fa_gears</item>
+		<item>fa_genderless</item>
+		<item>fa_get_pocket</item>
+		<item>fa_gg</item>
+		<item>fa_gg_circle</item>
+		<item>fa_gift</item>
+		<item>fa_git</item>
+		<item>fa_git_square</item>
+		<item>fa_github</item>
+		<item>fa_github_alt</item>
+		<item>fa_github_square</item>
+		<item>fa_gitlab</item>
+		<item>fa_gittip</item>
+		<item>fa_glass</item>
+		<item>fa_glide</item>
+		<item>fa_glide_g</item>
+		<item>fa_globe</item>
+		<item>fa_google</item>
+		<item>fa_google_plus</item>
+		<item>fa_google_plus_circle</item>
+		<item>fa_google_plus_official</item>
+		<item>fa_google_plus_square</item>
+		<item>fa_google_wallet</item>
+		<item>fa_graduation_cap</item>
+		<item>fa_gratipay</item>
+		<item>fa_grav</item>
+		<item>fa_group</item>
+		<item>fa_h_square</item>
+		<item>fa_hacker_news</item>
+		<item>fa_hand_grab_o</item>
+		<item>fa_hand_lizard_o</item>
+		<item>fa_hand_o_down</item>
+		<item>fa_hand_o_left</item>
+		<item>fa_hand_o_right</item>
+		<item>fa_hand_o_up</item>
+		<item>fa_hand_paper_o</item>
+		<item>fa_hand_peace_o</item>
+		<item>fa_hand_pointer_o</item>
+		<item>fa_hand_rock_o</item>
+		<item>fa_hand_scissors_o</item>
+		<item>fa_hand_spock_o</item>
+		<item>fa_hand_stop_o</item>
+		<item>fa_handshake_o</item>
+		<item>fa_hard_of_hearing</item>
+		<item>fa_hashtag</item>
+		<item>fa_hdd_o</item>
+		<item>fa_header</item>
+		<item>fa_headphones</item>
+		<item>fa_heart</item>
+		<item>fa_heart_o</item>
+		<item>fa_heartbeat</item>
+		<item>fa_history</item>
+		<item>fa_home</item>
+		<item>fa_hospital_o</item>
+		<item>fa_hotel</item>
+		<item>fa_hourglass</item>
+		<item>fa_hourglass_1</item>
+		<item>fa_hourglass_2</item>
+		<item>fa_hourglass_3</item>
+		<item>fa_hourglass_end</item>
+		<item>fa_hourglass_half</item>
+		<item>fa_hourglass_o</item>
+		<item>fa_hourglass_start</item>
+		<item>fa_houzz</item>
+		<item>fa_html5</item>
+		<item>fa_i_cursor</item>
+		<item>fa_id_badge</item>
+		<item>fa_id_card</item>
+		<item>fa_id_card_o</item>
+		<item>fa_ils</item>
+		<item>fa_image</item>
+		<item>fa_imdb</item>
+		<item>fa_inbox</item>
+		<item>fa_indent</item>
+		<item>fa_industry</item>
+		<item>fa_info</item>
+		<item>fa_info_circle</item>
+		<item>fa_inr</item>
+		<item>fa_instagram</item>
+		<item>fa_institution</item>
+		<item>fa_internet_explorer</item>
+		<item>fa_intersex</item>
+		<item>fa_ioxhost</item>
+		<item>fa_italic</item>
+		<item>fa_joomla</item>
+		<item>fa_jpy</item>
+		<item>fa_jsfiddle</item>
+		<item>fa_key</item>
+		<item>fa_keyboard_o</item>
+		<item>fa_krw</item>
+		<item>fa_language</item>
+		<item>fa_laptop</item>
+		<item>fa_lastfm</item>
+		<item>fa_lastfm_square</item>
+		<item>fa_leaf</item>
+		<item>fa_leanpub</item>
+		<item>fa_legal</item>
+		<item>fa_lemon_o</item>
+		<item>fa_level_down</item>
+		<item>fa_level_up</item>
+		<item>fa_life_bouy</item>
+		<item>fa_life_buoy</item>
+		<item>fa_life_ring</item>
+		<item>fa_life_saver</item>
+		<item>fa_lightbulb_o</item>
+		<item>fa_line_chart</item>
+		<item>fa_link</item>
+		<item>fa_linkedin</item>
+		<item>fa_linkedin_square</item>
+		<item>fa_linode</item>
+		<item>fa_linux</item>
+		<item>fa_list</item>
+		<item>fa_list_alt</item>
+		<item>fa_list_ol</item>
+		<item>fa_list_ul</item>
+		<item>fa_location_arrow</item>
+		<item>fa_lock</item>
+		<item>fa_long_arrow_down</item>
+		<item>fa_long_arrow_left</item>
+		<item>fa_long_arrow_right</item>
+		<item>fa_long_arrow_up</item>
+		<item>fa_low_vision</item>
+		<item>fa_magic</item>
+		<item>fa_magnet</item>
+		<item>fa_mail_forward</item>
+		<item>fa_mail_reply</item>
+		<item>fa_mail_reply_all</item>
+		<item>fa_male</item>
+		<item>fa_map</item>
+		<item>fa_map_marker</item>
+		<item>fa_map_o</item>
+		<item>fa_map_pin</item>
+		<item>fa_map_signs</item>
+		<item>fa_mars</item>
+		<item>fa_mars_double</item>
+		<item>fa_mars_stroke</item>
+		<item>fa_mars_stroke_h</item>
+		<item>fa_mars_stroke_v</item>
+		<item>fa_maxcdn</item>
+		<item>fa_meanpath</item>
+		<item>fa_medium</item>
+		<item>fa_medkit</item>
+		<item>fa_meetup</item>
+		<item>fa_meh_o</item>
+		<item>fa_mercury</item>
+		<item>fa_microchip</item>
+		<item>fa_microphone</item>
+		<item>fa_microphone_slash</item>
+		<item>fa_minus</item>
+		<item>fa_minus_circle</item>
+		<item>fa_minus_square</item>
+		<item>fa_minus_square_o</item>
+		<item>fa_mixcloud</item>
+		<item>fa_mobile</item>
+		<item>fa_mobile_phone</item>
+		<item>fa_modx</item>
+		<item>fa_money</item>
+		<item>fa_moon_o</item>
+		<item>fa_mortar_board</item>
+		<item>fa_motorcycle</item>
+		<item>fa_mouse_pointer</item>
+		<item>fa_music</item>
+		<item>fa_navicon</item>
+		<item>fa_neuter</item>
+		<item>fa_newspaper_o</item>
+		<item>fa_object_group</item>
+		<item>fa_object_ungroup</item>
+		<item>fa_odnoklassniki</item>
+		<item>fa_odnoklassniki_square</item>
+		<item>fa_opencart</item>
+		<item>fa_openid</item>
+		<item>fa_opera</item>
+		<item>fa_optin_monster</item>
+		<item>fa_outdent</item>
+		<item>fa_pagelines</item>
+		<item>fa_paint_brush</item>
+		<item>fa_paper_plane</item>
+		<item>fa_paper_plane_o</item>
+		<item>fa_paperclip</item>
+		<item>fa_paragraph</item>
+		<item>fa_paste</item>
+		<item>fa_pause</item>
+		<item>fa_pause_circle</item>
+		<item>fa_pause_circle_o</item>
+		<item>fa_paw</item>
+		<item>fa_paypal</item>
+		<item>fa_pencil</item>
+		<item>fa_pencil_square</item>
+		<item>fa_pencil_square_o</item>
+		<item>fa_percent</item>
+		<item>fa_phone</item>
+		<item>fa_phone_square</item>
+		<item>fa_photo</item>
+		<item>fa_picture_o</item>
+		<item>fa_pie_chart</item>
+		<item>fa_pied_piper</item>
+		<item>fa_pied_piper_alt</item>
+		<item>fa_pied_piper_pp</item>
+		<item>fa_pinterest</item>
+		<item>fa_pinterest_p</item>
+		<item>fa_pinterest_square</item>
+		<item>fa_plane</item>
+		<item>fa_play</item>
+		<item>fa_play_circle</item>
+		<item>fa_play_circle_o</item>
+		<item>fa_plug</item>
+		<item>fa_plus</item>
+		<item>fa_plus_circle</item>
+		<item>fa_plus_square</item>
+		<item>fa_plus_square_o</item>
+		<item>fa_podcast</item>
+		<item>fa_power_off</item>
+		<item>fa_print</item>
+		<item>fa_product_hunt</item>
+		<item>fa_puzzle_piece</item>
+		<item>fa_qq</item>
+		<item>fa_qrcode</item>
+		<item>fa_question</item>
+		<item>fa_question_circle</item>
+		<item>fa_question_circle_o</item>
+		<item>fa_quora</item>
+		<item>fa_quote_left</item>
+		<item>fa_quote_right</item>
+		<item>fa_ra</item>
+		<item>fa_random</item>
+		<item>fa_ravelry</item>
+		<item>fa_rebel</item>
+		<item>fa_recycle</item>
+		<item>fa_reddit</item>
+		<item>fa_reddit_alien</item>
+		<item>fa_reddit_square</item>
+		<item>fa_refresh</item>
+		<item>fa_registered</item>
+		<item>fa_remove</item>
+		<item>fa_renren</item>
+		<item>fa_reorder</item>
+		<item>fa_repeat</item>
+		<item>fa_reply</item>
+		<item>fa_reply_all</item>
+		<item>fa_resistance</item>
+		<item>fa_retweet</item>
+		<item>fa_rmb</item>
+		<item>fa_road</item>
+		<item>fa_rocket</item>
+		<item>fa_rotate_left</item>
+		<item>fa_rotate_right</item>
+		<item>fa_rouble</item>
+		<item>fa_rss</item>
+		<item>fa_rss_square</item>
+		<item>fa_rub</item>
+		<item>fa_ruble</item>
+		<item>fa_rupee</item>
+		<item>fa_s15</item>
+		<item>fa_safari</item>
+		<item>fa_save</item>
+		<item>fa_scissors</item>
+		<item>fa_scribd</item>
+		<item>fa_search</item>
+		<item>fa_search_minus</item>
+		<item>fa_search_plus</item>
+		<item>fa_sellsy</item>
+		<item>fa_send</item>
+		<item>fa_send_o</item>
+		<item>fa_server</item>
+		<item>fa_share</item>
+		<item>fa_share_alt</item>
+		<item>fa_share_alt_square</item>
+		<item>fa_share_square</item>
+		<item>fa_share_square_o</item>
+		<item>fa_shekel</item>
+		<item>fa_sheqel</item>
+		<item>fa_shield</item>
+		<item>fa_ship</item>
+		<item>fa_shirtsinbulk</item>
+		<item>fa_shopping_bag</item>
+		<item>fa_shopping_basket</item>
+		<item>fa_shopping_cart</item>
+		<item>fa_shower</item>
+		<item>fa_sign_in</item>
+		<item>fa_sign_language</item>
+		<item>fa_sign_out</item>
+		<item>fa_signal</item>
+		<item>fa_signing</item>
+		<item>fa_simplybuilt</item>
+		<item>fa_sitemap</item>
+		<item>fa_skyatlas</item>
+		<item>fa_skype</item>
+		<item>fa_slack</item>
+		<item>fa_sliders</item>
+		<item>fa_slideshare</item>
+		<item>fa_smile_o</item>
+		<item>fa_snapchat</item>
+		<item>fa_snapchat_ghost</item>
+		<item>fa_snapchat_square</item>
+		<item>fa_snowflake_o</item>
+		<item>fa_soccer_ball_o</item>
+		<item>fa_sort</item>
+		<item>fa_sort_alpha_asc</item>
+		<item>fa_sort_alpha_desc</item>
+		<item>fa_sort_amount_asc</item>
+		<item>fa_sort_amount_desc</item>
+		<item>fa_sort_asc</item>
+		<item>fa_sort_desc</item>
+		<item>fa_sort_down</item>
+		<item>fa_sort_numeric_asc</item>
+		<item>fa_sort_numeric_desc</item>
+		<item>fa_sort_up</item>
+		<item>fa_soundcloud</item>
+		<item>fa_space_shuttle</item>
+		<item>fa_spinner</item>
+		<item>fa_spoon</item>
+		<item>fa_spotify</item>
+		<item>fa_square</item>
+		<item>fa_square_o</item>
+		<item>fa_stack_exchange</item>
+		<item>fa_stack_overflow</item>
+		<item>fa_star</item>
+		<item>fa_star_half</item>
+		<item>fa_star_half_empty</item>
+		<item>fa_star_half_full</item>
+		<item>fa_star_half_o</item>
+		<item>fa_star_o</item>
+		<item>fa_steam</item>
+		<item>fa_steam_square</item>
+		<item>fa_step_backward</item>
+		<item>fa_step_forward</item>
+		<item>fa_stethoscope</item>
+		<item>fa_sticky_note</item>
+		<item>fa_sticky_note_o</item>
+		<item>fa_stop</item>
+		<item>fa_stop_circle</item>
+		<item>fa_stop_circle_o</item>
+		<item>fa_street_view</item>
+		<item>fa_strikethrough</item>
+		<item>fa_stumbleupon</item>
+		<item>fa_stumbleupon_circle</item>
+		<item>fa_subscript</item>
+		<item>fa_subway</item>
+		<item>fa_suitcase</item>
+		<item>fa_sun_o</item>
+		<item>fa_superpowers</item>
+		<item>fa_superscript</item>
+		<item>fa_support</item>
+		<item>fa_table</item>
+		<item>fa_tablet</item>
+		<item>fa_tachometer</item>
+		<item>fa_tag</item>
+		<item>fa_tags</item>
+		<item>fa_tasks</item>
+		<item>fa_taxi</item>
+		<item>fa_telegram</item>
+		<item>fa_television</item>
+		<item>fa_tencent_weibo</item>
+		<item>fa_terminal</item>
+		<item>fa_text_height</item>
+		<item>fa_text_width</item>
+		<item>fa_th</item>
+		<item>fa_th_large</item>
+		<item>fa_th_list</item>
+		<item>fa_themeisle</item>
+		<item>fa_thermometer</item>
+		<item>fa_thermometer_0</item>
+		<item>fa_thermometer_1</item>
+		<item>fa_thermometer_2</item>
+		<item>fa_thermometer_3</item>
+		<item>fa_thermometer_4</item>
+		<item>fa_thermometer_empty</item>
+		<item>fa_thermometer_full</item>
+		<item>fa_thermometer_half</item>
+		<item>fa_thermometer_quarter</item>
+		<item>fa_thermometer_three_quarters</item>
+		<item>fa_thumb_tack</item>
+		<item>fa_thumbs_down</item>
+		<item>fa_thumbs_o_down</item>
+		<item>fa_thumbs_o_up</item>
+		<item>fa_thumbs_up</item>
+		<item>fa_ticket</item>
+		<item>fa_times</item>
+		<item>fa_times_circle</item>
+		<item>fa_times_circle_o</item>
+		<item>fa_times_rectangle</item>
+		<item>fa_times_rectangle_o</item>
+		<item>fa_tint</item>
+		<item>fa_toggle_down</item>
+		<item>fa_toggle_left</item>
+		<item>fa_toggle_off</item>
+		<item>fa_toggle_on</item>
+		<item>fa_toggle_right</item>
+		<item>fa_toggle_up</item>
+		<item>fa_trademark</item>
+		<item>fa_train</item>
+		<item>fa_transgender</item>
+		<item>fa_transgender_alt</item>
+		<item>fa_trash</item>
+		<item>fa_trash_o</item>
+		<item>fa_tree</item>
+		<item>fa_trello</item>
+		<item>fa_tripadvisor</item>
+		<item>fa_trophy</item>
+		<item>fa_truck</item>
+		<item>fa_try</item>
+		<item>fa_tty</item>
+		<item>fa_tumblr</item>
+		<item>fa_tumblr_square</item>
+		<item>fa_turkish_lira</item>
+		<item>fa_tv</item>
+		<item>fa_twitch</item>
+		<item>fa_twitter</item>
+		<item>fa_twitter_square</item>
+		<item>fa_umbrella</item>
+		<item>fa_underline</item>
+		<item>fa_undo</item>
+		<item>fa_universal_access</item>
+		<item>fa_university</item>
+		<item>fa_unlink</item>
+		<item>fa_unlock</item>
+		<item>fa_unlock_alt</item>
+		<item>fa_unsorted</item>
+		<item>fa_upload</item>
+		<item>fa_usb</item>
+		<item>fa_usd</item>
+		<item>fa_user</item>
+		<item>fa_user_circle</item>
+		<item>fa_user_circle_o</item>
+		<item>fa_user_md</item>
+		<item>fa_user_o</item>
+		<item>fa_user_plus</item>
+		<item>fa_user_secret</item>
+		<item>fa_user_times</item>
+		<item>fa_users</item>
+		<item>fa_vcard</item>
+		<item>fa_vcard_o</item>
+		<item>fa_venus</item>
+		<item>fa_venus_double</item>
+		<item>fa_venus_mars</item>
+		<item>fa_viacoin</item>
+		<item>fa_viadeo</item>
+		<item>fa_viadeo_square</item>
+		<item>fa_video_camera</item>
+		<item>fa_vimeo</item>
+		<item>fa_vimeo_square</item>
+		<item>fa_vine</item>
+		<item>fa_vk</item>
+		<item>fa_volume_control_phone</item>
+		<item>fa_volume_down</item>
+		<item>fa_volume_off</item>
+		<item>fa_volume_up</item>
+		<item>fa_warning</item>
+		<item>fa_wechat</item>
+		<item>fa_weibo</item>
+		<item>fa_weixin</item>
+		<item>fa_whatsapp</item>
+		<item>fa_wheelchair</item>
+		<item>fa_wheelchair_alt</item>
+		<item>fa_wifi</item>
+		<item>fa_wikipedia_w</item>
+		<item>fa_window_close</item>
+		<item>fa_window_close_o</item>
+		<item>fa_window_maximize</item>
+		<item>fa_window_minimize</item>
+		<item>fa_window_restore</item>
+		<item>fa_windows</item>
+		<item>fa_won</item>
+		<item>fa_wordpress</item>
+		<item>fa_wpbeginner</item>
+		<item>fa_wpexplorer</item>
+		<item>fa_wpforms</item>
+		<item>fa_wrench</item>
+		<item>fa_xing</item>
+		<item>fa_xing_square</item>
+		<item>fa_y_combinator</item>
+		<item>fa_y_combinator_square</item>
+		<item>fa_yahoo</item>
+		<item>fa_yc</item>
+		<item>fa_yc_square</item>
+		<item>fa_yelp</item>
+		<item>fa_yen</item>
+		<item>fa_yoast</item>
+		<item>fa_youtube</item>
+		<item>fa_youtube_play</item>
+		<item>fa_youtube_square</item>
+	</string-array>
+
 </resources>

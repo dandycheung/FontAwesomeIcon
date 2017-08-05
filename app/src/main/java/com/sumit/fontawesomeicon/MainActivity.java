@@ -76,13 +76,14 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<FontAwesomeIcon> getIconArrayList() {
 
         ArrayList<FontAwesomeIcon> fontAwesomeIcons = new ArrayList<>();
-        String[] faIcons = context.getResources().getStringArray(R.array.array_fa_icons);
+        String[] faIconUnicodes = context.getResources().getStringArray(R.array.array_fa_icon_unicode);
+        String[] faIconClassNames = context.getResources().getStringArray(R.array.array_fa_icon_class_name);
 
-        for (int i = 0; i < faIcons.length; i++) {
+        for (int i = 0; i < faIconUnicodes.length; i++) {
             FontAwesomeIcon fontAwesomeIcon = new FontAwesomeIcon();
-            fontAwesomeIcon.setIconUnicode(faIcons[i]);
+            fontAwesomeIcon.setIconUnicode(faIconUnicodes[i]);
             fontAwesomeIcon.setIconColor(Util.getRandomColor());
-            fontAwesomeIcon.setIconClassName("#" + (i + 1));
+            fontAwesomeIcon.setIconClassName(faIconClassNames[i]);
             fontAwesomeIcon.setId(i);
             fontAwesomeIcons.add(fontAwesomeIcon);
         }
@@ -254,7 +255,6 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<FontAwesomeIcon> fontAwesomeIcons = FontAwesomeHtmlParser.getAllFontIconList(context);
                 if (fontAwesomeIcons != null && fontAwesomeIcons.size() > 0) {
                     return Util.exportXmlToSdCard(context, Util.createXmlContent(fontAwesomeIcons));
-
                 }
             }
 
