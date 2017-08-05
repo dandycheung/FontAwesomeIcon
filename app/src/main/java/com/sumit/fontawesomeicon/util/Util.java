@@ -131,8 +131,6 @@ public class Util {
             FileOutputStream fileOutputStream = null;
             try {
                 fileOutputStream = new FileOutputStream(file);
-                //fileOutputStream.write(xmlContent.getBytes());
-                //fileOutputStream.close();
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, "UTF-8");
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
                 bufferedWriter.write(xmlContent, 0, xmlContent.length());
