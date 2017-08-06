@@ -64,31 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         initViews();
         initFontAwesome();
-        resetAdapter(getIconArrayList());
-    }
-
-    private void resetAdapter(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
-
-        DataAdapter adapter = new DataAdapter(getApplicationContext(), fontAwesomeIcons);
-        recyclerView.setAdapter(adapter);
-    }
-
-    private ArrayList<FontAwesomeIcon> getIconArrayList() {
-
-        ArrayList<FontAwesomeIcon> fontAwesomeIcons = new ArrayList<>();
-        String[] faIconUnicodes = context.getResources().getStringArray(R.array.array_fa_icon_unicode);
-        String[] faIconClassNames = context.getResources().getStringArray(R.array.array_fa_icon_class_name);
-
-        for (int i = 0; i < faIconUnicodes.length; i++) {
-            FontAwesomeIcon fontAwesomeIcon = new FontAwesomeIcon();
-            fontAwesomeIcon.setIconUnicode(faIconUnicodes[i]);
-            fontAwesomeIcon.setIconColor(Util.getRandomColor());
-            fontAwesomeIcon.setIconClassName(faIconClassNames[i]);
-            fontAwesomeIcon.setId(i);
-            fontAwesomeIcons.add(fontAwesomeIcon);
-        }
-
-        return fontAwesomeIcons;
+        refreshAdapter(getIconArrayList());
     }
 
     private void initViews() {
@@ -108,14 +84,42 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                resetAdapter(getIconArrayList());
+                refreshAdapter(getIconArrayList());
             }
         });
     }
 
+    // Add font to TextView
+
     private void initFontAwesome() {
         Typeface iconFont = FontManager.getTypeface(getApplicationContext(), FontManager.FONT_AWESOME);
         FontManager.markAsIconContainer(textViewFab, iconFont);
+    }
+
+    private void refreshAdapter(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+
+        DataAdapter adapter = new DataAdapter(getApplicationContext(), fontAwesomeIcons);
+        recyclerView.setAdapter(adapter);
+    }
+
+    // Get all icon list from icons.xml string array
+
+    private ArrayList<FontAwesomeIcon> getIconArrayList() {
+
+        ArrayList<FontAwesomeIcon> fontAwesomeIcons = new ArrayList<>();
+        String[] faIconUnicodes = context.getResources().getStringArray(R.array.array_fa_icon_unicode);
+        String[] faIconClassNames = context.getResources().getStringArray(R.array.array_fa_icon_class_name);
+
+        for (int i = 0; i < faIconUnicodes.length; i++) {
+            FontAwesomeIcon fontAwesomeIcon = new FontAwesomeIcon();
+            fontAwesomeIcon.setIconUnicode(faIconUnicodes[i]);
+            fontAwesomeIcon.setIconColor(Util.getRandomColor());
+            fontAwesomeIcon.setIconClassName(faIconClassNames[i]);
+            fontAwesomeIcon.setId(i);
+            fontAwesomeIcons.add(fontAwesomeIcon);
+        }
+
+        return fontAwesomeIcons;
     }
 
     // Request storage access permission
@@ -152,10 +156,11 @@ public class MainActivity extends AppCompatActivity {
             case PERMISSIONS_REQUEST_CODE: {
                 if (grantResults.length > 0) {
                     if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                        // Permission granted
                         externalStoragePermissionCheck = PackageManager.PERMISSION_GRANTED;
                         initHtmlParserTask();
                     } else {
-                        // Permission not granted
+                        // Permission denied
                         Alerter.create((MainActivity) context)
                                 .setTitle(getString(R.string.error))
                                 .setBackgroundColorRes(R.color.red_500)
@@ -167,6 +172,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    // Send xml file path to an Intent to view the generated XML file
 
     private void viewXmlFile(String path) {
 
@@ -190,6 +197,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    // Check if any intent is available which can show xml content
 
     private boolean isViewIntentAvailable(String path) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -216,6 +225,9 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
+
+            // Show about App information
+
             Alerter.create((MainActivity) context)
                     .setTitle(getString(R.string.action_about))
                     .setBackgroundColorRes(R.color.colorPrimary)
@@ -234,7 +246,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    // Start HTML parse task and export xml to SD storage
+
     private void initHtmlParserTask() {
+
+        // Cancel async task if it is running
 
         if (htmlParserTask != null) {
             htmlParserTask.cancel(true);
@@ -251,9 +267,14 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(Void... voids) {
+
+            // Check if the device has network connectivity
+
             if (Util.isNetworkAvailable(context)) {
                 ArrayList<FontAwesomeIcon> fontAwesomeIcons = FontAwesomeHtmlParser.getAllFontIconList(context);
                 if (fontAwesomeIcons != null && fontAwesomeIcons.size() > 0) {
+                    // Generate XML and save to SD storage
+                    // Return generated file path. Return null if file creation fails
                     return Util.exportXmlToSdCard(context, Util.createXmlContent(fontAwesomeIcons));
                 }
             }
@@ -265,7 +286,6 @@ public class MainActivity extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
         }
-
 
         @Override
         protected void onPostExecute(final String filePath) {
@@ -313,7 +333,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        if(htmlParserTask != null){
+        if (htmlParserTask != null) {
             htmlParserTask.cancel(true);
             htmlParserTask = null;
         }

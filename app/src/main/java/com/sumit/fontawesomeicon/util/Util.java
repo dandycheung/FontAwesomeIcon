@@ -31,6 +31,8 @@ public class Util {
     public static final String DIR_NAME = "FontAwesome";
     public static final String FILE_NAME = "icons.xml";
 
+    // Generate random color in ARGB
+
     public static int getRandomColor() {
         Random random = new Random();
         return Color.argb(255, random.nextInt(256), random.nextInt(256), random.nextInt(256));
@@ -50,6 +52,8 @@ public class Util {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
+    // Generate icons.xml content
+
     public static String createXmlContent(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -65,14 +69,17 @@ public class Util {
         xmlContent += generateIconStringResource(fontAwesomeIcons);
 
         // To display all icons an array is needed both for unicode and icon names
+        // Remove below comments to add string array
 
-        xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
-        xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
+        //xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
+        //xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
 
         xmlContent += "\n\n </resources>";
 
         return xmlContent;
     }
+
+    // Generate icon unicode string resource
 
     private static String generateIconStringResource(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
 
@@ -109,11 +116,15 @@ public class Util {
         return iconClassNameArray;
     }
 
+    // Check if write permission is allowed
+
     private static boolean isWriteOnExternalStorageAllowed() {
         // get the state of external storage
         String state = Environment.getExternalStorageState();
         return Environment.MEDIA_MOUNTED.equals(state);
     }
+
+    // Save generated XML content to SD storage
 
     public static String exportXmlToSdCard(Context context, String xmlContent) {
 
@@ -128,6 +139,12 @@ public class Util {
 
             // create the file in which we will write the contents
             File file = new File(dir, FILE_NAME);
+
+            // Delete file if already exists
+            if (file.exists())
+                file.delete();
+
+            // Create new file
             FileOutputStream fileOutputStream = null;
             try {
                 fileOutputStream = new FileOutputStream(file);
