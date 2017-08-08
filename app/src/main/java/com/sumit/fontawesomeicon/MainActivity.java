@@ -15,9 +15,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,7 +42,7 @@ import java.util.ArrayList;
  * Created by Sumit on 7/27/2017.
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     private final int GRID_COLUMN = 4;
     private final int ALERTER_DURATION_IN_MILLIS = 8000;
@@ -55,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
     private String generatedXmlFilePath;
     private int externalStoragePermissionCheck;
 
+    private ArrayList<FontAwesomeIcon> iconArrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
 
         initViews();
         initFontAwesome();
-        refreshAdapter(getIconArrayList());
+        iconArrayList = getIconArrayList();
+        refreshAdapter(iconArrayList, "");
     }
 
     private void initViews() {
@@ -84,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                refreshAdapter(getIconArrayList());
+                // Change icon color and refresh adapter
+                iconArrayList = getIconArrayList();
+                refreshAdapter(iconArrayList, "");
             }
         });
     }
@@ -96,9 +103,26 @@ public class MainActivity extends AppCompatActivity {
         FontManager.markAsIconContainer(textViewFab, iconFont);
     }
 
-    private void refreshAdapter(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+    // Feed adapter data to RecyclerView
+    private void refreshAdapter(ArrayList<FontAwesomeIcon> fontAwesomeIcons, String iconNameToSearch) {
 
-        DataAdapter adapter = new DataAdapter(getApplicationContext(), fontAwesomeIcons);
+        DataAdapter adapter = null;
+
+        if (StringUtils.isNotEmpty(iconNameToSearch)) {
+            // Search based on icon class name
+            ArrayList<FontAwesomeIcon> iconSearchResults = new ArrayList<>();
+            for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
+                if (StringUtils.containsIgnoreCase(fontAwesomeIcon.getIconClassName(), iconNameToSearch)) {
+                    iconSearchResults.add(fontAwesomeIcon);
+                }
+            }
+
+            adapter = new DataAdapter(getApplicationContext(), iconSearchResults);
+        } else {
+            // Populate all icons
+            adapter = new DataAdapter(getApplicationContext(), fontAwesomeIcons);
+        }
+
         recyclerView.setAdapter(adapter);
     }
 
@@ -213,6 +237,23 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.action_search));
+        searchView.setOnQueryTextListener(this);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+
+        refreshAdapter(iconArrayList, newText);
+
         return true;
     }
 

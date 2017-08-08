@@ -7,8 +7,9 @@
     <string name="success">XML Generated</string>
     <string name="error">Error</string>
     <string name="error_description">Please check your network connection and try again. Internet connection is required to fetch latest font dictionaries from Font Awesome web page.</string>
-    <string name="about_app_description">Font Awesome Icons v1.2\nDesigned and developed by Sumit.\n\nSpecial thanks to Font Awesome TTF for making this possible.</string>
+    <string name="about_app_description">Font Awesome Icons v1.3\nDesigned and developed by Sumit.\n\nSpecial thanks to Font Awesome TTF for making this possible.</string>
     <string name="view_file">\n\nTap here to view generated XML file.</string>
     <string name="swipe_to_dismiss">Swipe to dismiss.</string>
     <string name="error_permission_denied">Please enable storage access to export icons.xml file. To enable access, tap on Export XML option again.</string>
+    <string name="action_search">Search Icon ...</string>
 </resources>
