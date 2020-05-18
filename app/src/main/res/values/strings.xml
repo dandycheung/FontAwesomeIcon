@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Font Awesome Icons</string>
+    <string name="app_name">Font Awesome Icon</string>
     <string name="action_settings">Settings</string>
     <string name="action_export">Export XML</string>
     <string name="action_about">About App</string>
@@ -7,9 +7,10 @@
     <string name="success">XML Generated</string>
     <string name="error">Error</string>
     <string name="error_description">Please check your network connection and try again. Internet connection is required to fetch latest font dictionaries from Font Awesome web page.</string>
-    <string name="about_app_description">Font Awesome Icons v1.4\nDesigned and developed by Sumit.\n\nSpecial thanks to Font Awesome TTF for making this possible.</string>
+    <string name="about_app_description">Font Awesome Icons v2.0\nDesigned and developed by Sumit Sahoo.\n\nSpecial thanks to Font Awesome for making this possible.</string>
     <string name="view_file">\n\nTap here to view generated XML file.</string>
     <string name="swipe_to_dismiss">Swipe to dismiss.</string>
     <string name="error_permission_denied">Please enable storage access to export icons.xml file. To enable access, tap on Export XML option again.</string>
-    <string name="action_search">Search Icon ...</string>
+    <string name="action_search">Search Icon …</string>
+    <string name="error_no_app_to_view">No app found to view the XML file. Install an app that can show Text/XML content and try again.</string>
 </resources>

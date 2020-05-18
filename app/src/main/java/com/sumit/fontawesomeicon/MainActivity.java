@@ -10,25 +10,26 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.FileProvider;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
+import androidx.core.view.MenuItemCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.sumit.fontawesomeicon.adapter.DataAdapter;
-import com.sumit.fontawesomeicon.model.FontAwesomeIcon;
-import com.sumit.fontawesomeicon.util.FontAwesomeHtmlParser;
+import com.sumit.fontawesomeicon.model.fa.Attributes;
+import com.sumit.fontawesomeicon.model.fa.FAIcon;
 import com.sumit.fontawesomeicon.util.FontManager;
 import com.sumit.fontawesomeicon.util.Util;
 import com.tapadoo.alerter.Alerter;
@@ -53,11 +54,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private RecyclerView recyclerView;
     private FloatingActionButton fab;
 
-    private HtmlParserTask htmlParserTask;
+    private CreateXmlTask createXmlTask;
     private String generatedXmlFilePath;
     private int externalStoragePermissionCheck;
 
-    private ArrayList<FontAwesomeIcon> iconArrayList;
+    private ArrayList<FAIcon> iconArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +69,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         initViews();
         initFontAwesome();
-        iconArrayList = getIconArrayList();
-        refreshAdapter(iconArrayList, "");
+
+        renderIcons();
     }
 
     private void initViews() {
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         setSupportActionBar(toolbar);
 
         textViewFab = (TextView) findViewById(R.id.text_fab);
-        textViewFab.setText(getString(R.string.fa_paint_brush));
+        textViewFab.setText(getString(R.string.paint_brush));
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -90,8 +91,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             @Override
             public void onClick(View view) {
                 // Change icon color and refresh adapter
-                iconArrayList = getIconArrayList();
-                refreshAdapter(iconArrayList, "");
+                renderIcons();
             }
         });
     }
@@ -103,47 +103,59 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         FontManager.markAsIconContainer(textViewFab, iconFont);
     }
 
+    private void renderIcons() {
+
+        iconArrayList = getIconArrayList();
+        refreshAdapter(iconArrayList, "");
+    }
+
+    // Get all icon list from icons.xml string array
+
+    private ArrayList<FAIcon> getIconArrayList() {
+
+        ArrayList<FAIcon> faIcons = new ArrayList<>();
+        String[] faIconUnicodes = context.getResources().getStringArray(R.array.array_fa_icon_unicode);
+        String[] faIconClassNames = context.getResources().getStringArray(R.array.array_fa_icon_class_name);
+
+        for (int i = 0; i < faIconUnicodes.length; i++) {
+
+            Attributes attributes = new Attributes();
+            attributes.setIconColor(Util.getRandomColor());
+            attributes.setUnicode(faIconUnicodes[i]);
+            attributes.setId(faIconClassNames[i]);
+
+            FAIcon faIcon = new FAIcon();
+            faIcon.setSequence(i);
+            faIcon.setId(faIconClassNames[i]);
+            faIcon.setAttributes(attributes);
+
+            faIcons.add(faIcon);
+        }
+
+        return faIcons;
+    }
+
     // Feed adapter data to RecyclerView
-    private void refreshAdapter(ArrayList<FontAwesomeIcon> fontAwesomeIcons, String iconNameToSearch) {
+    private void refreshAdapter(ArrayList<FAIcon> fontAwesomeIcons, String iconNameToSearch) {
 
         DataAdapter adapter = null;
 
         if (StringUtils.isNotEmpty(iconNameToSearch)) {
             // Search based on icon class name
-            ArrayList<FontAwesomeIcon> iconSearchResults = new ArrayList<>();
-            for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
-                if (StringUtils.containsIgnoreCase(fontAwesomeIcon.getIconClassName(), iconNameToSearch)) {
+            ArrayList<FAIcon> iconSearchResults = new ArrayList<>();
+            for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
+                if (StringUtils.containsIgnoreCase(fontAwesomeIcon.getId(), iconNameToSearch)) {
                     iconSearchResults.add(fontAwesomeIcon);
                 }
             }
 
-            adapter = new DataAdapter(getApplicationContext(), iconSearchResults);
+            adapter = new DataAdapter(context, iconSearchResults);
         } else {
             // Populate all icons
-            adapter = new DataAdapter(getApplicationContext(), fontAwesomeIcons);
+            adapter = new DataAdapter(context, fontAwesomeIcons);
         }
 
         recyclerView.setAdapter(adapter);
-    }
-
-    // Get all icon list from icons.xml string array
-
-    private ArrayList<FontAwesomeIcon> getIconArrayList() {
-
-        ArrayList<FontAwesomeIcon> fontAwesomeIcons = new ArrayList<>();
-        String[] faIconUnicodes = context.getResources().getStringArray(R.array.array_fa_icon_unicode);
-        String[] faIconClassNames = context.getResources().getStringArray(R.array.array_fa_icon_class_name);
-
-        for (int i = 0; i < faIconUnicodes.length; i++) {
-            FontAwesomeIcon fontAwesomeIcon = new FontAwesomeIcon();
-            fontAwesomeIcon.setIconUnicode(faIconUnicodes[i]);
-            fontAwesomeIcon.setIconColor(Util.getRandomColor());
-            fontAwesomeIcon.setIconClassName(faIconClassNames[i]);
-            fontAwesomeIcon.setId(i);
-            fontAwesomeIcons.add(fontAwesomeIcon);
-        }
-
-        return fontAwesomeIcons;
     }
 
     // Request storage access permission
@@ -187,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                         // Permission denied
                         Alerter.create((MainActivity) context)
                                 .setTitle(getString(R.string.error))
-                                .setBackgroundColorRes(R.color.red_500)
+                                .setBackgroundColorRes(R.color.md_red_500)
                                 .setText(getString(R.string.error_permission_denied))
                                 .setDuration(ALERTER_DURATION_IN_MILLIS)
                                 .show();
@@ -218,6 +230,13 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             if (intent.resolveActivity(getPackageManager()) != null) {
                 // If multiple intents are available then an intent chooser will be shown
                 startActivity(intent);
+            }else {
+                Alerter.create((MainActivity) context)
+                        .setTitle(getString(R.string.error))
+                        .setBackgroundColorRes(R.color.md_red_500)
+                        .setText(getString(R.string.error_no_app_to_view))
+                        .setDuration(ALERTER_DURATION_IN_MILLIS)
+                        .show();
             }
         }
     }
@@ -293,31 +312,28 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         // Cancel async task if it is running
 
-        if (htmlParserTask != null) {
-            htmlParserTask.cancel(true);
-            htmlParserTask = null;
+        if (createXmlTask != null) {
+            createXmlTask.cancel(true);
+            createXmlTask = null;
         }
 
-        htmlParserTask = new HtmlParserTask();
-        htmlParserTask.execute();
+        createXmlTask = new CreateXmlTask();
+        createXmlTask.execute();
     }
 
     // Initiate FontAwesome HTML Page parsing
 
-    private class HtmlParserTask extends AsyncTask<Void, Void, String> {
+    private class CreateXmlTask extends AsyncTask<Void, Void, String> {
 
         @Override
         protected String doInBackground(Void... voids) {
 
-            // Check if the device has network connectivity
 
-            if (Util.isNetworkAvailable(context)) {
-                ArrayList<FontAwesomeIcon> fontAwesomeIcons = FontAwesomeHtmlParser.getAllFontIconList(context);
-                if (fontAwesomeIcons != null && fontAwesomeIcons.size() > 0) {
-                    // Generate XML and save to SD storage
-                    // Return generated file path. Return null if file creation fails
-                    return Util.exportXmlToSdCard(context, Util.createXmlContent(fontAwesomeIcons));
-                }
+            ArrayList<FAIcon> fontAwesomeIcons = Util.getFreeToUseSolidIconList(Util.getAllIcons(context));
+            if (fontAwesomeIcons != null && fontAwesomeIcons.size() > 0) {
+                // Generate XML and save to SD storage
+                // Return generated file path. Return null if file creation fails
+                return Util.exportXmlToSdCard(context, Util.createXmlContent(fontAwesomeIcons));
             }
 
             return null;
@@ -347,7 +363,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
                 Alerter.create((MainActivity) context)
                         .setTitle(getString(R.string.success))
-                        .setBackgroundColorRes(R.color.green_500)
+                        .setBackgroundColorRes(R.color.md_green_500)
                         .setText(message)
                         .setOnClickListener(new View.OnClickListener() {
                             @Override
@@ -362,7 +378,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             } else {
                 Alerter.create((MainActivity) context)
                         .setTitle(getString(R.string.error))
-                        .setBackgroundColorRes(R.color.red_500)
+                        .setBackgroundColorRes(R.color.md_red_500)
                         .setText(getString(R.string.error_description))
                         .show();
             }
@@ -374,9 +390,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     protected void onDestroy() {
         super.onDestroy();
 
-        if (htmlParserTask != null) {
-            htmlParserTask.cancel(true);
-            htmlParserTask = null;
+        if (createXmlTask != null) {
+            createXmlTask.cancel(true);
+            createXmlTask = null;
         }
     }
 }

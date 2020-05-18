@@ -7,7 +7,6 @@ package com.sumit.fontawesomeicon.adapter;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +14,10 @@ import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.sumit.fontawesomeicon.R;
-import com.sumit.fontawesomeicon.model.FontAwesomeIcon;
+import com.sumit.fontawesomeicon.model.fa.FAIcon;
 import com.sumit.fontawesomeicon.util.FontManager;
 
 import java.util.ArrayList;
@@ -25,11 +26,11 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
     private final static int FADE_DURATION_IN_MILLI = 500;
 
-    private ArrayList<FontAwesomeIcon> fontAwesomeIcons;
+    private ArrayList<FAIcon> fontAwesomeIcons;
     private Context context;
 
 
-    public DataAdapter(Context context,ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+    public DataAdapter(Context context, ArrayList<FAIcon> fontAwesomeIcons) {
         setHasStableIds(true);
         this.fontAwesomeIcons = fontAwesomeIcons;
         this.context = context;
@@ -44,15 +45,16 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(DataAdapter.ViewHolder viewHolder, int i) {
 
-        viewHolder.textViewIconUnicode.setText(fontAwesomeIcons.get(i).getIconUnicode());
-        viewHolder.textViewIconUnicode.setTextColor(fontAwesomeIcons.get(i).getIconColor());
-        viewHolder.textViewIconId.setText("#" + (fontAwesomeIcons.get(i).getId() + 1));
-        viewHolder.textViewIconName.setText(fontAwesomeIcons.get(i).getIconClassName());
+        viewHolder.textViewIconUnicode.setText(fontAwesomeIcons.get(i).getAttributes().getUnicode());
+        viewHolder.textViewIconUnicode.setTextColor(fontAwesomeIcons.get(i).getAttributes().getIconColor());
+
+        viewHolder.textViewIconId.setText("#" + (i + 1));
+        viewHolder.textViewIconName.setText(fontAwesomeIcons.get(i).getId());
         viewHolder.textViewIconName.setSelected(true);
 
         // Dynamically change the stroke color
         GradientDrawable gradientDrawable = (GradientDrawable) viewHolder.linearLayoutRoot.getBackground();
-        gradientDrawable.setStroke(5, fontAwesomeIcons.get(i).getIconColor());
+        gradientDrawable.setStroke(5, fontAwesomeIcons.get(i).getAttributes().getIconColor());
 
         //setFadeAnimation(viewHolder.textViewIconUnicode);
         //setFadeAnimation(viewHolder.textViewIconName);
@@ -65,7 +67,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
     @Override
     public long getItemId(int position) {
-        return fontAwesomeIcons.get(position).getId();
+        return fontAwesomeIcons.get(position).getSequence();
     }
 
     @Override
@@ -80,7 +82,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder{
+    class ViewHolder extends RecyclerView.ViewHolder {
 
         private LinearLayout linearLayoutRoot;
         private TextView textViewIconUnicode;

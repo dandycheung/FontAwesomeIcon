@@ -8,17 +8,20 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Environment;
 
+import com.google.gson.Gson;
 import com.sumit.fontawesomeicon.R;
-import com.sumit.fontawesomeicon.model.FontAwesomeIcon;
+import com.sumit.fontawesomeicon.model.fa.FAIcon;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
@@ -52,9 +55,58 @@ public class Util {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
+    // Get JSON string file from raw resource
+
+    public static String getJsonStringFromRawFile(Context context, int rawId) {
+        String json = null;
+
+        InputStream inputStream = context.getResources().openRawResource(rawId);
+        try {
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            json = new String(buffer, "UTF-8");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        return json;
+    }
+
+    public static ArrayList<FAIcon> getAllIcons(Context context){
+
+        return new ArrayList<>(Arrays.asList(new Gson().fromJson(getJsonStringFromRawFile(context, R.raw.icons), FAIcon[].class)));
+
+    }
+
+    // Get free icons from JSON
+
+    public static ArrayList<FAIcon> getFreeToUseSolidIconList(ArrayList<FAIcon> icons){
+
+        ArrayList<FAIcon> freeToUseIcons = new ArrayList<>();
+
+        int sequence = 0;
+
+        for(FAIcon faIcon : icons){
+            try {
+                if (faIcon.getAttributes().getMembership().getFree().contains("solid")){
+
+                    faIcon.getAttributes().setUnicode("&#x" + faIcon.getAttributes().getUnicode() + ";");
+                    faIcon.getAttributes().setIconColor(getRandomColor());
+                    faIcon.setSequence(sequence++);
+
+                    freeToUseIcons.add(faIcon);
+                }
+            }catch (Exception e){}
+        }
+
+        return freeToUseIcons;
+    }
+
     // Generate icons.xml content
 
-    public static String createXmlContent(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+    public static String createXmlContent(ArrayList<FAIcon> fontAwesomeIcons) {
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         String currentDateTime = dateFormat.format(new Date());
@@ -71,8 +123,8 @@ public class Util {
         // To display all icons an array is needed both for unicode and icon names
         // Remove below comments to add string array
 
-        //xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
-        //xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
+        xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
+        xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
 
         xmlContent += "\n\n </resources>";
 
@@ -81,22 +133,22 @@ public class Util {
 
     // Generate icon unicode string resource
 
-    private static String generateIconStringResource(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+    private static String generateIconStringResource(ArrayList<FAIcon> fontAwesomeIcons) {
 
         String iconStringResource = "";
 
-        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
-            iconStringResource += "\n\t<string name=\"" + fontAwesomeIcon.getIconClassName() + "\">" + fontAwesomeIcon.getIconUnicode() + "</string>";
+        for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
+            iconStringResource += "\n\t<string name=\"" + fontAwesomeIcon.getId().replace("-","_") + "\">" + fontAwesomeIcon.getAttributes().getUnicode() + "</string>";
         }
 
         return iconStringResource;
     }
 
-    private static String generateIconUnicodeArray(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+    private static String generateIconUnicodeArray(ArrayList<FAIcon> fontAwesomeIcons) {
         String iconUnicodeArray = "\t<string-array name=\"array_fa_icon_unicode\">";
 
-        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
-            iconUnicodeArray += "\n\t\t<item>@string/" + fontAwesomeIcon.getIconClassName() + "</item>";
+        for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
+            iconUnicodeArray += "\n\t\t<item>@string/" + fontAwesomeIcon.getId().replace("-","_") + "</item>";
         }
 
         iconUnicodeArray += "\n\t</string-array>";
@@ -104,11 +156,11 @@ public class Util {
         return iconUnicodeArray;
     }
 
-    private static String generateIconClassNameArray(ArrayList<FontAwesomeIcon> fontAwesomeIcons) {
+    private static String generateIconClassNameArray(ArrayList<FAIcon> fontAwesomeIcons) {
         String iconClassNameArray = "\t<string-array name=\"array_fa_icon_class_name\">";
 
-        for (FontAwesomeIcon fontAwesomeIcon : fontAwesomeIcons) {
-            iconClassNameArray += "\n\t\t<item>" + fontAwesomeIcon.getIconClassName() + "</item>";
+        for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
+            iconClassNameArray += "\n\t\t<item>" + fontAwesomeIcon.getId().replace("-","_") + "</item>";
         }
 
         iconClassNameArray += "\n\t</string-array>";
