@@ -5,11 +5,8 @@ This project showcases how to implement Font Awesome TTF in a TextView and by us
 
 App is available at Play Store : https://play.google.com/store/apps/details?id=com.sumit.fontawesomedemo
 
-JSOUP library is used to parse Font Awesome web page and generate the icon name and unicode character dictionary which can be used just like any string resource. The `icons.xml` file is generated to device SD card (this requires write permission to storage).
-
-More about JSOUP : `https://jsoup.org/` <br />
-More about Font Awesome : `http://fontawesome.io/` <br />
-Font Awesome icon list : `http://fontawesome.io/icons/`
+More about Font Awesome : `https://fontawesome.com/` <br />
+Font Awesome icon list : `https://fontawesome.com/icons?d=gallery`
 
 To show any alert or message App uses Alerter which is quite cool, have a look here : `https://github.com/Tapadoo/Alerter`
 
