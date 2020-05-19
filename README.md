@@ -5,8 +5,8 @@ This project showcases how to implement Font Awesome TTF in a TextView and by us
 
 App is available at Play Store : https://play.google.com/store/apps/details?id=com.sumit.fontawesomedemo
 
-More about Font Awesome : `https://fontawesome.com/` <br />
-Font Awesome icon list : `https://fontawesome.com/icons?d=gallery`
+More about Font Awesome : https://fontawesome.com/ <br />
+Font Awesome icon list : https://fontawesome.com/icons?d=gallery
 
 To show any alert or message App uses Alerter which is quite cool, have a look here : `https://github.com/Tapadoo/Alerter`
 
