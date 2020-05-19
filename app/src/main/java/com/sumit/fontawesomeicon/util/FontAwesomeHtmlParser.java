@@ -1,16 +1,5 @@
 package com.sumit.fontawesomeicon.util;
 
-import android.content.Context;
-
-import org.apache.commons.lang3.StringUtils;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import java.io.IOException;
-import java.util.ArrayList;
-
 /**
  * Created by Sumit on 7/28/2017.
  */

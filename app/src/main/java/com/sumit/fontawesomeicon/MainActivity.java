@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -13,6 +14,8 @@ import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -94,6 +97,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 renderIcons();
             }
         });
+
+        Window window = getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        window.setStatusBarColor(Color.TRANSPARENT);
     }
 
     // Add font to TextView
@@ -230,7 +239,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             if (intent.resolveActivity(getPackageManager()) != null) {
                 // If multiple intents are available then an intent chooser will be shown
                 startActivity(intent);
-            }else {
+            } else {
                 Alerter.create((MainActivity) context)
                         .setTitle(getString(R.string.error))
                         .setBackgroundColorRes(R.color.md_red_500)
@@ -289,7 +298,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             // Show about App information
 
             Alerter.create((MainActivity) context)
-                    .setTitle(getString(R.string.action_about))
+                    .setTitle(getString(R.string.title_about))
                     .setBackgroundColorRes(R.color.colorPrimary)
                     .setText(getString(R.string.about_app_description))
                     .setDuration(ALERTER_DURATION_IN_MILLIS)
