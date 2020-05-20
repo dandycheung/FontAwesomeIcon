@@ -139,8 +139,8 @@ public class Util {
         // To display all icons an array is needed both for unicode and icon names
         // Remove below comments to add string array
 
-        xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
-        xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
+        //xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
+        //xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
 
         xmlContent += "\n\n </resources>";
 
