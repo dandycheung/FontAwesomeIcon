@@ -6,13 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by Sumit on 7/27/2017.
- */
-
-
 public class FontManager {
-
     public static final String ROOT = "fonts/";
     public static final String FONT_AWESOME = ROOT + "fa-solid-900.ttf";
 
@@ -31,5 +25,4 @@ public class FontManager {
             ((TextView) v).setTypeface(typeface);
         }
     }
-
 }

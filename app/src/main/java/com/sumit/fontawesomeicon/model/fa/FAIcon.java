@@ -4,13 +4,14 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class FAIcon {
-
     @SerializedName("attributes")
     @Expose
     private Attributes attributes;
+
     @SerializedName("id")
     @Expose
     private String id;
+
     @SerializedName("type")
     @Expose
     private String type;

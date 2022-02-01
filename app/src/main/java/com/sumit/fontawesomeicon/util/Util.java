@@ -21,6 +21,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -28,17 +29,11 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
-/**
- * Created by Sumit on 7/27/2017.
- */
-
 public class Util {
-
     public static final String DIR_NAME = "FontAwesome";
     public static final String FILE_NAME = "icons.xml";
 
     // Generate random color in ARGB
-
     public static int getRandomColor() {
         Random random = new Random();
         return Color.argb(255, random.nextInt(256), random.nextInt(256), random.nextInt(256));
@@ -50,7 +45,6 @@ public class Util {
     }
 
     // Check network connectivity
-
     public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -59,19 +53,17 @@ public class Util {
     }
 
     public static void setWindowFlag(Activity activity, final int bits, boolean on) {
-
         Window win = activity.getWindow();
         WindowManager.LayoutParams winParams = win.getAttributes();
-        if (on) {
+        if (on)
             winParams.flags |= bits;
-        } else {
+        else
             winParams.flags &= ~bits;
-        }
+
         win.setAttributes(winParams);
     }
 
     // Get JSON string file from raw resource
-
     public static String getJsonStringFromRawFile(Context context, int rawId) {
         String json = null;
 
@@ -81,7 +73,7 @@ public class Util {
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
             inputStream.close();
-            json = new String(buffer, "UTF-8");
+            json = new String(buffer, StandardCharsets.UTF_8);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -90,30 +82,24 @@ public class Util {
     }
 
     public static ArrayList<FAIcon> getAllIcons(Context context) {
-
         return new ArrayList<>(Arrays.asList(new Gson().fromJson(getJsonStringFromRawFile(context, R.raw.icons), FAIcon[].class)));
-
     }
 
     // Get free icons from JSON
-
     public static ArrayList<FAIcon> getFreeToUseSolidIconList(ArrayList<FAIcon> icons) {
-
         ArrayList<FAIcon> freeToUseIcons = new ArrayList<>();
 
         int sequence = 0;
-
         for (FAIcon faIcon : icons) {
             try {
                 if (faIcon.getAttributes().getMembership().getFree().contains("solid")) {
-
                     faIcon.getAttributes().setUnicode("&#x" + faIcon.getAttributes().getUnicode() + ";");
                     faIcon.getAttributes().setIconColor(getRandomColor());
                     faIcon.setSequence(sequence++);
 
                     freeToUseIcons.add(faIcon);
                 }
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
         }
 
@@ -121,9 +107,7 @@ public class Util {
     }
 
     // Generate icons.xml content
-
     public static String createXmlContent(ArrayList<FAIcon> fontAwesomeIcons) {
-
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         String currentDateTime = dateFormat.format(new Date());
 
@@ -139,8 +123,8 @@ public class Util {
         // To display all icons an array is needed both for unicode and icon names
         // Remove below comments to add string array
 
-        //xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
-        //xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
+        // xmlContent += "\n\n" + generateIconUnicodeArray(fontAwesomeIcons);
+        // xmlContent += "\n\n" + generateIconClassNameArray(fontAwesomeIcons);
 
         xmlContent += "\n\n </resources>";
 
@@ -148,44 +132,49 @@ public class Util {
     }
 
     // Generate icon unicode string resource
-
     private static String generateIconStringResource(ArrayList<FAIcon> fontAwesomeIcons) {
-
-        String iconStringResource = "";
+        StringBuilder iconStringResource = new StringBuilder();
 
         for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
-            iconStringResource += "\n\t<string name=\"" + fontAwesomeIcon.getId().replace("-", "_") + "\">" + fontAwesomeIcon.getAttributes().getUnicode() + "</string>";
+            iconStringResource.append("\n\t<string name=\"")
+                .append(fontAwesomeIcon.getId().replace("-", "_"))
+                .append("\">")
+                .append(fontAwesomeIcon.getAttributes().getUnicode())
+                .append("</string>");
         }
 
-        return iconStringResource;
+        return iconStringResource.toString();
     }
 
     private static String generateIconUnicodeArray(ArrayList<FAIcon> fontAwesomeIcons) {
-        String iconUnicodeArray = "\t<string-array name=\"array_fa_icon_unicode\">";
+        StringBuilder iconUnicodeArray = new StringBuilder("\t<string-array name=\"array_fa_icon_unicode\">");
 
         for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
-            iconUnicodeArray += "\n\t\t<item>@string/" + fontAwesomeIcon.getId().replace("-", "_") + "</item>";
+            iconUnicodeArray.append("\n\t\t<item>@string/")
+                .append(fontAwesomeIcon.getId().replace("-", "_"))
+                .append("</item>");
         }
 
-        iconUnicodeArray += "\n\t</string-array>";
+        iconUnicodeArray.append("\n\t</string-array>");
 
-        return iconUnicodeArray;
+        return iconUnicodeArray.toString();
     }
 
     private static String generateIconClassNameArray(ArrayList<FAIcon> fontAwesomeIcons) {
-        String iconClassNameArray = "\t<string-array name=\"array_fa_icon_class_name\">";
+        StringBuilder iconClassNameArray = new StringBuilder("\t<string-array name=\"array_fa_icon_class_name\">");
 
         for (FAIcon fontAwesomeIcon : fontAwesomeIcons) {
-            iconClassNameArray += "\n\t\t<item>" + fontAwesomeIcon.getId().replace("-", "_") + "</item>";
+            iconClassNameArray.append("\n\t\t<item>")
+                .append(fontAwesomeIcon.getId().replace("-", "_"))
+                .append("</item>");
         }
 
-        iconClassNameArray += "\n\t</string-array>";
+        iconClassNameArray.append("\n\t</string-array>");
 
-        return iconClassNameArray;
+        return iconClassNameArray.toString();
     }
 
     // Check if write permission is allowed
-
     private static boolean isWriteOnExternalStorageAllowed() {
         // get the state of external storage
         String state = Environment.getExternalStorageState();
@@ -193,9 +182,7 @@ public class Util {
     }
 
     // Save generated XML content to SD storage
-
     public static String exportXmlToSdCard(Context context, String xmlContent) {
-
         if (isWriteOnExternalStorageAllowed()) {
             // get the path to sdcard
             File sdcard = Environment.getExternalStorageDirectory();
@@ -216,7 +203,7 @@ public class Util {
             FileOutputStream fileOutputStream = null;
             try {
                 fileOutputStream = new FileOutputStream(file);
-                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, "UTF-8");
+                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
                 bufferedWriter.write(xmlContent, 0, xmlContent.length());
 

@@ -1,9 +1,6 @@
 package com.sumit.fontawesomeicon.adapter;
 
-/**
- * Created by Sumit on 7/27/2017.
- */
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
@@ -14,6 +11,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sumit.fontawesomeicon.R;
@@ -23,12 +21,10 @@ import com.sumit.fontawesomeicon.util.FontManager;
 import java.util.ArrayList;
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
-
     private final static int FADE_DURATION_IN_MILLI = 500;
 
-    private ArrayList<FAIcon> fontAwesomeIcons;
-    private Context context;
-
+    private final ArrayList<FAIcon> fontAwesomeIcons;
+    private final Context context;
 
     public DataAdapter(Context context, ArrayList<FAIcon> fontAwesomeIcons) {
         setHasStableIds(true);
@@ -36,15 +32,16 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         this.context = context;
     }
 
+    @NonNull
     @Override
     public DataAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row_recycler_view, viewGroup, false);
         return new ViewHolder(view);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(DataAdapter.ViewHolder viewHolder, int i) {
-
         viewHolder.textViewIconUnicode.setText(fontAwesomeIcons.get(i).getAttributes().getUnicode());
         viewHolder.textViewIconUnicode.setTextColor(fontAwesomeIcons.get(i).getAttributes().getIconColor());
 
@@ -56,8 +53,8 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         GradientDrawable gradientDrawable = (GradientDrawable) viewHolder.linearLayoutRoot.getBackground();
         gradientDrawable.setStroke(5, fontAwesomeIcons.get(i).getAttributes().getIconColor());
 
-        //setFadeAnimation(viewHolder.textViewIconUnicode);
-        //setFadeAnimation(viewHolder.textViewIconName);
+        // setFadeAnimation(viewHolder.textViewIconUnicode);
+        // setFadeAnimation(viewHolder.textViewIconName);
     }
 
     @Override
@@ -71,23 +68,23 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     }
 
     @Override
-    public void onViewDetachedFromWindow(ViewHolder holder) {
+    public void onViewDetachedFromWindow(@NonNull ViewHolder holder) {
         super.onViewDetachedFromWindow(holder);
 
         // Prevent animation on fast scrolling
-        /*if(((ViewHolder) holder).textViewIconUnicode != null && ((ViewHolder) holder).textViewIconName != null) {
+        /*
+        if(((ViewHolder) holder).textViewIconUnicode != null && ((ViewHolder) holder).textViewIconName != null) {
             ((ViewHolder) holder).textViewIconUnicode.clearAnimation();
             ((ViewHolder) holder).textViewIconName.clearAnimation();
-        }*/
-
+        }
+        // */
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-
-        private LinearLayout linearLayoutRoot;
-        private TextView textViewIconUnicode;
-        private TextView textViewIconId;
-        private TextView textViewIconName;
+        private final LinearLayout linearLayoutRoot;
+        private final TextView textViewIconUnicode;
+        private final TextView textViewIconId;
+        private final TextView textViewIconName;
 
         ViewHolder(View view) {
             super(view);
@@ -99,7 +96,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
             Typeface iconFont = FontManager.getTypeface(context.getApplicationContext(), FontManager.FONT_AWESOME);
             FontManager.markAsIconContainer(textViewIconUnicode, iconFont);
-
         }
     }
 
@@ -108,5 +104,4 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         anim.setDuration(FADE_DURATION_IN_MILLI);
         view.startAnimation(anim);
     }
-
 }

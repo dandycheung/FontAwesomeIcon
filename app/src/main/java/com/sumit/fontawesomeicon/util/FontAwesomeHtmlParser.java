@@ -1,19 +1,13 @@
 package com.sumit.fontawesomeicon.util;
 
-/**
- * Created by Sumit on 7/28/2017.
- */
-
 public class FontAwesomeHtmlParser {
-
     private static final String FONT_AWESOME_CHEATSHEET_URL = "https://fontawesome.com/cheatsheet/free/solid";
 
-    /*public static ArrayList<FontAwesomeIcon> getAllFontIconList(Context context) {
-
+    /*
+    public static ArrayList<FontAwesomeIcon> getAllFontIconList(Context context) {
         Document doc = null;
 
         try {
-
             // Parse the tags which contains the icon unicode and name
 
             *//*<div class="col-md-4 col-sm-6 col-lg-3 col-print-4">
@@ -39,11 +33,11 @@ public class FontAwesomeHtmlParser {
             }
 
             return fontAwesomeIcons;
-
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         return null;
-    }*/
+    }
+    // */
 }

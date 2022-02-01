@@ -6,19 +6,22 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class Attributes {
-
     @SerializedName("id")
     @Expose
     private String id;
+
     @SerializedName("membership")
     @Expose
     private Membership membership;
+
     @SerializedName("styles")
     @Expose
     private List<String> styles = null;
+
     @SerializedName("unicode")
     @Expose
     private String unicode;
+
     @SerializedName("voted")
     @Expose
     private Boolean voted;
