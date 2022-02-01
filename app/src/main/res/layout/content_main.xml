@@ -25,6 +25,4 @@
             android:clipToPadding="false"
             android:scrollbars="vertical" />
     </androidx.cardview.widget.CardView>
-
-
 </LinearLayout>
